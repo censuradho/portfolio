@@ -2,6 +2,7 @@ import { createStitches } from '@stitches/react'
 
 import {
   colors,
+  breakpoints
 } from 'constants/theme'
 
 const { styled, globalCss: GlobalCss, getCssText, theme, css, keyframes, createTheme } = createStitches({
@@ -11,6 +12,7 @@ const { styled, globalCss: GlobalCss, getCssText, theme, css, keyframes, createT
       default: '5px'
     }
   },
+  media: breakpoints
 })
 
 const globalStyle = GlobalCss({
@@ -18,7 +20,7 @@ const globalStyle = GlobalCss({
     padding: '0',
     margin: '0',
     boxSizing: 'border-box',
-    fontFamily: 'Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
+    fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
     color: '$text'
   },
   body: {
