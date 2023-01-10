@@ -34,12 +34,12 @@ export const Title = styled('strong', {
 
 export const Content = styled(Collapsible.Content, {
   p: {
-    maxWidth: '35rem',
+    maxWidth: '50rem',
     fontSize: '1rem',
     paddingLeft: '3rem',
     
     '@table-min': {
-      paddingLeft: '11rem'
+      paddingLeft: '12rem'
     }
   }
 })

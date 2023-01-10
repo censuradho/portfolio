@@ -5,7 +5,8 @@ import {
   Header, 
   HeroCarousel, 
   PricePlans, 
-  SocialProof 
+  SocialProof, 
+  Terms
 } from './components'
 import * as Styles from './styles'
 
@@ -19,6 +20,7 @@ export function HomeLayout () {
       <Bonus />
       <Gradient />
       <CommonQuestions />
+      <Terms />
     </Styles.Container>
   )
 }
