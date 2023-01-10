@@ -1,3 +1,4 @@
+import { Footer } from 'components'
 import { 
   Bonus, 
   CommonQuestions, 
@@ -21,6 +22,7 @@ export function HomeLayout () {
       <Gradient />
       <CommonQuestions />
       <Terms />
+      <Footer />
     </Styles.Container>
   )
 }
