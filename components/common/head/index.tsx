@@ -22,7 +22,6 @@ export function Head (props: HeadProps) {
     image: og?.image || image
   }
 
-  console.log(image)
   return (
     <NextHead>
       <title>{title}</title>

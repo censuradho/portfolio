@@ -11,7 +11,7 @@ export function Icons (props: IconsProps) {
 
   return (
     <Component 
-      preserveAspectRatio
+      preserveAspectRatio="true"
       style={{
         width: size,
         height: 'auto'
