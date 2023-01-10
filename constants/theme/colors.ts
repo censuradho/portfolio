@@ -5,5 +5,6 @@ export const colors = {
   heading: '#fff',
   text: '#999',
   primary: '#DD33ED',
+  primaryActive: '#7D2885',
   secondary: '#1B8BE4'
 }

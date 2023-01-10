@@ -2,12 +2,14 @@ import { createStitches } from '@stitches/react'
 
 import {
   colors,
-  breakpoints
+  breakpoints,
+  fonts
 } from 'constants/theme'
 
 const { styled, globalCss: GlobalCss, getCssText, theme, css, keyframes, createTheme } = createStitches({
   theme: {
     colors,
+    fonts,
     radii: {
       default: '5px'
     }
@@ -47,6 +49,7 @@ const globalStyle = GlobalCss({
     fontFamily: '$text',
     lineHeight: '2rem'
   },
+
   hr: {
     width: '100%',
     height: 1,

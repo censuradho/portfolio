@@ -3,7 +3,6 @@ import { styled } from "stitches.config";
 export const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  height: 'calc(100vh - 76px)',
   'keen-slider__slide': {
     width: '100%',
     position: 'relative',
