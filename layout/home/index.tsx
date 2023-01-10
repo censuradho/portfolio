@@ -5,6 +5,7 @@ import {
   Gradient, 
   Header, 
   HeroCarousel, 
+  Presentation, 
   PricePlans, 
   SocialProof, 
   Terms
@@ -16,6 +17,7 @@ export function HomeLayout () {
     <Styles.Container>
       <Header />
       <HeroCarousel />
+      <Presentation />
       <PricePlans />
       <SocialProof />
       <Bonus />

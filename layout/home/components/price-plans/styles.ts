@@ -5,11 +5,10 @@ export const Container = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   background: 'url(/section-bg.png)',
-  backgroundSize: '100%',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
   backgroundAttachment: 'fixed',
   padding: '4rem 0',
-
-
 })
 
 export const CardList = styled('ul', {

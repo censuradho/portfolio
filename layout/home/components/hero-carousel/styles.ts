@@ -13,24 +13,24 @@ export const Container = styled('div', {
   }
 })
 
-export const Banner = styled('div', {
-
-  img: {
-    height: '400px',
-  },
-
-  '@table-min': {
-    img: {
-      height: '500px'
-    },
+export const Figure = styled('figure', {
+  width: '100%',
+  position: 'relative',
+  height: '12.5rem',
+  '@smartphone-min': {
+    height: '31.25rem'
   },
 
   '@laptops-min': {
-    img: {
-      height: '700px'
-    },
+    height: '43.75rem'
   },
  
+})
+
+export const Banner = styled('div', {
+
+
+
 })
 
 export const Range = styled('div', {

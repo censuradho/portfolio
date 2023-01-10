@@ -46,14 +46,18 @@ export function HeroCarousel () {
 
   const renderImages = useMemo(() => images?.map((value) => (
     <div className="keen-slider__slide" key={uuid()}>
-      <Image
-        src={value}
-        alt="banner"
-        sizes="100vw"
-        style={{ 
-          width: '100%',
-        }}
-      />
+      <Styles.Figure>
+        <Image
+          src={value}
+          alt="banner"
+          fill
+          // sizes="100vw"
+          // style={{ 
+          //   width: '100%',
+          // }}
+        />
+      </Styles.Figure>
+
     </div>
   )), []);
 
