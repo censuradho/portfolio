@@ -8,10 +8,14 @@ export const Container = styled('div', {
 })
 
 export const Title = styled('h2', {
-  fontSize: '2.5rem',
+  fontSize: '2rem',
   color: '$heading',
   textTransform: 'uppercase',
-  fontFamily: '$heading'
+  fontFamily: '$heading',
+
+  '@laptops-min': {
+    fontSize: '2.5rem',
+  }
 })
 
 export const Sub = styled('p', {

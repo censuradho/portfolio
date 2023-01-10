@@ -26,7 +26,7 @@ export function Bonus () {
           }}
         >
           <Box flexDirection="column">
-            <Styles.Number>1#</Styles.Number>
+            <Styles.Number>#1</Styles.Number>
             <Styles.Call>E-book</Styles.Call>
             <p>Ebook Receitas Saudáveis para utilizar na sua rotina sem fugir da alimentação saudável</p>
           </Box>
@@ -49,7 +49,7 @@ export function Bonus () {
           >
             <Image src="/img_3991.jpg" width={330} height={330} alt="ebook" />
             <Box flexDirection="column">
-              <Styles.Number>2#</Styles.Number>
+              <Styles.Number>#2</Styles.Number>
               <Styles.Call>Nutricionista</Styles.Call>
               <p>Lives com Vivi Amato, Lê Teixeira e Nutricionista Muriely Verdin para você tirar todas suas dúvidas</p>
             </Box>
@@ -70,7 +70,7 @@ export function Bonus () {
           }}
         >
           <Box flexDirection="column">
-            <Styles.Number>3#</Styles.Number>
+            <Styles.Number>#3</Styles.Number>
             <Styles.Call>Antidor + Pilates</Styles.Call>
             <p>Módulo Anti-DOR + 4 Aulas de pilates 13 vídeos para prevenir e eliminar dores com fisioterapeuta Keyner Luiz</p>
           </Box>
@@ -93,7 +93,7 @@ export function Bonus () {
           >
             <Image src="/diastase.png" width={300} height={330} alt="ebook" />
             <Box flexDirection="column">
-              <Styles.Number>4#</Styles.Number>
+              <Styles.Number>#4</Styles.Number>
               <Styles.Call>Diástase</Styles.Call>
               <p>Aulas especiais para diástase com a fisioterapeuta Manu Pimentel</p>
             </Box>

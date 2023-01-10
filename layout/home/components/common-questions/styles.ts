@@ -1,12 +1,17 @@
 import * as Collapsible from '@radix-ui/react-collapsible';
 import { styled } from 'stitches.config';
 
-export const Section = styled('section', {
-  padding: '4rem 0'
-})
 
 export const Root = styled(Collapsible.Root, {
   marginBottom: '5rem'
+})
+
+export const Section = styled('section', {
+  padding: '4rem 0',
+
+  [`${Root}:last-child`]: {
+    marginBottom: 0
+  }
 })
 
 export const Trigger = styled(Collapsible.Trigger, {

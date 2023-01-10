@@ -16,7 +16,7 @@ export const Container = styled('div', {
 export const Banner = styled('div', {
 
   img: {
-    height: '400px'
+    height: '400px',
   },
 
   '@table-min': {

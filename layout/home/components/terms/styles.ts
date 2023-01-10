@@ -1,7 +1,7 @@
 import { styled } from 'stitches.config'
 
 export const Section = styled('section', {
-  padding: '4rem 0',
+  padding: '2rem 0',
   textAlign: 'center',
 
   background: '$foreground',
@@ -9,5 +9,9 @@ export const Section = styled('section', {
     color: '$heading',
     fontSize: '1.125rem',
     textTransform: 'uppercase',
+  },
+
+  '@table-min': {
+    padding: '4rem 0',
   }
 })

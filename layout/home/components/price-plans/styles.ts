@@ -15,11 +15,11 @@ export const Container = styled('section', {
 export const CardList = styled('ul', {
   display: 'flex',
   justifyContent: 'center',
+  gap: '2rem',
 
   '@table-max': {
     flexDirection: 'column',
     alignItems: 'center',
-    gap: '2rem'
   } 
 })
 

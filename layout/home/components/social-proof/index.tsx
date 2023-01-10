@@ -1,6 +1,7 @@
 import { useKeenSlider } from 'keen-slider/react'
 import Image from 'next/image'
 
+
 import 'keen-slider/keen-slider.min.css'
 
 import { Container } from 'components/common'
@@ -66,7 +67,9 @@ export function SocialProof () {
 
   const renderImages = images.map(image => (
     <div className="keen-slider__slide" key={uuid()}>
-      <Image src={`/resultados/${image}`} alt="" width={300} height={300} />
+      <Styles.Figure>
+        <Image src={`/resultados/${image}`} alt="" fill />
+      </Styles.Figure>
     </div>
   ))
 
