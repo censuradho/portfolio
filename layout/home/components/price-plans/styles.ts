@@ -7,12 +7,20 @@ export const Container = styled('section', {
   background: 'url(/section-bg.png)',
   backgroundSize: '100%',
   backgroundAttachment: 'fixed',
-  padding: '4rem 0'
+  padding: '4rem 0',
+
+
 })
 
 export const CardList = styled('ul', {
   display: 'flex',
-  justifyContent: 'center'
+  justifyContent: 'center',
+
+  '@table-max': {
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '2rem'
+  } 
 })
 
 export const Card = styled('li', {
@@ -32,11 +40,15 @@ export const Card = styled('li', {
       true: {
         transform: 'scale(1.1)',
         background: '$background',
-
+        '@table-max': {
+          transform: 'scale(1)',
+        },
         zIndex: 2
       }
     }
   },
+
+
   ul: {
     display: 'flex',
     flexDirection: 'column',

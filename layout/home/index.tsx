@@ -1,5 +1,10 @@
-import { Container } from 'components/common/container'
-import { Header, HeroCarousel, PricePlans, SectionTitle, SocialProof } from './components'
+import { 
+  Bonus, 
+  Header, 
+  HeroCarousel, 
+  PricePlans, 
+  SocialProof 
+} from './components'
 import * as Styles from './styles'
 
 export function HomeLayout () {
@@ -9,6 +14,7 @@ export function HomeLayout () {
       <HeroCarousel />
       <PricePlans />
       <SocialProof />
+      <Bonus />
     </Styles.Container>
   )
 }
