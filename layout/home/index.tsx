@@ -1,5 +1,7 @@
 import { 
   Bonus, 
+  CommonQuestions, 
+  Gradient, 
   Header, 
   HeroCarousel, 
   PricePlans, 
@@ -15,6 +17,8 @@ export function HomeLayout () {
       <PricePlans />
       <SocialProof />
       <Bonus />
+      <Gradient />
+      <CommonQuestions />
     </Styles.Container>
   )
 }

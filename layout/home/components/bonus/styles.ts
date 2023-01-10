@@ -1,9 +1,5 @@
 import { styled } from "stitches.config";
 
-export const Section = styled('section', {
-  padding: '4rem 0',
-})
-
 export const Number = styled('span', {
   fontSize: '1.6rem',
   textTransform: 'uppercase',
@@ -20,5 +16,13 @@ export const Call = styled('strong', {
 export const Foreground = styled('div', {
   background: '$foreground',
   padding: '2rem 0',
-  margin: '2rem 0'
+})
+
+
+export const Section = styled('section', {
+  paddingTop: '4rem',
+
+  [`${Foreground}:last-child`]: {
+    marginBottom: 0
+  }
 })
