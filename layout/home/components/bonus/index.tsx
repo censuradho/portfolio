@@ -1,3 +1,4 @@
+import { CTA } from 'components'
 import { Box, Container } from 'components/common'
 import Image from 'next/image'
 import { SectionTitle } from '../section-title'
@@ -99,6 +100,9 @@ export function Bonus () {
             </Box>
           </Box>
         </Container>
+        <Box marginTop={5} fullWidth justifyContent="center">
+          <CTA />
+        </Box>
       </Styles.Foreground>
 
     </Styles.Section>

@@ -1,4 +1,5 @@
-import { Container, Icons } from 'components/common'
+import { CTA } from 'components'
+import { Box, ButtonAnchor, Container, Icons } from 'components/common'
 import { SectionTitle } from '../section-title'
 import * as Styles from './styles'
 
@@ -67,7 +68,9 @@ export function Presentation () {
             </p>
           </li>
         </Styles.Benefits>
- 
+        <Box fullWidth justifyContent="center" marginTop={3}>
+          <CTA />
+        </Box>
       </Container>
     </Styles.Section>
   )

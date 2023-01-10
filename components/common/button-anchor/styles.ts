@@ -1,6 +1,6 @@
 import { styled } from 'stitches.config'
 
-export const Anchor = styled('button', {
+export const Anchor = styled('a', {
   display: 'flex',
   alignItems: 'center',
   gap: '0.5rem',
@@ -10,6 +10,7 @@ export const Anchor = styled('button', {
   whiteSpace: 'nowrap',
   borderRadius: '3px',
   fontSize: '.875rem',
+  textTransform: 'uppercase',
 
   '&:disabled': {
     cursor: 'not-allowed'
@@ -23,9 +24,10 @@ export const Anchor = styled('button', {
     variant: {
       primary: {
         background: '$primary',
-        padding: '1rem',
+        padding: '1rem 2rem',
         color: '#fff',
-        
+        width: 'auto',
+
         '&:hover': {
           background: '$primaryActive'
         },

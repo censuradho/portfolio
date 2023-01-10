@@ -25,10 +25,13 @@ const globalStyle = GlobalCss({
     fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
     color: '$text'
   },
+  html: {
+    scrollBehavior: 'smooth'
+  },
   body: {
     backgroundColor: '$background',
     width: '100%',
-    height: '100%'
+    height: '100%',
   },
   button: {
     background: 'none',

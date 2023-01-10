@@ -9,7 +9,7 @@ export const Button = styled('button', {
   position: 'relative',
   whiteSpace: 'nowrap',
   borderRadius: '3px',
-  fontSize: '.875rem',
+  fontSize: '1.1rem',
 
   '&:disabled': {
     cursor: 'not-allowed'

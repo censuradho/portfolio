@@ -117,13 +117,13 @@ export function PricePlans () {
   })
 
   return (
-    <Styles.Container>
+    <Styles.Section id="plans">
       <Container>
         <SectionTitle title="Escolha seu plano simbora trincar" />
         <Styles.CardList>
           {renderPlans}
         </Styles.CardList>
       </Container>
-    </Styles.Container>
+    </Styles.Section>
   )
 }

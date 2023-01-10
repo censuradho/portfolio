@@ -18,10 +18,10 @@ export function HomeLayout () {
       <Header />
       <HeroCarousel />
       <Presentation />
-      <PricePlans />
       <SocialProof />
       <Bonus />
       <Gradient />
+      <PricePlans />
       <CommonQuestions />
       <Terms />
       <Footer />

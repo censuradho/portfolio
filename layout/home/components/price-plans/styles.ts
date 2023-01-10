@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { styled } from 'stitches.config'
 
-export const Container = styled('section', {
+export const Section = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   background: 'url(/section-bg.png)',
