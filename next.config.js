@@ -4,6 +4,11 @@ const nextConfig = {
     appDir: true,
   },
   productionBrowserSourceMaps: true,
+  images: {
+    domains: [
+      'github.com'
+    ]
+  }
 }
 
 module.exports = {

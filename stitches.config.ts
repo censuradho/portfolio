@@ -3,15 +3,17 @@ import { createStitches } from '@stitches/react'
 import {
   colors,
   breakpoints,
-  fonts
+  fonts,
+  fontSizes
 } from 'constants/theme'
 
 const { styled, globalCss: GlobalCss, getCssText, theme, css, keyframes, createTheme } = createStitches({
   theme: {
     colors,
     fonts,
+    fontSizes,
     radii: {
-      default: '5px'
+      default: '16px'
     }
   },
   media: breakpoints
@@ -41,7 +43,6 @@ const globalStyle = GlobalCss({
   h1: {
     fontWeight: '500',
     fontFamily: '$title',
-    lineHeight: '3.5rem'
   },
   h2: {
     fontFamily: '$title',
