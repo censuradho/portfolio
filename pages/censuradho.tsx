@@ -3,6 +3,7 @@ import { LinkTreeLayout } from "layout/link-tree";
 import path from 'path';
 import { promises as fs } from 'fs';
 import { InferGetStaticPropsType } from "next";
+import { Head } from "components/common";
 
 export const getStaticProps = async () => {
   const jsonDirectory = path.join(process.cwd(), 'data');
@@ -21,6 +22,12 @@ export const getStaticProps = async () => {
 
 export default function LinkTree (props: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <LinkTreeLayout {...props} />
+    <>
+      <Head 
+        title="Gustavo Leite Oliveira (censuradho) | Software developer"
+        description="Alguns links importantes"
+      />
+      <LinkTreeLayout {...props} />
+    </>
   )
 }

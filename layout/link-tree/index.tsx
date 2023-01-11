@@ -25,7 +25,7 @@ export function LinkTreeLayout (props: LinkTreeProps) {
       <Styles.Main>
         <Styles.Banner>
           <Styles.Presentation>
-            <Avatar size={120} src='https://github.com/censuradho.png' alt="avatar" />
+            <Avatar size={120} src='/logo.jpg' alt="avatar" />
             <Styles.Lettering >
               <Typography as="h1" size="md" color="heading">{perfil.instagram}</Typography>
             </Styles.Lettering>

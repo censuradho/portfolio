@@ -5,7 +5,7 @@ export function Head (props: HeadProps) {
   const {
     description,
     title,
-    image = 'https://static-public.klickpages.com.br/uploads/media/file/4760425/whatsapp_image_2022-03-25_at_17.07.52.jpeg',
+    image = 'https://portfolio-gules-eight-22.vercel.app/social-banner.jpg',
     og,
     twitter
   } = props
