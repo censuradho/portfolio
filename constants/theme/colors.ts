@@ -1,8 +1,9 @@
 export const colors = {
-  background: '#111111',
-  foreground: '#000',
-  foregroundActive: '#333',
-  heading: '#fff',
+  background: '#F5F5F5',
+  foreground: '#fff',
+  foregroundActive: 'rgb(235, 238, 241)',
+  foregroundActiveOpacity: 'rgba(255, 255, 255, 0.5)',
+  heading: '#242424',
   text: '#999',
   primary: '#DD33ED',
   primaryActive: '#7D2885',

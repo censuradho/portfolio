@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@meronex/icons": "^4.0.0",
     "@next/font": "13.1.1",
     "@radix-ui/react-collapsible": "^1.0.1",
     "@stitches/react": "^1.2.8",

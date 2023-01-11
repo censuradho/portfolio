@@ -1,26 +1,29 @@
 {
   "nickname": "lestudio_42l",
   "instagram": "@lestudio_42l",
-  "linktree": [
+  "social_links": [
     {
-      "icon": "💼",
+      "icon": "linkedin",
       "label": "Linkedin",
       "link": "https://www.linkedin.com/in/gustavo-dev-front/"
     },
     {
-      "icon": "👨🏽‍💻",
+      "icon": "github",
       "label": "Github",
       "link": "https://github.com/censuradho"
     },
     {
-      "icon": "📷",
+      "icon": "instagram",
       "label": "Instagram",
       "link": "https://www.instagram.com/lestudio_42l/"
     },
     {
-      "icon": "📬",
+      "icon": "mail",
       "label": "E-mail",
       "link": "mailto:develop.front@gmail.com"
     }
+  ],
+  "projects_links": [
+
   ]
 }

@@ -1,15 +1,16 @@
 import { styled } from 'stitches.config'
 
 export const Container = styled('div', {
-  background: 'url(/philip-myrtorp-NCXZRohHhRE-unsplash.jpg)',
+  // background: 'url(/philip-myrtorp-NCXZRohHhRE-unsplash.jpg)',
+  background: '$background',
   backgroundSize: 'cover',
+  backgroundAttachment: 'fixed'
 })
 
 export const Main = styled('main', {
   width: '100%',
   maxWidth: '45rem',
   margin: '0 auto',
-  height: '100vh',
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem'
@@ -54,7 +55,6 @@ export const Lettering = styled('div', {
 
 export const LinkList = styled('ul', {
   flex: 1,
-  overflow: 'auto',
   display: 'flex',
   flexDirection: 'column',
   gap: '1rem'
@@ -62,7 +62,7 @@ export const LinkList = styled('ul', {
 
 export const LinkItem = styled('li', {
 
-  background: 'rgba(0, 0, 0, 0.2)',
+  background: '$foreground',
   border: 'transparent 1px solid',
   borderRadius: '$default',
   backdropFilter: 'blur(5px)',
