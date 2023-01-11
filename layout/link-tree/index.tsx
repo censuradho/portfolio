@@ -4,6 +4,8 @@ import { uuid } from 'lib/uuid'
 import * as Styles from './styles'
 import { LinkTreeProps } from './types'
 
+import ReactGA from 'react-ga4'
+
 export function LinkTreeLayout (props: LinkTreeProps) {
   const { 
     perfil
@@ -12,6 +14,11 @@ export function LinkTreeLayout (props: LinkTreeProps) {
   const renderLinks = perfil.linktree?.map(item => (
     <Styles.LinkItem
       key={uuid()}
+      onClick={() => ReactGA.event({
+        label: item.label,
+        action: 'click',
+        category: 'social link'
+      })}
     >
       <a aria-label={item.label} href={item.link} target="_blank" rel="noreferrer">
         <Styles.Emoji>{item.icon}</Styles.Emoji>
