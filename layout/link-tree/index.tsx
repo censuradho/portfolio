@@ -1,7 +1,6 @@
-import { Avatar, Box } from 'components/common'
+import { Avatar } from 'components/common'
 import { Typography } from 'components/common/typography'
 import { uuid } from 'lib/uuid'
-import Image from 'next/image'
 import * as Styles from './styles'
 import { LinkTreeProps } from './types'
 
@@ -31,7 +30,6 @@ export function LinkTreeLayout (props: LinkTreeProps) {
               <Typography as="h1" size="md" color="heading">{perfil.instagram}</Typography>
             </Styles.Lettering>
           </Styles.Presentation>
-          <Image src="/react.png" alt="banner" fill />
         </Styles.Banner>
         <Styles.LinkList>
           {renderLinks}

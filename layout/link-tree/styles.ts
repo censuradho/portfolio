@@ -1,7 +1,8 @@
 import { styled } from 'stitches.config'
 
 export const Container = styled('div', {
-
+  background: 'url(/philip-myrtorp-NCXZRohHhRE-unsplash.jpg)',
+  backgroundSize: 'cover',
 })
 
 export const Main = styled('main', {
@@ -46,7 +47,7 @@ export const Presentation = styled('div', {
 })
 
 export const Lettering = styled('div', {
-  background: '$background',
+  backdropFilter: 'blur(5px)',
   padding: '0.5rem 1rem',
   borderRadius: '$default'
 })
@@ -61,9 +62,10 @@ export const LinkList = styled('ul', {
 
 export const LinkItem = styled('li', {
 
-  background: '$foreground',
+  background: 'rgba(0, 0, 0, 0.2)',
   border: 'transparent 1px solid',
   borderRadius: '$default',
+  backdropFilter: 'blur(5px)',
 
   '&:hover': {
     borderColor: '$foregroundActive'
