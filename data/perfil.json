@@ -18,6 +18,11 @@
       "link": "https://www.instagram.com/lestudio_42l/"
     },
     {
+      "icon": "rss",
+      "label": "Blog",
+      "link": "https://blog-next-seven-vert.vercel.app"
+    },
+    {
       "icon": "mail",
       "label": "E-mail",
       "link": "mailto:develop.front@gmail.com"
@@ -29,6 +34,13 @@
       "label": "Planning poker",
       "link": "https://agile-planning-poker.vercel.app",
       "link_preview": ""
+    },
+    {
+      "icon": "codeAlt",
+      "label": "Simbora trincar",
+      "link": "https://simboratrinca-landingpage.vercel.app",
+      "link_preview": ""
     }
   ]
 }
+

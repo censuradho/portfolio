@@ -1,3 +1,5 @@
+import dynamic from 'next/dynamic'
+
 import { uuid } from 'lib/uuid'
 import { 
   Avatar, 
@@ -5,7 +7,8 @@ import {
   Typography 
 } from 'components/common'
 
-import { Header, HoverPreview } from './components'
+
+import { Header } from './components'
 import * as Styles from './styles'
 import { LinkTreeProps } from './types'
 
@@ -13,6 +16,10 @@ import ReactGA from 'react-ga4'
 import { useRef } from 'react'
 import { useIntersectionObserver } from 'hooks'
 import { IconNames } from 'components/common/icon/types'
+
+const HoverPreview = dynamic(() => import('./components').then(mod => mod.HoverPreview), {
+  ssr: false
+})
 
 export function LinkTreeLayout (props: LinkTreeProps) {
   const ref = useRef<HTMLDivElement | null>(null)
@@ -41,24 +48,26 @@ export function LinkTreeLayout (props: LinkTreeProps) {
 
 
   const renderProjectsLinks = perfil.projects_links?.map(item => (
-    <HoverPreview
-      src={item.link_preview}
+  
+    <Styles.LinkItem
       key={uuid()}
+      onClick={() => ReactGA.event({
+        label: item.label,
+        action: 'click',
+        category: 'social link'
+      })}
     >
-      <Styles.LinkItem
-        
-        onClick={() => ReactGA.event({
-          label: item.label,
-          action: 'click',
-          category: 'social link'
-        })}
+      <HoverPreview
+        src={item.link_preview}
+       
       >
         <a aria-label={item.label} href={item.link} target="_blank" rel="noreferrer">
           <Icon name={item.icon as IconNames} size={32}  />
           <Styles.Label>{item.label}</Styles.Label>
         </a>
-      </Styles.LinkItem>
-    </HoverPreview>
+      </HoverPreview>
+
+    </Styles.LinkItem>
   ))
 
   return (

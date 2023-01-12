@@ -7,7 +7,8 @@ const nextConfig = {
   images: {
     domains: [
       'github.com',
-      'agile-planning-poker.vercel.app'
+      'agile-planning-poker.vercel.app',
+      'static-public.klickpages.com.br'
     ]
   }
 }

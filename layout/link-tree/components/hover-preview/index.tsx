@@ -10,7 +10,7 @@ export function HoverPreview (props: HoverPreviewProps) {
   
   return (
     <Styles.Root>
-      <Styles.Trigger>{children}</Styles.Trigger>
+      <Styles.Trigger asChild>{children}</Styles.Trigger>
       <Styles.Portal>
         <Styles.Content sideOffset={5}>
           <Image src={src} width={300} height={300} alt="preview" />

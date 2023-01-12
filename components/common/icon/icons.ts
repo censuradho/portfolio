@@ -24,6 +24,10 @@ import {
   FdMail
 } from '@meronex/icons/fd'
 
+import {
+  EnRss
+} from '@meronex/icons/en';
+
 export const icons = {
   suiteCase: FaSuitcase,
   github: BilGithub,
@@ -36,5 +40,6 @@ export const icons = {
   shareBoxLine: RiShareBoxLine,
   whatsapp: LogoWhatsapp,
   outlineClose: AiOutlineClose,
-  codeAlt: BiCodeAlt
+  codeAlt: BiCodeAlt,
+  rss: EnRss
 }
