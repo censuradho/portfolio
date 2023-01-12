@@ -20,3 +20,6 @@ export function parseToVariant <T> (obj: Record<string, string>, property: keyof
       ...next
     }), {}) as unknown as T
 }
+
+
+export const isBrowser = () => typeof window !== 'undefined'
