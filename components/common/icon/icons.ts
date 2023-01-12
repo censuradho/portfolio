@@ -12,7 +12,8 @@ import {
   BisShareAlt,
   BilFacebookSquare,
   BilTwitter,
-  BiCodeAlt
+  BiCodeAlt,
+  BilSpotify
 } from '@meronex/icons/bi';
 import {
   RiShareBoxLine
@@ -41,5 +42,6 @@ export const icons = {
   whatsapp: LogoWhatsapp,
   outlineClose: AiOutlineClose,
   codeAlt: BiCodeAlt,
-  rss: EnRss
+  rss: EnRss,
+  spotify: BilSpotify
 }
