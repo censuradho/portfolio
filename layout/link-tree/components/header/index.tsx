@@ -7,7 +7,7 @@ import { HeaderProps } from './types'
 export function Header (props: HeaderProps) {
   
   const { 
-    visible,
+    visible = false,
     title 
   } = props
 

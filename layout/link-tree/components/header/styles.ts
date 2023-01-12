@@ -20,7 +20,6 @@ export const Header = styled('header', {
       true: {
         borderColor: '$foregroundActive',
         background: '$foregroundActiveOpacity',
-    
       },
     }
   }

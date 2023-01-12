@@ -11,19 +11,19 @@ export function Share (props: ShareProps) {
 
   const router = useRouter()
 
-  const currentUrl = isBrowser() ? `${window.location.origin}${router.pathname}` : ''
+  const currentUrl = isBrowser()   ? `${window.location.origin}${router.pathname}` : ''
 
   
   
   return (
-    <Styles.Root>
-      <Styles.Trigger>{children}</Styles.Trigger>
+    <Styles.Root >
+      <Styles.Trigger asChild>{children}</Styles.Trigger>
       <Styles.Portal>
         <Styles.Overlay />
         <Styles.Content>
           <Box fullWidth justifyContent="flex-end"> 
-            <Styles.Cancel>
-              <Icon name="outlineClose" />
+            <Styles.Cancel asChild>
+              <ButtonIcon label="close" icon={{ name: 'outlineClose' }} />
             </Styles.Cancel>
           </Box>
           <Styles.List>
