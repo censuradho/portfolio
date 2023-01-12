@@ -7,7 +7,8 @@ import {
 
 import {
   BilGithub,
-  BilInstagramAlt
+  BilInstagramAlt,
+  BisShareAlt
 } from '@meronex/icons/bi';
 
 import {
@@ -19,5 +20,6 @@ export const icons = {
   github: BilGithub,
   instagram: BilInstagramAlt,
   mail: FdMail,
-  linkedin: AiFillLinkedin
+  linkedin: AiFillLinkedin,
+  shareAlt: BisShareAlt
 }

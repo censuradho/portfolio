@@ -4,7 +4,8 @@ export const Container = styled('div', {
   // background: 'url(/philip-myrtorp-NCXZRohHhRE-unsplash.jpg)',
   background: '$background',
   backgroundSize: 'cover',
-  backgroundAttachment: 'fixed'
+  backgroundAttachment: 'fixed',
+  padding: '1rem'
 })
 
 export const Main = styled('main', {
@@ -18,7 +19,7 @@ export const Main = styled('main', {
 
 export const Banner = styled('div', {
   width: '100%',
-  height: '300px',
+  height: '200px',
   borderRadius: '0 0 2rem 2rem',
   position: 'relative',
   overflow: 'hidden',

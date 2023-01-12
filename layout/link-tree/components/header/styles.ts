@@ -1,3 +1,4 @@
+import { Box } from 'components/common'
 import { styled } from 'stitches.config'
 
 export const Header = styled('header', {
@@ -9,15 +10,19 @@ export const Header = styled('header', {
   top: '2rem',
   zIndex: 3,
   transition: '.15s ease',
-  background: '$foregroundActiveOpacity',
-  border: '1px solid $foregroundActive',
+  border: '1px solid transparent',
+  background: 'none',
+  display: 'flex',
+  alignItems: 'center',
 
   variants: {
     visible: {
       true: {
-        opacity: 0,
-        visibility: 'hidden'
-      }
+        borderColor: '$foregroundActive',
+        background: '$foregroundActiveOpacity',
+    
+      },
     }
   }
 })
+

@@ -1,4 +1,4 @@
-import { Avatar, Box, Typography } from 'components/common'
+import { Avatar, Box, ButtonIcon, Typography } from 'components/common'
 
 import * as Styles from './styles'
 import { HeaderProps } from './types'
@@ -10,14 +10,25 @@ export function Header (props: HeaderProps) {
     title 
   } = props
 
-  return (
-    <Styles.Header visible={visible}>
-      <Box gap={1} alignItems="center">
+  const renderBranding = () => {
+    if (!visible) return null
+    
+    return (
+      <Box fullWidth gap={1} alignItems="center" flex={1}>
         <Avatar size={50} src='/logo.jpg' alt="logo" />
         <Box flex={1} justifyContent="center">
           <Typography as="h2" size="md" color="heading">{title}</Typography>
         </Box>
       </Box>
+    )
+  }
+  
+  return (
+    <Styles.Header visible={visible}>
+      {renderBranding()}
+      <div style={{ marginLeft: 'auto' }}>
+        <ButtonIcon label="share" icon={{ name: 'shareAlt' }} />
+      </div>
     </Styles.Header>
   )
 }

@@ -43,7 +43,7 @@ export function LinkTreeLayout (props: LinkTreeProps) {
     <Styles.Container>
       <Styles.Main>
         <Header 
-          visible={isVisible}
+          visible={!isVisible}
           title={perfil.nickname} 
         />
         <Styles.Banner ref={ref}>
