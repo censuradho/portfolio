@@ -13,6 +13,7 @@
     "@next/font": "13.1.1",
     "@radix-ui/react-alert-dialog": "^1.0.2",
     "@radix-ui/react-collapsible": "^1.0.1",
+    "@radix-ui/react-hover-card": "^1.0.2",
     "@stitches/react": "^1.2.8",
     "@svgr/webpack": "^6.5.1",
     "@types/node": "18.11.18",
