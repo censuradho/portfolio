@@ -44,9 +44,11 @@ export const List = styled('ul', {
 })
 
 export const Item = styled('li', {
-  padding: '0.5rem',
-
-  '&:hover': { background: '$foreground' }
+  a: {
+    display: 'block',
+    padding: '0.5rem',
+    '&:hover': { background: '$foreground' }
+  }
 })
 
 

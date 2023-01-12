@@ -10,7 +10,7 @@ export function Share (props: ShareProps) {
 
   const router = useRouter()
 
-  const currentUrl = `${window.location.origin}${router.pathname}`
+  const currentUrl = !!window ? `${window.location.origin}${router.pathname}` : ''
 
   
   
