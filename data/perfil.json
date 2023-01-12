@@ -24,6 +24,10 @@
     }
   ],
   "projects_links": [
-
+    {
+      "icon": "codeAlt",
+      "label": "Planning poker",
+      "link": "https://agile-planning-poker.vercel.app"
+    }
   ]
 }

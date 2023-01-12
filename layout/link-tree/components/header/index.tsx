@@ -1,4 +1,6 @@
 import { Avatar, Box, ButtonIcon, Typography } from 'components/common'
+
+
 import { Share } from '../shere'
 
 import * as Styles from './styles'
@@ -23,7 +25,7 @@ export function Header (props: HeaderProps) {
       </Box>
     )
   }
-  
+
   return (
     <Styles.Header visible={visible}>
       {renderBranding()}

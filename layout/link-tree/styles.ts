@@ -5,7 +5,7 @@ export const Container = styled('div', {
   background: '$background',
   backgroundSize: 'cover',
   backgroundAttachment: 'fixed',
-  padding: '1rem'
+  padding: '0 1rem'
 })
 
 export const Main = styled('main', {
@@ -91,6 +91,6 @@ export const Emoji = styled('span', {
 })
 
 export const Label = styled('strong', {
-  fontSize: '1.125rem',
+  fontSize: '$xsm',
   color: '$heading'
 })

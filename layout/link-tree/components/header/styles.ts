@@ -3,7 +3,6 @@ import { styled } from 'stitches.config'
 
 export const Header = styled('header', {
   width: '100%',
-  backdropFilter: 'blur(10px)',
   borderRadius: '100px',
   padding: '0.5rem 1rem',
   position: 'sticky',
@@ -14,12 +13,14 @@ export const Header = styled('header', {
   background: 'none',
   display: 'flex',
   alignItems: 'center',
+  minHeight: '5.425rem',
 
   variants: {
     visible: {
       true: {
         borderColor: '$foregroundActive',
         background: '$foregroundActiveOpacity',
+        backdropFilter: 'blur(10px)',
       },
     }
   }
