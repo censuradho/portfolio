@@ -2,15 +2,23 @@ import {
   FaSuitcase
 } from '@meronex/icons/fa';
 import {
-  AiFillLinkedin
+  AiFillLinkedin,
+  AiOutlineClose
 } from '@meronex/icons/ai';
 
 import {
   BilGithub,
   BilInstagramAlt,
-  BisShareAlt
+  BisShareAlt,
+  BilFacebookSquare,
+  BilTwitter
 } from '@meronex/icons/bi';
-
+import {
+  RiShareBoxLine
+} from '@meronex/icons/ri';
+import {
+  LogoWhatsapp
+} from '@meronex/icons/ios';
 import {
   FdMail
 } from '@meronex/icons/fd'
@@ -21,5 +29,10 @@ export const icons = {
   instagram: BilInstagramAlt,
   mail: FdMail,
   linkedin: AiFillLinkedin,
-  shareAlt: BisShareAlt
+  shareAlt: BisShareAlt,
+  facebook: BilFacebookSquare,
+  twitter: BilTwitter,
+  shareBoxLine: RiShareBoxLine,
+  whatsapp: LogoWhatsapp,
+  outlineClose: AiOutlineClose
 }

@@ -1,4 +1,5 @@
 import { Avatar, Box, ButtonIcon, Typography } from 'components/common'
+import { Share } from '../shere'
 
 import * as Styles from './styles'
 import { HeaderProps } from './types'
@@ -27,7 +28,9 @@ export function Header (props: HeaderProps) {
     <Styles.Header visible={visible}>
       {renderBranding()}
       <div style={{ marginLeft: 'auto' }}>
-        <ButtonIcon label="share" icon={{ name: 'shareAlt' }} />
+        <Share>
+          <ButtonIcon label="share" icon={{ name: 'shareAlt' }} />
+        </Share>
       </div>
     </Styles.Header>
   )
