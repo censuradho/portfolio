@@ -23,8 +23,11 @@ const HoverPreview = dynamic(() => import('./components').then(mod => mod.HoverP
 
 export function LinkTreeLayout (props: LinkTreeProps) {
   const ref = useRef<HTMLDivElement | null>(null)
-  const entry = useIntersectionObserver(ref, {})
-  const isVisible = !!entry?.isIntersecting
+  const entry = useIntersectionObserver(ref, {
+    threshold: 1
+  })
+
+  const isVisible = ref.current ? !!entry?.isIntersecting : true
 
   const { 
     perfil
@@ -48,7 +51,6 @@ export function LinkTreeLayout (props: LinkTreeProps) {
 
 
   const renderProjectsLinks = perfil.projects_links?.map(item => (
-  
     <Styles.LinkItem
       key={uuid()}
       onClick={() => ReactGA.event({

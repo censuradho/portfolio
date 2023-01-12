@@ -49,7 +49,7 @@ export const Item = styled('li', {
     display: 'block',
     padding: '0.5rem',
     border: '1px solid transparent',
-
+    borderRadius: '$default',
     '&:hover': { background: '$foreground' },
     '&:focus': { background:  '$foreground', borderColor: '$foregroundActive' }
   }

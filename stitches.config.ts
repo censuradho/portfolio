@@ -13,7 +13,7 @@ const { styled, globalCss: GlobalCss, getCssText, theme, css, keyframes, createT
     fonts,
     fontSizes,
     radii: {
-      default: '16px'
+      default: '8px'
     }
   },
   media: breakpoints

@@ -9,26 +9,18 @@ import { HeaderProps } from './types'
 export function Header (props: HeaderProps) {
   
   const { 
-    visible = false,
+    visible = true,
     title 
   } = props
 
-  const renderBranding = () => {
-    if (!visible) return null
-    
-    return (
-      <Box fullWidth gap={1} alignItems="center" flex={1}>
+  return (
+    <Styles.Header visible={visible}>
+      <Styles.HiddenView visible={visible}>
         <Avatar size={50} src='/logo.jpg' alt="logo" />
         <Box flex={1} justifyContent="center">
           <Typography as="h2" size="md" color="heading">{title}</Typography>
         </Box>
-      </Box>
-    )
-  }
-
-  return (
-    <Styles.Header visible={visible}>
-      {renderBranding()}
+      </Styles.HiddenView>
       <div style={{ marginLeft: 'auto' }}>
         <Share>
           <ButtonIcon label="share" icon={{ name: 'shareAlt' }} />

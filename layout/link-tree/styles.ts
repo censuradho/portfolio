@@ -14,7 +14,8 @@ export const Main = styled('main', {
   margin: '0 auto',
   display: 'flex',
   flexDirection: 'column',
-  gap: '2rem'
+  gap: '2rem',
+  paddingBottom: '2rem',
 })
 
 export const Banner = styled('div', {

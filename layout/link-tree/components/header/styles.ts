@@ -1,6 +1,25 @@
 import { Box } from 'components/common'
 import { styled } from 'stitches.config'
 
+export const HiddenView = styled('div', {
+  gap: '1rem',
+  alignItems: 'center',
+  width: '100%',
+  flex: 1,
+  display: 'none',
+  
+  variants: {
+    visible: {
+      true: {
+        display: 'flex',
+      }
+    }
+  },
+  defaultVariants: {
+    visible: false
+  }
+})
+
 export const Header = styled('header', {
   width: '100%',
   borderRadius: '100px',
@@ -23,6 +42,10 @@ export const Header = styled('header', {
         backdropFilter: 'blur(10px)',
       },
     }
+  },
+
+  defaultVariants: {
+    visible: false
   }
 })
 
