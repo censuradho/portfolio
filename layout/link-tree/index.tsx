@@ -10,24 +10,22 @@ import * as Styles from './styles'
 import { LinkTreeProps } from './types'
 
 import ReactGA from 'react-ga4'
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import { useIntersectionObserver } from 'hooks'
 import { IconNames } from 'components/common/icon/types'
-import { getLinkPreview } from 'service/link-preview'
+import Image from 'next/image'
 
 export function LinkTreeLayout (props: LinkTreeProps) {
   const ref = useRef<HTMLDivElement | null>(null)
   const entry = useIntersectionObserver(ref, {})
   const isVisible = !!entry?.isIntersecting
 
-
   const { 
     perfil
   } = props
 
-
-  const [metaTags, setMetaTags] = useState([])
-
+  console.log(perfil)
+  
   const renderLinks = perfil.social_links?.map(item => (
     <Styles.LinkItem
       key={uuid()}
@@ -44,6 +42,7 @@ export function LinkTreeLayout (props: LinkTreeProps) {
     </Styles.LinkItem>
   ))
 
+
   const renderProjectsLinks = perfil.projects_links?.map(item => (
     <Styles.LinkItem
       key={uuid()}
@@ -57,14 +56,11 @@ export function LinkTreeLayout (props: LinkTreeProps) {
         <Icon name={item.icon as IconNames} size={32}  />
         <Styles.Label>{item.label}</Styles.Label>
       </a>
+      <Styles.ImagePreviewFigure>
+        <Image src={item.link_preview} width={200} height={200} alt="preview"  />
+      </Styles.ImagePreviewFigure>
     </Styles.LinkItem>
   ))
-
-    
-  useEffect(() => {
-    getLinkPreview('https://agile-planning-poker.vercel.app/')
-  }, [])
-
 
   return (
     <Styles.Container>

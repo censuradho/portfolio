@@ -6,7 +6,8 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
   images: {
     domains: [
-      'github.com'
+      'github.com',
+      'agile-planning-poker.vercel.app'
     ]
   }
 }

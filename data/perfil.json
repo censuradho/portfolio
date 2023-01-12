@@ -27,7 +27,8 @@
     {
       "icon": "codeAlt",
       "label": "Planning poker",
-      "link": "https://agile-planning-poker.vercel.app"
+      "link": "https://agile-planning-poker.vercel.app",
+      "link_preview": ""
     }
   ]
 }

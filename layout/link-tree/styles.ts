@@ -94,3 +94,7 @@ export const Label = styled('strong', {
   fontSize: '$xsm',
   color: '$heading'
 })
+
+export const ImagePreviewFigure = styled('figure', {
+
+})
