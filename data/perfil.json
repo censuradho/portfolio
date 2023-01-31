@@ -18,11 +18,6 @@
       "link": "https://www.instagram.com/lestudio_42l/"
     },
     {
-      "icon": "rss",
-      "label": "Blog",
-      "link": "https://blog-next-seven-vert.vercel.app"
-    },
-    {
       "icon": "mail",
       "label": "E-mail",
       "link": "mailto:develop.front@gmail.com"
@@ -34,6 +29,12 @@
     }
   ],
   "projects_links": [
+    {
+      "icon": "codeAlt",
+      "label": "IZ FIT",
+      "link": "https://izfit.vercel.app",
+      "link_preview": ""
+    },
     {
       "icon": "codeAlt",
       "label": "Planning poker",

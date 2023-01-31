@@ -17,9 +17,6 @@ import { useRef } from 'react'
 import { useIntersectionObserver } from 'hooks'
 import { IconNames } from 'components/common/icon/types'
 
-const HoverPreview = dynamic(() => import('./components').then(mod => mod.HoverPreview), {
-  ssr: false
-})
 
 export function LinkTreeLayout (props: LinkTreeProps) {
   const ref = useRef<HTMLDivElement | null>(null)
@@ -59,15 +56,10 @@ export function LinkTreeLayout (props: LinkTreeProps) {
         category: 'social link'
       })}
     >
-      <HoverPreview
-        src={item.link_preview}
-       
-      >
-        <a aria-label={item.label} href={item.link} target="_blank" rel="noreferrer">
-          <Icon name={item.icon as IconNames} size={32}  />
-          <Styles.Label>{item.label}</Styles.Label>
-        </a>
-      </HoverPreview>
+      <a aria-label={item.label} href={item.link} target="_blank" rel="noreferrer">
+        <Icon name={item.icon as IconNames} size={32}  />
+        <Styles.Label>{item.label}</Styles.Label>
+      </a>
 
     </Styles.LinkItem>
   ))
