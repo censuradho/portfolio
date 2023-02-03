@@ -49,7 +49,7 @@ export const ButtonMenu = styled(ButtonIcon, {
   }
 })
 
-export const List = styled('div', {
+export const List = styled('ul', {
   width: '100%',
   display: 'flex',
   flexDirection: 'column',

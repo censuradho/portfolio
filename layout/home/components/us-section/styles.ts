@@ -19,15 +19,31 @@ export const Image = styled(NextImage, {
   borderRadius: '$default',
 })
 
-export const Figure = styled('figure', {
+export const Glass = styled('div', {
+  backdropFilter: 'blur(5px)',
+  zIndex: 7,
   position: 'absolute',
-  width: '800px',
-  height: '500px',
+  padding: '1rem',
+  border: '1px solid rgba(225, 255, 255, 0.2)'
+})
+export const ImageContainer = styled('div', {
+  position: 'absolute',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  
   right: '-10%',
-
   '@laptops-max': {
     right: 'unset',
     position: 'relative',
+  }
+})
+
+export const Figure = styled('figure', {
+  width: '800px',
+  height: '500px',
+
+  '@laptops-max': {
     width: '350px',
     height: '200px',
   }

@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from 'components/common'
+import { Avatar, Box, Container, Typography } from 'components/common'
 import * as Styles from './styles'
 
 export function UsSection () {
@@ -22,13 +22,21 @@ export function UsSection () {
           </Typography>
         </Box>
       </Container>
-      <Styles.Figure>
-        <Styles.Image
-          fill
-          src="/hack-capital-uv5_bsypFUM-unsplash.jpg" 
-          alt="image"
-        />
-      </Styles.Figure>
+      <Styles.ImageContainer>
+        {/* <Styles.Glass>
+          <Box flexDirection="column" alignItems="center" justifyContent="center">
+            <Avatar src="/avatar.jfif" size={100} alt="" />
+            <Typography size="xlg" fontWeight="600" color="heading">Gustavo Leite Oliveira</Typography>
+          </Box>
+        </Styles.Glass> */}
+        <Styles.Figure>
+          <Styles.Image
+            fill
+            src="/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" 
+            alt="image"
+          />
+        </Styles.Figure>
+      </Styles.ImageContainer>
     </Styles.Section>
   )
 }
