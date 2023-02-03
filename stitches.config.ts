@@ -30,7 +30,6 @@ const globalStyle = GlobalCss({
     '&::-webkit-scrollbar-track': {
       background: '$background'
     },
-        
     /* Handle */
     '&::-webkit-scrollbar-thumb': {
       background: '$foreground',
@@ -38,7 +37,6 @@ const globalStyle = GlobalCss({
 
   },
   html: {
-    scrollBehavior: 'smooth',
     /* Track */
     '&::-webkit-scrollbar-track': {
       background: '$background'
@@ -50,6 +48,7 @@ const globalStyle = GlobalCss({
     },
   },
   body: {
+
     /* Track */
     '&::-webkit-scrollbar-track': {
       background: '$background'

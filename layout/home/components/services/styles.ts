@@ -11,7 +11,6 @@ export const Card = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
   gap: '1rem',
   width: '100%',
   maxWidth: '300px'

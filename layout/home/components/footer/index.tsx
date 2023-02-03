@@ -2,6 +2,8 @@ import { Box, Container, Icon, Typography } from 'components/common'
 import Image from 'next/image'
 import * as Styles from './styles'
 
+export const whatsAppPath = 'https://api.whatsapp.com/send?phone=5551982397632&text=Ol%C3%A1,%20gostaria%20de%20falar%20sobre%20a%20consultoria%20de%20software'
+
 const categories = [
   {
     title: 'Fale conosco',
@@ -9,7 +11,7 @@ const categories = [
       {
         label: '(51) 9 8239-7632',
         icon: 'whatsapp',
-        link: 'https://api.whatsapp.com/send?phone=5551982397632&text=Ol%C3%A1,%20gostaria%20de%20falar%20sobre%20a%20consultoria%20de%20software'
+        link: whatsAppPath
       },
       {
         label: 'develo.front@gmail.com',

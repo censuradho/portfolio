@@ -1,4 +1,5 @@
 import { Box, Button, Container, Typography } from 'components/common'
+import { whatsAppPath } from '../footer'
 import * as Styles from './styles'
 
 export function Contact () {
@@ -19,7 +20,7 @@ export function Contact () {
           }}
         >
           <Typography textAlign="center" as="h2" fontWeight="800" size="xlg" color="heading" id="contato">Quer falar com a gente?</Typography>
-          <Button size="md">Entre em contato</Button>
+          <Button as="a" href={whatsAppPath} target="_blank" size="md">Entre em contato</Button>
         </Box>
       </Container>
     </Styles.Section>

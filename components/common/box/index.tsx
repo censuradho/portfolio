@@ -29,6 +29,7 @@ export function Box (props: BoxProps) {
     justifyContent,
     flexDirection,
     alignItems,
+    style,
     flexWrap,
     ...otherProps
   } =
@@ -42,6 +43,7 @@ export function Box (props: BoxProps) {
       flexWrap={flexWrap}
       style={{
         ...otherProps,
+        ...style,
         display: 'flex',
         width: fullWidth ? '100%' : 'auto',
         ...(gap && { gap: `${gap}rem` }),
