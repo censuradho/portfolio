@@ -22,7 +22,10 @@ export const colors = {
   pastelGreen: '#89DA6C',
   selectiveYellow: '#FCB904',
   sweetCorn: '#FADE8D',
+  heliotrope: '#DD33ED',
+  eminence: '#7D2885',
   primary: '#DD33ED',
   primaryActive: '#7D2885',
-  secondary: '#1B8BE4'
+  secondary: '#1B8BE4',
+  brightTurquoise: '#31E1F7'
 }

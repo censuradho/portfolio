@@ -30,7 +30,7 @@ export const Navigation = styled('nav', {
     top: 'unset',
     left: 'unset',
     height: 'max-content',
-    transform: 'translateY(0)',
+    transform: 'translateY(0) !important',
   },
   variants: {
     open: {
