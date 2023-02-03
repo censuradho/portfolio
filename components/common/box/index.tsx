@@ -29,6 +29,7 @@ export function Box (props: BoxProps) {
     justifyContent,
     flexDirection,
     alignItems,
+    flexWrap,
     ...otherProps
   } =
     props
@@ -38,6 +39,7 @@ export function Box (props: BoxProps) {
       flexDirection={flexDirection}
       alignItems={alignItems}
       justifyContent={justifyContent}
+      flexWrap={flexWrap}
       style={{
         ...otherProps,
         display: 'flex',
