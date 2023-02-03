@@ -35,7 +35,7 @@ export function Header () {
               <Link href={paths.home}>Home</Link>
             </Styles.Item>
             <Styles.Item>
-              <Link href="#quem-somos">Quem somos</Link>
+              <Link href="#quem-somos">Sobre</Link>
             </Styles.Item>
             <Styles.Item>
               <Link href="#soluções">Soluções</Link>

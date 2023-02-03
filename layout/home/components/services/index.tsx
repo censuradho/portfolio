@@ -33,7 +33,14 @@ export function Section () {
   return (
     <Styles.Section>
       <Container>
-        <Typography textAlign="center" as="h2" fontWeight="800" size="xlg" color="heading" id="soluções">Soluções que oferecemos</Typography>
+        <Typography 
+          textAlign="center" 
+          as="h2" 
+          fontWeight="800" 
+          size="xlg" 
+          color="heading" 
+          id="soluções"
+        >Soluções que ofereço</Typography>
         <Box gap={2} marginTop={4} flexWrap="wrap"  justifyContent="center">
           {renderServices}
         </Box>

@@ -1,7 +1,8 @@
 import { Avatar, Box, Container, Typography } from 'components/common'
+import { pathExternals } from 'constants/routes'
 import * as Styles from './styles'
 
-export function UsSection () {
+export function About () {
   return (
     <Styles.Section id="quem-somos">
       <Container>
@@ -12,14 +13,18 @@ export function UsSection () {
             size="xlg" 
             color="heading" 
             
-          >Quem somos</Typography>
+          >Sobre</Typography>
           <Typography as="p">
-            Muito Prazer, somos a <Typography as="strong" color="heading">Estúdio Prisma</Typography>! 
-            Uma consultoria de software com foco no cliente.
-            Estamos começando no mercado agora, mas com sede de resultado, nosso método de trabalho 
-            é pautado no pilar do respeito ao cliente, transparência, dedicação e resultado. 
-            Mais do que negócios, acreditamos em relações.
+            Muito Prazer, Meu nome é <a href={pathExternals.linkdin} target="_blank" rel="noreferrer">
+              <Typography as="strong" color="heading">Gustavo Leite Oliveira</Typography></a>! 
+            Sou desenvolvedor de software a mais de 4 anos, atuei em vários seguimentos desde E-Commerces à ERPs.
+            Meu método de trabalho é pautado no pilar do respeito ao cliente, transparência, dedicação e resultado. 
+            Mais do que negócios, acredito em relações.  
           </Typography>
+          <Box alignItems="center" gap={1}>
+            <Avatar src="/avatar.jfif" alt="Gustavo leite oliveira" />
+            <Typography color="heading">Gustavo Leite Oliveira</Typography>
+          </Box>
         </Box>
       </Container>
       <Styles.ImageContainer>

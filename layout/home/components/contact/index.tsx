@@ -19,7 +19,7 @@ export function Contact () {
             '@initial': 'center',
           }}
         >
-          <Typography textAlign="center" as="h2" fontWeight="800" size="xlg" color="heading" id="contato">Quer falar com a gente?</Typography>
+          <Typography textAlign="center" as="h2" fontWeight="800" size="xlg" color="heading" id="contato">Quer falar comigo?</Typography>
           <Button as="a" href={whatsAppPath} target="_blank" size="md">Entre em contato</Button>
         </Box>
       </Container>

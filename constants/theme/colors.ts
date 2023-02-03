@@ -27,5 +27,6 @@ export const colors = {
   primary: '#DD33ED',
   primaryActive: '#7D2885',
   secondary: '#1B8BE4',
-  brightTurquoise: '#31E1F7'
+  brightTurquoise: '#31E1F7',
+  gradient: 'linear-gradient(#FCB904, #FADE8D)'
 }

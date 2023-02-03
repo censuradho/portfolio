@@ -19,6 +19,4 @@ export const Section = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundClip: 'text',
-  textFillColor: 'transparent',
 })
