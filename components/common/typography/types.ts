@@ -13,4 +13,5 @@ type Variant = VariantProps<typeof Typography>
 export interface TypographyProps extends Variant {
   children: ReactNode
   as?: any
+  id?: string
 }

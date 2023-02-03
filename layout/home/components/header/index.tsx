@@ -13,9 +13,6 @@ export function Header () {
   const Logo = () => (
     <Image 
       src="/logo-full.svg" 
-      style={{ 
-        filter: 'grayscale(1)'
-      }} 
       alt="logo" 
       width={149} 
       height={63} 

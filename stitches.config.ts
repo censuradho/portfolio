@@ -25,12 +25,39 @@ const globalStyle = GlobalCss({
     margin: '0',
     boxSizing: 'border-box',
     fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
-    color: '$text'
+    color: '$text',
+    /* Track */
+    '&::-webkit-scrollbar-track': {
+      background: '$background'
+    },
+        
+    /* Handle */
+    '&::-webkit-scrollbar-thumb': {
+      background: '$foreground',
+    },
+
   },
   html: {
-    scrollBehavior: 'smooth'
+    scrollBehavior: 'smooth',
+    /* Track */
+    '&::-webkit-scrollbar-track': {
+      background: '$background'
+    },
+        
+    /* Handle */
+    '&::-webkit-scrollbar-thumb': {
+      background: '$foreground',
+    },
   },
   body: {
+    /* Track */
+    '&::-webkit-scrollbar-track': {
+      background: '$background'
+    },
+    /* Handle */
+    '&::-webkit-scrollbar-thumb': {
+      background: '$foreground',
+    },
     backgroundColor: '$background',
     width: '100%',
     height: '100%',

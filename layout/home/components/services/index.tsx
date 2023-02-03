@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from 'components/common'
+import { Box, Container, Icon, Typography } from 'components/common'
 import * as Styles from './styles'
 
 const services = [
@@ -22,6 +22,9 @@ const services = [
 export function Section () {
   const renderServices = services.map((service, index) => (
     <Styles.Card key={index}>
+      <Styles.IconCard>
+        <Icon name={service.icon as any} size={30} color="background" />
+      </Styles.IconCard>
       <Typography color="heading" as="h3" size="md">{service.title}</Typography>
       <Typography as="p" size="sm">{service.body}</Typography>
     </Styles.Card>
@@ -30,8 +33,8 @@ export function Section () {
   return (
     <Styles.Section>
       <Container>
-        <Typography textAlign="center" as="h2" size="lg" color="heading">Serviços que oferecemos</Typography>
-        <Box gap={2}>
+        <Typography textAlign="center" as="h2" fontWeight="800" size="xlg" color="heading" id="soluções">Soluções que oferecemos</Typography>
+        <Box gap={2} marginTop={4} flexWrap="wrap"  justifyContent="center">
           {renderServices}
         </Box>
       </Container>

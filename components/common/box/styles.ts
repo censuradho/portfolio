@@ -33,6 +33,14 @@ export const Container = styled('div', {
         alignItems: 'center'
       }
     },
+    flexWrap: {
+      wrap: {
+        flexWrap: 'wrap'
+      },
+      nowrap: {
+        flexWrap: 'nowrap'
+      },
+    },
     justifyContent: {
       center: {
         justifyContent: 'center'

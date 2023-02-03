@@ -34,6 +34,9 @@ export const Typography = styled('span', {
       },
       600: {
         fontWeight: 600
+      },
+      800: {
+        fontWeight: 800
       }
     }
   }

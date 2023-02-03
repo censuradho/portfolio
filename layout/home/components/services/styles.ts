@@ -10,5 +10,14 @@ export const Card = styled('div', {
   padding: '1rem',
   display: 'flex',
   flexDirection: 'column',
-  gap: '1rem'
+  gap: '1rem',
+  width: '100%',
+  maxWidth: '300px'
+})
+
+export const IconCard = styled('div', {
+  padding: '0.5rem',
+  width: 'max-content',
+  borderRadius: '$default',
+  backgroundImage: 'linear-gradient(90deg, $selectiveYellow, $sweetCorn)'
 })

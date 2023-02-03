@@ -19,6 +19,12 @@ export const Button = styled('button', {
         width: '100%'
       }
     },
+    size: {
+      md: {
+        paddingRight: '4rem',
+        paddingLeft: '4rem',
+      }
+    },
     variant: {
       primary: {
         background: '$ancesst8',

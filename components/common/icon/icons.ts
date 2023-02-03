@@ -1,50 +1,45 @@
 import {
-  FaSuitcase,
-  FaDatabase
-} from '@meronex/icons/fa';
-import {
   AiFillLinkedin,
-  AiOutlineClose
+  AiOutlineClose,
+  AiOutlineMail
 } from '@meronex/icons/ai';
+import {
+  EnLocationPin
+} from '@meronex/icons/en';
+import {
+  FaDatabase, FaSuitcase
+} from '@meronex/icons/fa';
 import {
   VscMenu
 } from '@meronex/icons/vsc';
 
 import {
-  BilGithub,
-  BilInstagramAlt,
-  BisShareAlt,
-  BilFacebookSquare,
-  BilTwitter,
-  BiCodeAlt,
-  BilSpotify
+  BiCodeAlt, BilFacebookSquare, BilGithub,
+  BilInstagramAlt, BilSpotify, BilTwitter, BisShareAlt
 } from '@meronex/icons/bi';
-import {
-  RiShareBoxLine
-} from '@meronex/icons/ri';
 import {
   LogoWhatsapp
 } from '@meronex/icons/ios';
 import {
-  FdMail
-} from '@meronex/icons/fd'
+  RiShareBoxLine
+} from '@meronex/icons/ri';
 
 import {
   EnRss
 } from '@meronex/icons/en';
 
 import {
-  MdcClockFast
-} from '@meronex/icons/mdc';
-import {
   BsCodeSlash
 } from '@meronex/icons/bs';
+import {
+  MdcClockFast
+} from '@meronex/icons/mdc';
 
 export const icons = {
   suiteCase: FaSuitcase,
   github: BilGithub,
   instagram: BilInstagramAlt,
-  mail: FdMail,
+  mail: AiOutlineMail,
   linkedin: AiFillLinkedin,
   shareAlt: BisShareAlt,
   facebook: BilFacebookSquare,
@@ -52,6 +47,7 @@ export const icons = {
   shareBoxLine: RiShareBoxLine,
   whatsapp: LogoWhatsapp,
   outlineClose: AiOutlineClose,
+  location: EnLocationPin,
   codeAlt: BiCodeAlt,
   rss: EnRss,
   spotify: BilSpotify,
