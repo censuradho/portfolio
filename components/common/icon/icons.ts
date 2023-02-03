@@ -5,6 +5,9 @@ import {
   AiFillLinkedin,
   AiOutlineClose
 } from '@meronex/icons/ai';
+import {
+  VscMenu
+} from '@meronex/icons/vsc';
 
 import {
   BilGithub,
@@ -43,5 +46,6 @@ export const icons = {
   outlineClose: AiOutlineClose,
   codeAlt: BiCodeAlt,
   rss: EnRss,
-  spotify: BilSpotify
+  spotify: BilSpotify,
+  menu: VscMenu
 }
