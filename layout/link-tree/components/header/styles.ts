@@ -37,7 +37,7 @@ export const Header = styled('header', {
   variants: {
     visible: {
       true: {
-        borderColor: '$foregroundActive',
+        borderColor: '$border',
         background: '$foregroundActiveOpacity',
         backdropFilter: 'blur(10px)',
       },

@@ -16,6 +16,7 @@ import ReactGA from 'react-ga4'
 import { useRef } from 'react'
 import { useIntersectionObserver } from 'hooks'
 import { IconNames } from 'components/common/icon/types'
+import Image from 'next/image'
 
 
 export function LinkTreeLayout (props: LinkTreeProps) {
@@ -73,7 +74,7 @@ export function LinkTreeLayout (props: LinkTreeProps) {
         />
         <Styles.Banner ref={ref}>
           <Styles.Presentation>
-            <Avatar size={120} src='/logo.jpg' alt="logo" />
+            <Image width={120} height={120} src='/logo.svg' style={{ objectFit: 'contain' }} alt="logo" />
             <Styles.Lettering >
               <Typography as="h1" size="md" color="heading">{perfil.instagram}</Typography>
             </Styles.Lettering>

@@ -16,7 +16,7 @@ export function Header (props: HeaderProps) {
   return (
     <Styles.Header visible={visible}>
       <Styles.HiddenView visible={visible}>
-        <Avatar size={50} src='/logo.jpg' alt="logo" />
+        <Avatar size={50} src='/logo.svg' alt="logo" />
         <Box flex={1} justifyContent="center">
           <Typography as="h2" size="md" color="heading">{title}</Typography>
         </Box>

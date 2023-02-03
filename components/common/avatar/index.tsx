@@ -26,7 +26,8 @@ export function Avatar (props: AvatarProps) {
       blurDataURL={src} 
       placeholder="blur"
       style={{
-        borderRadius: '50%'
+        borderRadius: '50%',
+        objectFit: 'contain'
       }}
       {...otherProps}
     />
