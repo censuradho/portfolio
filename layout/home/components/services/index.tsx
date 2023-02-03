@@ -25,8 +25,8 @@ export function Section () {
       <Styles.IconCard>
         <Icon name={service.icon as any} size={30} color="background" />
       </Styles.IconCard>
-      <Typography color="heading" as="h3" size="md">{service.title}</Typography>
-      <Typography as="p" size="sm">{service.body}</Typography>
+      <Typography textAlign="center" color="heading" as="h3" size="md">{service.title}</Typography>
+      <Typography textAlign="center" as="p" size="sm">{service.body}</Typography>
     </Styles.Card>
   ))
 

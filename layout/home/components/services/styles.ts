@@ -10,6 +10,8 @@ export const Card = styled('div', {
   padding: '1rem',
   display: 'flex',
   flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
   gap: '1rem',
   width: '100%',
   maxWidth: '300px'
