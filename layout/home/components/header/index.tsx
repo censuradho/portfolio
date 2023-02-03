@@ -1,4 +1,4 @@
-import { Box, ButtonIcon } from 'components/common'
+import { Box } from 'components/common'
 import { paths } from 'constants/routes'
 import Image from 'next/image'
 import Link from 'next/link'

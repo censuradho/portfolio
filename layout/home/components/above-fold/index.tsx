@@ -1,5 +1,6 @@
 import { Box, Typography } from 'components/common'
 import { Button } from 'components/common'
+import { whatsAppPath } from '../footer'
 import { Letter } from './components/index.'
 import * as Styles from './styles'
 
@@ -20,7 +21,7 @@ export function AboveFold () {
           </Typography>
         </div>
         <Box marginTop={2}>
-          <Button as="a" href="#contato">Entre em contato</Button>
+          <Button as="a" href={whatsAppPath}>Entre em contato</Button>
         </Box>
       </Box>
     </Styles.Section>
