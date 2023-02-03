@@ -6,10 +6,11 @@ export const Header = styled('header', {
   height: '4.5rem',
   background: '$backgroundOpacity',
   borderBottom: '$border 1px solid',
-  backdropFilter: 'blur(5px)',
+  backdropFilter: 'saturate(180%) blur(5px)',
   position: 'sticky',
   top: 0,
-  padding: '0 1rem'
+  padding: '0 1rem',
+  zIndex: 10
 })
 
 
@@ -31,6 +32,7 @@ export const Navigation = styled('nav', {
     left: 'unset',
     height: 'max-content',
     transform: 'translateY(0) !important',
+    background: 'none'
   },
   variants: {
     open: {

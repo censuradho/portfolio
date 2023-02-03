@@ -1,5 +1,6 @@
 import {
-  FaSuitcase
+  FaSuitcase,
+  FaDatabase
 } from '@meronex/icons/fa';
 import {
   AiFillLinkedin,
@@ -32,6 +33,13 @@ import {
   EnRss
 } from '@meronex/icons/en';
 
+import {
+  MdcClockFast
+} from '@meronex/icons/mdc';
+import {
+  BsCodeSlash
+} from '@meronex/icons/bs';
+
 export const icons = {
   suiteCase: FaSuitcase,
   github: BilGithub,
@@ -47,5 +55,8 @@ export const icons = {
   codeAlt: BiCodeAlt,
   rss: EnRss,
   spotify: BilSpotify,
-  menu: VscMenu
+  menu: VscMenu,
+  clock: MdcClockFast,
+  code: BsCodeSlash,
+  database: FaDatabase
 }
