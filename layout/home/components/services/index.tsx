@@ -13,9 +13,9 @@ const services = [
     body: 'Precisando de uma solução que atenda as suas necessidades? Marque uma reunião com nossos consultores e comece a já o planejamento do seu software customizado.'
   },
   {
-    icon: 'database',
-    title: 'Analise de dados',
-    body: 'Integre suas bases de dados para acelerar a leitura das informações e a tomada de decisão. Nosso time possui expertise em integração de bases complexas para dar suporte a operações de vendas e logística.'
+    icon: 'user',
+    title: 'Suporte',
+    body: 'Conte comigo para apoiar na continuidade de desenvolvimento de seus projetos de software.'
   },
 ]
 

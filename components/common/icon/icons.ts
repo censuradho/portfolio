@@ -34,6 +34,9 @@ import {
 import {
   MdcClockFast
 } from '@meronex/icons/mdc';
+import {
+  ImUser
+} from '@meronex/icons/im';
 
 export const icons = {
   suiteCase: FaSuitcase,
@@ -54,5 +57,6 @@ export const icons = {
   menu: VscMenu,
   clock: MdcClockFast,
   code: BsCodeSlash,
-  database: FaDatabase
+  database: FaDatabase,
+  user: ImUser
 }
