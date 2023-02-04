@@ -26,8 +26,14 @@
       "icon": "spotify",
       "label": "Spotify",
       "link": "https://open.spotify.com/playlist/37i9dQZF1F0sijgNaJdgit?si=99816834c33f47df"
+    },
+    {
+      "icon": "web",
+      "label": "Site",
+      "link": "https://gustavoleite.vercel.app/"
     }
   ],
+  
   "projects_links": [
     {
       "icon": "codeAlt",
