@@ -12,10 +12,13 @@ export function Header () {
 
   const Logo = () => (
     <Image 
-      src="/logo-full.svg" 
+      src="/logo.svg" 
       alt="logo" 
-      width={149} 
-      height={63} 
+      width={60} 
+      height={60}
+      style={{
+        objectFit: 'contain'
+      }}
     />
   )
   return (

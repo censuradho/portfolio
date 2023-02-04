@@ -32,6 +32,18 @@ export const ImageContainer = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   
+  '&::after': {
+    content: '',
+    display: 'block',
+    borderRadius: '$default',
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    bottom: '-5%',
+    left: '-5%',
+    border: '1px solid $border',
+  },
+
   right: '-10%',
   '@laptops-max': {
     right: 'unset',

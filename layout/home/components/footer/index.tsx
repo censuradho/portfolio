@@ -1,22 +1,26 @@
 import { Box, Container, Icon, Typography } from 'components/common'
+import { pathExternals } from 'constants/routes'
 import Image from 'next/image'
 import * as Styles from './styles'
 
-export const whatsAppPath = 'https://api.whatsapp.com/send?phone=5551982397632&text=Ol%C3%A1,%20gostaria%20de%20falar%20sobre%20a%20consultoria%20de%20software'
-
 const categories = [
   {
-    title: 'Fale conosco',
+    title: 'Fale comigo',
     items: [
       {
         label: '(51) 9 8239-7632',
         icon: 'whatsapp',
-        link: whatsAppPath
+        link: pathExternals.whatsapp
       },
       {
         label: 'develo.front@gmail.com',
         icon: 'mail',
-        link: 'mailto:develo.front@gmail.com?subject=Consultoria de software&body=Olá gostaria de falar sobre a consultoria de software'
+        link: pathExternals.email
+      },
+      {
+        label: 'Linkedin',
+        link: pathExternals.linkdin,
+        icon: 'linkedin'
       },
       {
         label: 'Porto Alegre',
@@ -27,9 +31,9 @@ const categories = [
 ]
 
 export function Footer () {
-  const renderCategories = categories.map((categorie, index) => {
+  const renderCategories = categories.map((category, index) => {
 
-    const renderItems = categorie.items.map((item, index) => (
+    const renderItems = category.items.map((item, index) => (
       <Styles.Item key={index}>
         <Icon name={item.icon as any} size={20} color="ancesst8" />
         {!item.link && <span>{item.label}</span>}
@@ -40,7 +44,7 @@ export function Footer () {
 
     return (
       <Box key={index} flexDirection="column" gap={1}>
-        <Typography color="heading" size="sm">{categorie.title}</Typography>
+        <Typography color="heading" size="sm">{category.title}</Typography>
         <Styles.List>{renderItems}</Styles.List>
       </Box>
     )
@@ -62,7 +66,7 @@ export function Footer () {
     
           </Box>
           <Box marginTop={2}>
-            <Typography size="xsm" color="text">Copyright © 2023 Estúdio Prisma. All rights reserved.</Typography>
+            <Typography size="xsm" color="text">Copyright © 2023 Gustavo Leite Oliveira. All rights reserved.</Typography>
           </Box>
         </Box>
       </Container>
