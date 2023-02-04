@@ -1,6 +1,5 @@
 import { Box, Button, Container, Typography } from 'components/common'
 import { pathExternals } from 'constants/routes'
-import { whatsAppPath } from '../footer'
 import * as Styles from './styles'
 
 export function Contact () {
