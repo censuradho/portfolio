@@ -9,11 +9,4 @@ export const Container = styled('div', {
     padding: '0 2rem',
 
   },
-  '@laptops-min': {
-    maxWidth: '75rem'
-  },
-
-  '@desktop-min': {
-    maxWidth: '92.5rem'
-  }
 })

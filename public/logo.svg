@@ -1,6 +1,5 @@
-<svg width="171" height="125" viewBox="0 0 171 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M62.2254 0L124.451 62.2254L62.2254 124.451L7.15256e-06 62.2254L62.2254 0Z" fill="#FF9E01"/>
-<path d="M108.451 0.225403L170.676 62.4508L108.451 124.676L46.2254 62.4508L108.451 0.225403Z" fill="#FF9E01"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M85.4508 23.2254L124.451 62.2254L85.2254 101.451L46.2254 62.4508L85.4508 23.2254Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M85.4508 23.2254L124.451 62.2254L85.2254 101.451L46.2254 62.4508L85.4508 23.2254Z" fill="white"/>
+<svg width="172" height="125" viewBox="0 0 172 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M63 0L125.225 62.2254L63 124.451L0.774604 62.2254L63 0Z" fill="#1B8BE4"/>
+<path d="M109.225 0.225403L171.451 62.4508L109.225 124.676L47 62.4508L109.225 0.225403Z" fill="#1B8BE4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M86.2254 23.2254L125.225 62.2254L86 101.451L47 62.4508L86.2254 23.2254Z" fill="#31E1F7" fill-opacity="0.22"/>
 </svg>

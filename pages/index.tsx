@@ -1,11 +1,11 @@
 import { Head } from "components/common";
-import { HomeLayout } from "layout/home";
+import { HomeLayout } from "layout/_home";
 
 export default function HomePage () {
   return (
     <>
       <Head 
-        title="Home | Estúdio 42"
+        title="Gustavo Leite Oliveira"
         description={`
           Estúdio 42. Mais do que negócios, nós. 
           acreditamos nas relações. Quem somos. Muito prazer, 

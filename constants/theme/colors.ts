@@ -1,5 +1,5 @@
 export const ancesst = {
-  ancesst0: '#000',
+  ancesst0: '#151417',
   ancesst1: '#1111',
   ancesst2: '#333',
   ancesst3: '#444',

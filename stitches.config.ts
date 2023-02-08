@@ -73,11 +73,10 @@ const globalStyle = GlobalCss({
   h2: {
     fontFamily: '$title',
     fontWeight: '500',
-    lineHeight: '4.3rem'
   },
   p: {
     fontFamily: '$text',
-    lineHeight: '2rem'
+    lineHeight: '1.5rem'
   },
 
   hr: {

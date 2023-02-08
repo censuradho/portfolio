@@ -15,7 +15,8 @@ import {
 
 import {
   BiCodeAlt, BilFacebookSquare, BilGithub,
-  BilInstagramAlt, BilSpotify, BilTwitter, BisShareAlt
+  BilInstagramAlt, BilSpotify, BilTwitter, BisShareAlt,
+  BiCommand
 } from '@meronex/icons/bi';
 import {
   LogoWhatsapp
@@ -62,5 +63,6 @@ export const icons = {
   code: BsCodeSlash,
   database: FaDatabase,
   user: ImUser, 
-  web: MdcWeb
+  web: MdcWeb,
+  command: BiCommand
 }
