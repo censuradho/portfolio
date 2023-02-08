@@ -8,11 +8,12 @@ export function UnderlineLink (props: PropsWithChildren<UnderlineLinkProps>) {
     children,
     type = 'next-link',
     href,
-    target
+    target,
+    rel
   } = props
 
   const renderLink = () => {
-    if (type === 'native') return <a href={href} target={target}>{children}</a>
+    if (type === 'native') return <a rel={rel} href={href} target={target}>{children}</a>
     return <Link href={href}>{children}</Link>
   }
 

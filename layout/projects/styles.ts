@@ -52,10 +52,6 @@ export const ListEmphasis = styled('ul', {
   }
 })
 
-export const SectionTitle = styled('h2', {
-  fontSize
-})
-
 export const ListProjects = styled('ul', {
   paddingLeft: '3rem',
   display: 'flex',

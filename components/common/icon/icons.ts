@@ -31,11 +31,15 @@ import {
   BsCodeSlash
 } from '@meronex/icons/bs';
 import {
-  MdcClockFast, MdcWeb
+  MdcClockFast, MdcWeb,
+  MdcPokerChip
 } from '@meronex/icons/mdc';
 import {
   GiPokerHand
 } from '@meronex/icons/gi';
+import {
+  CgGym
+} from '@meronex/icons/cg/';
 
 export const icons = {
   suiteCase: FaSuitcase,
@@ -62,5 +66,6 @@ export const icons = {
   command: BiCommand,
   copy: RiFileCopyLine,
   home: AiOutlineHome,
-  poker: GiPokerHand
+  poker: MdcPokerChip,
+  gym: CgGym
 }

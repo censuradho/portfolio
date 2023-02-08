@@ -28,16 +28,20 @@
   
   "projects_links": [
     {
-      "icon": "codeAlt",
+      "icon": "gym",
       "label": "IZ FIT",
       "link": "https://izfit.vercel.app",
-      "link_preview": ""
+      "description": "Gerencie os alunos da sua academia e crie fichas de treino de forma fácil e rápida.",
+      "link_preview": "",
+      "emphasis": true
     },
     {
-      "icon": "codeAlt",
+      "icon": "poker",
       "label": "Planning poker",
       "link": "https://agile-planning-poker.vercel.app",
-      "link_preview": ""
+      "link_preview": "",
+      "description": "Aplicação visa ser uma plataforma open source para que os timer de desenvolvimento posam estimar desafios de forma ágil através do planning poker.",
+      "emphasis": true
     },
     {
       "icon": "codeAlt",

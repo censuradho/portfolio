@@ -14,6 +14,8 @@ const colorsVariants = parseToVariant<VariantColors>(colors, 'color')
 
 export const Typography = styled('span', {
   alignContent: 'baseline',
+  display: 'inline',
+  
   variants: {
     size: fontSizesVariants,
     color: colorsVariants,
