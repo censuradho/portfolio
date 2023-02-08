@@ -1,6 +1,7 @@
 import { styled } from 'stitches.config';
 
 export const Header = styled('header', {
+  padding: '1rem'
 })
 
 
@@ -8,7 +9,7 @@ export const Navigation = styled('nav', {
   display: 'flex',
   flex: 1,
   justifyContent: 'center',
-  overflowX: 'auto',
+  overflow: 'auto hidden',
 })
 
 export const List = styled('ul', {

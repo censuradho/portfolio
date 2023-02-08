@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { memo, forwardRef, ButtonHTMLAttributes } from 'react'
 
 import { Icon } from 'components/common'
 
@@ -9,7 +9,7 @@ import { ButtonProps } from './types'
 
 import LoadingSvg from 'public/loading.svg'
 
-function BaseButton (props: ButtonProps) {
+export const Button = forwardRef<any, ButtonProps>((props, ref) => {
   const { children, icon, loading, disabled, href, type, as, ...otherProps } =
     props
 
@@ -25,6 +25,7 @@ function BaseButton (props: ButtonProps) {
     )
     return (
       <Styles.Button
+      ref={ref}
         type={type}
         disabled={disabled || loading}
         {...otherProps}
@@ -37,13 +38,11 @@ function BaseButton (props: ButtonProps) {
 
   const renderContent = () => {
     if (as === 'a' && href) {
-      return <Link href={href}>{renderButton()}</Link>
+      return <Link ref={ref} href={href}>{renderButton()}</Link>
     }
 
     return renderButton()
   }
 
   return renderContent()
-}
-
-export const Button = memo(BaseButton)
+})

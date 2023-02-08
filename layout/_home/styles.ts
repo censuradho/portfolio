@@ -34,13 +34,6 @@ export const Button = styled('button', {
     marginLeft: '5px'
   },
 
-  kbd: {
-    background: '$ancesst6',
-    padding: '1px 5px',
-    borderRadius: '4px',
-    fontSize: '14px',
-    color: '$background'
-  },
 
   '&:hover': {
     background: '$ancesst4',

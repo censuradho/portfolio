@@ -1,6 +1,7 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "indent": ["warn", 2]
+    "indent": ["warn", 2],
+    "react/display-name": "none"
   }
 }

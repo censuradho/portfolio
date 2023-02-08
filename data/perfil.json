@@ -1,6 +1,8 @@
 {
   "nickname": "lestudio_42l",
   "instagram": "@lestudio_42l",
+  "email": "mailto:develop.front@gmail.com",
+  "wahtsapp": "https://api.whatsapp.com/send?phone=5551982397632",
   "social_links": [
     {
       "icon": "linkedin",
@@ -18,19 +20,9 @@
       "link": "https://www.instagram.com/lestudio_42l/"
     },
     {
-      "icon": "mail",
-      "label": "E-mail",
-      "link": "mailto:develop.front@gmail.com"
-    },
-    {
       "icon": "spotify",
       "label": "Spotify",
       "link": "https://open.spotify.com/playlist/37i9dQZF1F0sijgNaJdgit?si=99816834c33f47df"
-    },
-    {
-      "icon": "web",
-      "label": "Site",
-      "link": "https://gustavoleite.vercel.app/"
     }
   ],
   
@@ -52,6 +44,18 @@
       "label": "Simbora trincar",
       "link": "https://simboratrinca-landingpage.vercel.app",
       "link_preview": ""
+    }
+  ],
+  "fast_links": [
+    {
+      "icon": "home",
+      "label": "home",
+      "link": "/"
+    },
+    {
+      "icon": "user",
+      "label": "Sobre",
+      "link": "/sobre"
     }
   ]
 }

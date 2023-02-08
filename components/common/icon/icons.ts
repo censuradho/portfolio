@@ -1,7 +1,6 @@
 import {
   AiFillLinkedin,
-  AiOutlineClose,
-  AiOutlineMail
+  AiOutlineClose, AiOutlineHome, AiOutlineMail, AiOutlineUser
 } from '@meronex/icons/ai';
 import {
   EnLocationPin
@@ -14,15 +13,14 @@ import {
 } from '@meronex/icons/vsc';
 
 import {
-  BiCodeAlt, BilFacebookSquare, BilGithub,
-  BilInstagramAlt, BilSpotify, BilTwitter, BisShareAlt,
-  BiCommand
+  BiCodeAlt, BiCommand, BilFacebookSquare, BilGithub,
+  BilInstagramAlt, BilSpotify, BilTwitter, BisShareAlt
 } from '@meronex/icons/bi';
 import {
   LogoWhatsapp
 } from '@meronex/icons/ios';
 import {
-  RiShareBoxLine
+  RiFileCopyLine, RiShareBoxLine
 } from '@meronex/icons/ri';
 
 import {
@@ -33,13 +31,7 @@ import {
   BsCodeSlash
 } from '@meronex/icons/bs';
 import {
-  MdcClockFast
-} from '@meronex/icons/mdc';
-import {
-  ImUser
-} from '@meronex/icons/im';
-import {
-  MdcWeb
+  MdcClockFast, MdcWeb
 } from '@meronex/icons/mdc';
 
 export const icons = {
@@ -62,7 +54,9 @@ export const icons = {
   clock: MdcClockFast,
   code: BsCodeSlash,
   database: FaDatabase,
-  user: ImUser, 
+  user: AiOutlineUser, 
   web: MdcWeb,
-  command: BiCommand
+  command: BiCommand,
+  copy: RiFileCopyLine,
+  home: AiOutlineHome,
 }

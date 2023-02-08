@@ -14,7 +14,7 @@ const CookieWarn = dynamic(() => import('components/cookie-warn').then(t => t.Co
 export default function MyApp ({ Component, pageProps }: AppProps) {
   useEffect(() => {
     globalStyle()
-    
+
     if (process.env.NODE_ENV === 'production') {
       reactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS as string);
     }

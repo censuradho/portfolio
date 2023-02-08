@@ -47,16 +47,31 @@ const globalStyle = GlobalCss({
       background: '$foreground',
     },
   },
+  kbd: {
+    background: '$ancesst6',
+    padding: '1px 5px',
+    borderRadius: '4px',
+    fontSize: '14px',
+    color: '$background'
+  },
   body: {
-
+    '::-webkit-scrollbar': {
+      width: '10px',
+      borderRadius: '$default'
+    },
+    
     /* Track */
-    '&::-webkit-scrollbar-track': {
-      background: '$background'
+    '::-webkit-scrollbar-track': {
+      background: '$background',
+      borderRadius: '$default'
     },
+    
     /* Handle */
-    '&::-webkit-scrollbar-thumb': {
-      background: '$foreground',
+    '::-webkit-scrollbar-thumb': {
+      background: '$ancesst3',
+      borderRadius: '$default'
     },
+    
     backgroundColor: '$background',
     width: '100%',
     height: '100%',

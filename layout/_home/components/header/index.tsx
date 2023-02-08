@@ -1,10 +1,13 @@
 import { Box, ButtonIcon } from 'components/common'
 import { paths } from 'constants/routes'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
-import { ModalLinks } from '../modal-links'
 import * as Styles from './styles'
+
+const ModalLinks = dynamic(() => import('../modal-links').then(t => t.ModalLinks), {
+  ssr: false
+})
 
 export function Header () {
   const Logo = () => (

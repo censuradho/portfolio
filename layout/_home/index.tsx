@@ -1,6 +1,11 @@
 import { Box, Container, Typography } from 'components/common'
+import dynamic from 'next/dynamic'
 import { Footer, Header } from './components'
 import * as Styles from './styles'
+
+const ModalLinks = dynamic(() => import('./components').then(t => t.ModalLinks), {
+  ssr: false
+})
 
 export function HomeLayout () {
   return (
@@ -27,7 +32,9 @@ export function HomeLayout () {
               Atualmente trabalho com Frontend React, experiência +3 anos, mas estou estudando backend node com Nest.js.
               Typescript é minha paixão, projetos nessa linguagem são muito bem vindos.
               </Typography>
-              <Styles.Button>Pressione <kbd>ctrl</kbd><kbd>K</kbd> para iniciar</Styles.Button>
+              <ModalLinks>
+                <Styles.Button>Pressione <kbd>ctrl</kbd><kbd>K</kbd> para iniciar</Styles.Button>
+              </ModalLinks>
             </Box>
           </Box>
         </Container>
