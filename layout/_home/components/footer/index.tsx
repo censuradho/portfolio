@@ -9,6 +9,7 @@ export function Footer () {
       <Styles.Item key={index}>
         <a
           href={value.link}
+          aria-label={value.label}
           target="_blank"
           rel="noreferrer"
         >

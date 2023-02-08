@@ -52,14 +52,14 @@
   ],
   "fast_links": [
     {
-      "icon": "home",
-      "label": "home",
+      "icon": "user",
+      "label": "Sobre",
       "link": "/"
     },
     {
-      "icon": "user",
-      "label": "Sobre",
-      "link": "/sobre"
+      "icon": "codeAlt",
+      "label": "Projetos",
+      "link": "/projetos"
     }
   ]
 }
