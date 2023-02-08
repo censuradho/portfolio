@@ -1,4 +1,4 @@
-import { Box, ButtonIcon } from 'components/common'
+import { ActiveLink, Box, ButtonIcon } from 'components/common'
 import { paths } from 'constants/routes'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -24,9 +24,9 @@ export function Header () {
   return (
     <Styles.Header>
       <Box fullWidth justifyContent="space-between" alignItems="center">
-        <Link href={paths.home}>
+        <ActiveLink href={paths.home}>
           <Logo />
-        </Link>
+        </ActiveLink>
         <ModalLinks>
           <ButtonIcon label="command" icon={{ name: 'command', size: 25 }} />
         </ModalLinks>
@@ -34,16 +34,16 @@ export function Header () {
       <Styles.Navigation>
         <Styles.List>
           <Styles.Item>
-            <Link href={paths.home}>Sobre</Link>
+            <ActiveLink href={paths.home}>Sobre</ActiveLink>
           </Styles.Item>
           <Styles.Item>
-            <Link href="#quem-somos">Projetos</Link>
+            <ActiveLink href={paths.projects}>Projetos</ActiveLink>
           </Styles.Item>
           <Styles.Item>
-            <Link href="#soluções">Setup</Link>
+            <ActiveLink href="#soluções">Setup</ActiveLink>
           </Styles.Item>
           <Styles.Item>
-            <Link href="#contato">News</Link>
+            <ActiveLink href="#contato">News</ActiveLink>
           </Styles.Item>
         </Styles.List>
       </Styles.Navigation>

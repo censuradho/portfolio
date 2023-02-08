@@ -1,5 +1,6 @@
 export const paths = {
-  home: '/'
+  home: '/',
+  projects: '/projetos'
 }
 
 export const pathExternals = {

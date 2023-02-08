@@ -24,7 +24,7 @@ export const Item = styled('li', {
     borderRadius: '$default',
     transition: '0.2s',
 
-    '&:hover': {
+    '&:hover, &.active': {
       color: '$heading',
       background: '$ancesst2'
     }

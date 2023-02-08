@@ -33,6 +33,9 @@ import {
 import {
   MdcClockFast, MdcWeb
 } from '@meronex/icons/mdc';
+import {
+  GiPokerHand
+} from '@meronex/icons/gi';
 
 export const icons = {
   suiteCase: FaSuitcase,
@@ -59,4 +62,5 @@ export const icons = {
   command: BiCommand,
   copy: RiFileCopyLine,
   home: AiOutlineHome,
+  poker: GiPokerHand
 }
