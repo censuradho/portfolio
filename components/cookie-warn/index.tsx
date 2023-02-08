@@ -45,7 +45,7 @@ export function CookieWarn () {
                 '@table-min': 'left'
               }}
             >
-              Nós utilizamos cookies nesse site para maximizar a experiência de usuário.
+              Utilizo cookies nesse site para maximizar a experiência de usuário.
               Para mais informações sobre todos os cookies que utilizamos, por favor veja em <UnderlineLink
                 href=""
               >Cookies</UnderlineLink>
