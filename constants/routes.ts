@@ -1,6 +1,7 @@
 export const paths = {
   home: '/',
-  projects: '/projetos'
+  projects: '/projetos',
+  news: '/news'
 }
 
 export const pathExternals = {

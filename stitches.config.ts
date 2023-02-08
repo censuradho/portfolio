@@ -37,15 +37,23 @@ const globalStyle = GlobalCss({
 
   },
   html: {
+    '::-webkit-scrollbar': {
+      width: '10px',
+      borderRadius: '$default'
+    },
+    
     /* Track */
-    '&::-webkit-scrollbar-track': {
-      background: '$background'
+    '::-webkit-scrollbar-track': {
+      background: '$background',
+      borderRadius: '$default'
     },
-        
+    
     /* Handle */
-    '&::-webkit-scrollbar-thumb': {
-      background: '$foreground',
+    '::-webkit-scrollbar-thumb': {
+      background: '$ancesst3',
+      borderRadius: '$default'
     },
+    
   },
   kbd: {
     background: '$ancesst6',

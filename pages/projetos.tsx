@@ -1,3 +1,4 @@
+import { Head } from "components/common";
 import { ProjectLayout } from "layout/projects";
 import { ProjectsProps } from "layout/projects/types";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
@@ -16,6 +17,12 @@ export const getStaticProps: GetStaticProps<ProjectsProps> = async () => {
 
 export default function ProjetosPage (props: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
+    <>
+    <Head 
+      title="Projetos//censuradho"
+      description="Lista de projetos que desenvolvo no meu tempo livre"
+    />
     <ProjectLayout {...props} />
+    </>
   )
 }

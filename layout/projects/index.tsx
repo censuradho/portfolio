@@ -1,5 +1,5 @@
 import { Box, Container, Icon, Typography, UnderlineLink } from 'components/common'
-import { Header } from 'layout/_home/components'
+import { Footer, Header } from 'layout/_home/components'
 import * as Styles from './styles'
 
 import json from 'data/perfil.json'
@@ -57,7 +57,7 @@ export function ProjectLayout (props: ProjectsProps) {
 
       return (
         <Box flexDirection="column" gap={1} key={value.created} marginBottom={40}>
-          <Typography size="md" fontWeight="600" color="heading">{value.created}</Typography>
+          <Typography as="h3" size="md" fontWeight="600" color="heading">{value.created}</Typography>
           <Styles.ListProjects>
             {renderItems}
           </Styles.ListProjects>
@@ -86,19 +86,20 @@ export function ProjectLayout (props: ProjectsProps) {
         <Container>
           <Styles.Title>Projetos pessoais & Open source</Styles.Title>
           <Typography as="p" size="xsm">
-          Aqui estão listados os <Typography as="strong" color="heading">{projectsCount}</Typography> que venho desenvolvendo no meu tempo livre
+            Aqui estão listados os <Typography as="strong" color="heading">{projectsCount}</Typography> projetos que venho desenvolvendo no meu tempo livre
           </Typography>
 
           <Box flexDirection="column" gap={2} marginTop={2}>
-            <Typography size="md" color="heading" fontWeight="600">Destaques</Typography>
+            <Typography as="h2" size="md" color="heading" fontWeight="600">Destaques</Typography>
             <Styles.ListEmphasis>{renderEmphasis}</Styles.ListEmphasis>
           </Box>
           <Box flexDirection="column" gap={2} marginTop={2}>
-            <Typography size="md" color="heading" fontWeight="600">Todos Projetos</Typography>
+            <Typography as="h2" size="md" color="heading" fontWeight="600">Todos Projetos</Typography>
             {renderProjects}
           </Box>
         </Container>
       </Styles.Main>
+      <Footer />
      </Styles.Container>
   )
 }
