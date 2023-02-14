@@ -39,6 +39,9 @@ export function Header () {
           <Styles.Item>
             <ActiveLink href={paths.projects}>Projetos</ActiveLink>
           </Styles.Item>
+          <Styles.Item>
+            <ActiveLink href={paths.blog.home}>Blog</ActiveLink>
+          </Styles.Item>
         </Styles.List>
       </Styles.Navigation>
     </Styles.Header>

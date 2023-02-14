@@ -8,7 +8,8 @@ const nextConfig = {
     domains: [
       'github.com',
       'agile-planning-poker.vercel.app',
-      'static-public.klickpages.com.br'
+      'static-public.klickpages.com.br',
+      'digitalpress.fra1.cdn.digitaloceanspaces.com'
     ]
   }
 }
