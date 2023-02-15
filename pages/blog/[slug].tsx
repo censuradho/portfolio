@@ -62,3 +62,5 @@ export default function Post (props: InferGetStaticPropsType<typeof getStaticPro
     </>
   )
 }
+
+export const revalidate = 10

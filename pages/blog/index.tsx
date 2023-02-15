@@ -39,3 +39,5 @@ export default function BlogPage (props: InferGetStaticPropsType<typeof getStati
     </>
   )
 }
+
+export const revalidate = 10
