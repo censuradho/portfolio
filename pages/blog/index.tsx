@@ -10,13 +10,6 @@ export const getStaticProps: GetStaticProps<{ post: PostsOrPages, meta: Paginati
   const post = await getPosts({
     include: ['authors', 'tags'],
   })
-  
-  if (!post) {
-    return {
-      notFound: true,
-      revalidate: 10
-    }   
-  }
 
   return {
     props: { 
