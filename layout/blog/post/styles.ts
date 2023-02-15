@@ -32,9 +32,13 @@ export const Article = styled('article', {
     fontSize: '$sm',
     padding: '0.4rem 0'
   },
+  
   h4: {
     fontSize: '$xsm',
     paddingBottom: '0.4rem'
+  },
+  'h1, h2, h3, h4, h5, h6, strong, li': {
+    color: '$heading'
   },
   p: {
     fontSize: '$sm',

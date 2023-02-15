@@ -5,5 +5,6 @@ export const environments = {
   ghost: {
     url: env.GHOST_URL as string,
     key: env.GHOST_KEY as string
-  }
+  },
+  revalidate: process.env.REVALIDATE_KEY
 }

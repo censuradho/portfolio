@@ -5,7 +5,8 @@ export const paths = {
   blog: {
     home: '/blog',
     post: '/blog/:slug'
-  }
+  },
+  revalidate: '/api/:token'
 }
 
 export const pathExternals = {
