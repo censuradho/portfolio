@@ -28,7 +28,8 @@ export const getStaticProps: GetStaticProps<{ post: PostOrPage}> = async (contex
   })
 
   if (!post) return {
-    notFound: true
+    notFound: true,
+    revalidate: 10
   }
 
   return {
