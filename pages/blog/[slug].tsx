@@ -17,7 +17,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: 'blocking',
   };
 }
 
@@ -63,4 +63,3 @@ export default function Post (props: InferGetStaticPropsType<typeof getStaticPro
   )
 }
 
-export const revalidate = 10
