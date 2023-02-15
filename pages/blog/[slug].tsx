@@ -27,6 +27,11 @@ export const getStaticProps: GetStaticProps<{ post: PostOrPage}> = async (contex
     include: ['tags', 'authors']
   })
 
+  if (!post) return {
+      notFound: true,
+      revalidate: 60 * 60
+  }
+
   return {
     props: {
       post: {
