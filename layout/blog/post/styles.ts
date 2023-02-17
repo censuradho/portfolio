@@ -61,6 +61,7 @@ export const Article = styled('article', {
     color: '$information'
   },
   img: {
-    maxWidth: '100%'
+    maxWidth: '100%',
+    height: 'auto'
   }
 })
