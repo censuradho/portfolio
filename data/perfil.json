@@ -44,6 +44,13 @@
       "emphasis": true
     },
     {
+      "icon": "tree",
+      "label": "Clone link tree",
+      "link": "https://gustavoleite.vercel.app/censuradho",
+      "description": "Clone da aplicação link tree, o core do app é reunir links úteis sobre mim.",
+      "emphasis": true
+    },
+    {
       "icon": "codeAlt",
       "label": "Simbora trincar",
       "link": "https://simboratrinca-landingpage.vercel.app",

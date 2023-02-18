@@ -31,15 +31,15 @@ import {
   BsCodeSlash
 } from '@meronex/icons/bs';
 import {
-  MdcClockFast, MdcWeb,
-  MdcPokerChip
-} from '@meronex/icons/mdc';
-import {
-  GiPokerHand
-} from '@meronex/icons/gi';
-import {
   CgGym
 } from '@meronex/icons/cg/';
+import {
+  MdcClockFast, MdcPokerChip, MdcWeb
+} from '@meronex/icons/mdc';
+
+import {
+  SiGumtree
+} from '@meronex/icons/si';
 
 export const icons = {
   suiteCase: FaSuitcase,
@@ -67,5 +67,6 @@ export const icons = {
   copy: RiFileCopyLine,
   home: AiOutlineHome,
   poker: MdcPokerChip,
-  gym: CgGym
+  gym: CgGym,
+  tree: SiGumtree,
 }
