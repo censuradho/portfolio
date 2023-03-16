@@ -1,21 +1,21 @@
 import { Head } from "components/common";
 import { ProjectLayout } from "layout/projects";
 import { ProjectsProps } from "layout/projects/types";
-import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { github } from "service/github";
 
-export const getStaticProps: GetStaticProps<ProjectsProps> = async () => {
+export const getServerSideProps: GetServerSideProps<ProjectsProps> = async () => {
   const { data } = await github.getRepositories()
 
   return {
     props: {
-      data: data
-    },
-    revalidate: 100
+      data
+    }
   }
-}
+} 
 
-export default function ProjetosPage (props: InferGetStaticPropsType<typeof getStaticProps>) {
+
+export default function ProjetosPage (props: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <>
     <Head 
