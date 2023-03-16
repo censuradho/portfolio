@@ -13,7 +13,9 @@ import { getPost, getPosts } from "lib/ghost";
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getPosts()
 
-  const paths = posts?.map(value => ({ params: { slug: value.slug }}))
+  const paths = posts?.map(value => ({ 
+    params: { slug: value.slug }
+  }))
 
   return {
     paths,
