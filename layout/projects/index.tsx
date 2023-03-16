@@ -78,7 +78,6 @@ export function ProjectLayout (props: ProjectsProps) {
       </li>
   ))
 
-
   return (
      <Styles.Container>
       <Header />

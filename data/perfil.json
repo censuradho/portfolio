@@ -25,7 +25,6 @@
       "link": "https://open.spotify.com/playlist/37i9dQZF1F0sijgNaJdgit?si=99816834c33f47df"
     }
   ],
-  
   "projects_links": [
     {
       "icon": "gym",
@@ -41,6 +40,14 @@
       "link": "https://agile-planning-poker.vercel.app",
       "link_preview": "",
       "description": "Aplicação visa ser uma plataforma open source para que os timer de desenvolvimento possam estimar desafios de forma ágil através do planning poker.",
+      "emphasis": true
+    },
+    {
+      "icon": "cart",
+      "label": "E-commerce template",
+      "link": "https://clothing-store-censuradho.vercel.app/",
+      "link_preview": "",
+      "description": "Template frontend de um E-commerce de roupas.",
       "emphasis": true
     },
     {

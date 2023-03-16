@@ -7,7 +7,7 @@ export default function HomePage () {
       <Head 
         title="Gustavo Leite Oliveira"
         description="Desenvolvedor de software com fono no frontend, trabalho majoritariamente com a stack React/Node/Typescript"
-      />
+        />
       <HomeLayout />
     </>
   )
