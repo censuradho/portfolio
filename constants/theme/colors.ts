@@ -14,8 +14,8 @@ export const ancesst = {
 export const colors = {
   ...ancesst,
   backgroundOpacity: 'rgba(255, 255, 255, .5)',
-  background: ancesst.ancesst8,
-  foreground: ancesst.ancesst7,
+  background: ancesst.ancesst9,
+  foreground: ancesst.ancesst8,
   heading: ancesst.ancesst0,
   text: ancesst.ancesst5,
   border: ancesst.ancesst7,

@@ -29,40 +29,29 @@ export const ListEmphasis = styled('ul', {
   display: 'flex',
   flexDirection: 'column',
   margin: '2rem 0',
-  
+  flexWrap: 'wrap',
+  gap: '1rem',
+
   path: {
     fill: '$heading'
   },
   li: {
-    width: '100%'
+    width: '100%',
+    maxWidth: '350px'
   },
   a: {
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
     padding: '1rem',
-
+    borderRadius: '$default',
+    
     '&:hover, &:focus': {
-      background: '$ancesst2'
+      background: '$foreground'
     }
   },
 
   '@laptops-min': {
     flexDirection: 'row',
-  }
-})
-
-export const ListProjects = styled('ul', {
-  paddingLeft: '3rem',
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1rem',
-  
-  a: {
-    fontSize: '$xsm',
-    fontWeight: 500
-  },
-  li: {
-    listStyleType: 'unset'
   }
 })

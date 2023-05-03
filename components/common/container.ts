@@ -7,6 +7,5 @@ export const Container = styled('div', {
   padding: '0 1rem',
   '@table-min': {
     padding: '0 2rem',
-
   },
 })

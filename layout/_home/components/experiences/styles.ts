@@ -22,3 +22,8 @@ export const Item = styled('li', {
     borderRadius: '50%',
   }
 })
+
+export const Description = styled('p', {
+  whiteSpace: 'nowrap',
+  fontSize: '$xsm'
+})

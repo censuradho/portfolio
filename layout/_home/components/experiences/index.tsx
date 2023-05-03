@@ -35,7 +35,7 @@ export function Experiences () {
       <Box fullWidth flexWrap="wrap" gap={0.1}>
         <Box flexDirection="column" gap={0.2} flex={1}>
           <Typography as="strong" size="xsm" color="heading">{value.companyName}</Typography>
-          <Typography size="xsm">{value.description}</Typography>
+          <Styles.Description>{value.description}</Styles.Description>
         </Box>
         <Typography size="xsm">{value.date}</Typography>
       </Box>
@@ -45,8 +45,8 @@ export function Experiences () {
   return (
      <Styles.Container>
       <Box gap={0.5} alignItems="center">
-        <Icon color="ancesst6" name="briefCase" />
-        <Typography as="h3" size="xsm" fontWeight="500">Experiencias</Typography>
+        <Icon color="heading" name="briefCase" />
+        <Typography as="h3" size="xsm" fontWeight="500" color="heading">Experiencias</Typography>
       </Box>
       <Styles.List>{renderData}</Styles.List>
      </Styles.Container>
