@@ -32,7 +32,7 @@ export function ProjectLayout (props: ProjectsProps) {
         <Container>
           <Styles.Title>Projetos pessoais & Open source</Styles.Title>
           <Typography as="p" size="xsm">
-            Aqui estão listados os <Typography as="strong" color="heading">{projectsCount}</Typography> projetos que venho desenvolvendo no meu tempo livre
+            Aqui estão listados os projetos que venho desenvolvendo no meu tempo livre
           </Typography>
 
           <Box flexDirection="column" gap={2} marginTop={2}>
