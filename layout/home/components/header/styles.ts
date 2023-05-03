@@ -67,7 +67,7 @@ export const Item = styled('li', {
   a: {
     display: 'flex',
     padding: '0.5rem',
-    color: '$ancesst8',
+    color: '$heading',
     fontSize: '$md',
     fontWeight: 400,
     borderBottom: '1px solid $border',

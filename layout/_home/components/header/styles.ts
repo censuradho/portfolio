@@ -23,10 +23,10 @@ export const Item = styled('li', {
     padding: '0.5rem',
     borderRadius: '$default',
     transition: '0.2s',
-
+    
     '&:hover, &.active': {
       color: '$heading',
-      background: '$ancesst2'
+      fontWeight: 500,
     }
   }
 })

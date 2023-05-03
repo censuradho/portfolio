@@ -33,13 +33,4 @@ export const Button = styled('button', {
   'kbd:last-child': {
     marginLeft: '5px'
   },
-
-
-  '&:hover': {
-    background: '$ancesst4',
-
-    kbd: {
-      background: '$ancesst7'
-    }
-  },
 })

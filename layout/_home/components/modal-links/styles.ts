@@ -21,7 +21,7 @@ export const Overlay = styled(AlertDialog.Overlay, {
 });
 
 export const Content = styled(AlertDialog.Content, {
-  backgroundColor: '$ancesst2',
+  backgroundColor: '$foreground',
   borderRadius: '$default',
   boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
   position: 'fixed',
@@ -90,7 +90,7 @@ export const Item = styled('li', {
     outline: 'none',
 
     '&:hover': {
-      background: '$ancesst3',
+      background: '$ancesst7',
     },
     '&:focus': {
       background: '$ancesst3',

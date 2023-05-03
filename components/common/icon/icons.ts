@@ -14,7 +14,8 @@ import {
 
 import {
   BiCodeAlt, BiCommand, BilFacebookSquare, BilGithub,
-  BilInstagramAlt, BilSpotify, BilTwitter, BisCartAlt, BisShareAlt
+  BilInstagramAlt, BilSpotify, BilTwitter, BisCartAlt, BisShareAlt,
+  BisBriefcaseAlt
 } from '@meronex/icons/bi';
 import {
   LogoWhatsapp
@@ -69,5 +70,6 @@ export const icons = {
   poker: MdcPokerChip,
   gym: CgGym,
   tree: SiGumtree,
-  cart: BisCartAlt
+  cart: BisCartAlt,
+  briefCase: BisBriefcaseAlt
 }
