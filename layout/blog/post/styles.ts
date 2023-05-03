@@ -52,7 +52,7 @@ export const Article = styled('article', {
     margin: '15px 0'
   },
   code: {
-    background: '$backgroundOpacity',
+    background: '$foreground',
     padding: '1.6px 4px',
     color: '$heading'
   },

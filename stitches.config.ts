@@ -66,8 +66,9 @@ const globalStyle = GlobalCss({
     padding: '10px 15px',
     overflow: 'auto',
     display: 'block',
-    backgroundColor: '#1d1f20', 
-    height: 'auto'
+    backgroundColor: '$foreground', 
+    height: 'auto',
+    borderRadius: '$default'
   },
   body: {
     '::-webkit-scrollbar': {
