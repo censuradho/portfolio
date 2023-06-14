@@ -1,5 +1,5 @@
 import { getDictionary } from "@/utils/get-dictionary"
-import { AboveFold } from "./components"
+import { AboveFold, Experiences, Services } from "./components"
 
 export default async function HomePage ({ params }: any) {
   const { lang } = params
@@ -8,7 +8,13 @@ export default async function HomePage ({ params }: any) {
   return (
     <main>
       <AboveFold 
-        data={dictionary['home']}
+        data={dictionary.home}
+      />
+      <Experiences 
+        data={dictionary.home.experiences}
+      />
+      <Services 
+        data={dictionary.home.services}
       />
     </main>
   )

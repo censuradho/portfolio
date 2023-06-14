@@ -1,0 +1,63 @@
+{
+  "home": {
+    "above": {
+      "title": "Gustavo Leite Oliveira",
+      "subtitle": "Software Developer",
+      "description": "Passionate software developer committed to delivering challenging projects and creating amazing experiences for people."
+    },
+    "services": {
+      "title": "My services",
+      "items": [
+        {
+          "title": "Desenvolvimento de software",
+          "description": "Complete end-to-end website solutions, including E-commerce, CMS, responsive websites, blogs, systems and platforms, hosting, payment gateways, mobile apps, and more."
+        },
+        {
+          "title": "Design",
+          "description": "High-level experience through a user-focused application. UI designed with the user flow in mind, leading them towards conversion."
+        },
+        {
+          "title": "SEO",
+          "description": "Don't lose customers due to slowness or lack of accessibility. I work on optimizing applications to achieve the highest levels of performance for leading search engines, directly impacting your conversion rate."
+        }
+      ]
+    },
+    "experiences": {
+      "title": "Experiências",
+      "items": [
+        {
+          "title": "Openbox.ai",
+          "location": "POA, RS",
+          "position": "Web Development Intern",
+          "date": "Set 2019 - Fev 2021",
+          "description": "Learning hard & soft skills. I have worked with technologies such as JavaScript, CSS, HTML, PHP, React.js, Next.js, MySQL, and Rest API. I have been involved in the development of websites and landing pages. I have participated in the creation of email marketing campaigns. I have worked on system bug fixes. I have been involved in deploying applications to production. I have also developed dashboard applications for internal reporting purposes.",
+          "logo": "/companies/openbox.png"
+        },
+        {
+          "title": "Openbox.ai",
+          "location": "POA, RS",
+          "position": "Software Developer Jr",
+          "date": "Fev 2021 - Jun 2021",
+          "description": "Responsible for maintaining the institutional website. Responsible for reducing time and effort in the marketing area through marketing automation via RD Station. Creating reports in internal dashboard applications. Involved in deploying applications to production. Worked with technologies such as TypeScript, JavaScript, React, CSS, Styled-components, Next.js, Node.js, PHP, HTML, Gulp, Axios, REST, RESTFul. Creating UI/UX flows using the Figma tool.",
+          "logo": "/companies/openbox.png"
+        },
+        {
+          "title": "Ubistart",
+          "location": "POA, RS",
+          "position": "Software Developer Jr",
+          "date": "Fev 2021 - Jun 2021",
+          "description": "Worked with the Git Flow workflow model, which aims to simplify and organize the branching versioning of a development project in Git. Participated in agile ceremonies such as SCRUM and Kanban. Managed tasks using BitBucket and Jira. Conducted presentations of new features developed in the Sprint by the Front-End team. Responsible for creating automated tests (unit/integration). Developed features following the principles of Clean Code and SOLID. Worked with technologies such as React, Next, Electron, JavaScript, TypeScript, Styled-components, CSS, Sass, PHP, Node.js, Docker, Axios, Redux, Zustend, REST, RESTFul. Contributed to the development and maintenance of features. Responsible for creating and maintaining documentation of the developed software to preserve knowledge and assist future individuals interacting with each topic. Provided contributions to technical specifications and implementations to ensure quality and scalability in team deliveries.",
+          "logo": "/companies/openbox.png"
+        },
+        {
+          "title": "CWI",
+          "location": "Remoto",
+          "position": "Software Developer Pleno",
+          "date": "Fev 2021 - Jun 2021",
+          "description": "Atuação no modelo de trabalho Git Flow. Participei de cerimônias ágeis como SCRUM e Kanban. Atuação no gerenciamento de tarefas através do BitBucket. Desenvolvimento de features pensando em boas práticas, seguindo o padrão estabelecido pelo time. Participação no desenvolvimento e manutenção de features. Contribuição com especificações e implementações técnicas para que o time realize entregas com qualidade e escalabilidade. Criar components customizáveis. Atuei com as tecnologias React, Next, Electron, JavaScript, TypeScript, HTML, Styled-components, CSS, Sass, Node.js, Docker, Axios, Redux, Context API, REST, RESTFul. Realização de code review para garantir qualidade e padronização nas entregas. Participei de cerimônias ágeis como SCRUM e Kanban",
+          "logo": "/companies/openbox.png"
+        }
+      ]
+    }
+  }
+}

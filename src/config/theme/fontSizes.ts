@@ -1,7 +1,7 @@
 export const fontSizes = {
-  xsm: '12px',
-  sm: '14px',
-  md: '16px',
-  lg: '20px',
-  xlg: '28px',
+  xsm: 'var(--font-size-xsm)',
+  sm: 'var(--font-size-sm)',
+  md: 'var(--font-size-md)',
+  lg: 'var(--font-size-lg)',
+  xlg: 'var(--font-size-xlg)',
 }

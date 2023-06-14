@@ -1,0 +1,39 @@
+.services {
+  margin: 90px auto;
+  padding: 1.5rem;
+  gap: 2rem;
+  display: grid;
+}
+
+.services__title {
+  font-size: var(--font-size-xsm);
+  font-weight: 500;
+}
+
+.services__list {
+  display: grid;
+  gap: 70px
+}
+
+.services__list li {
+  display: flex;
+  gap: 1rem
+}
+
+.services__list-title {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  font-family: var(--font-roboto-serif);
+}
+.services__list-index {
+  font-size: var(--font-size-xsm);
+  font-weight: 500;
+  display: inline-block;
+  min-width: max-content;
+}
+
+@media (min-width: 762px) {
+  .services {
+    grid-template-columns: 16.6% 1fr;
+  }
+}
