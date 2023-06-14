@@ -7,15 +7,36 @@ import styles from './styles.module.css'
 import "keen-slider/keen-slider.min.css"
 import Image from "next/image";
 import { classGroupe } from "@/utils/classNames";
+import { breakpoints } from "constants/theme";
 
 export function ProjectFeatured (props: ProjectFeaturedProps) {
   const { data, projects } = props
 
   const [sliderRef] = useKeenSlider({
     slides: {
-      perView: 'auto',
-      spacing: 15,
+      perView: 1.4,
+      spacing: 20,
     },
+    breakpoints: {
+      [breakpoints["table-min"]]: {
+        slides: {
+          perView: 2.1,
+          spacing: 20,
+        }
+      },
+      [breakpoints["laptops-min"]]: {
+        slides: {
+          perView: 3.4,
+          spacing: 20,
+        }
+      },
+      [breakpoints["desktop-min"]]: {
+        slides: {
+          perView: 'auto',
+          spacing: 20,
+        }
+      }
+    }
   })
 
   const items = projects

@@ -1,6 +1,7 @@
 .project {
   display: grid;
   gap: 34px;
+  margin: 94px 0
 }
 
 .project__header {
