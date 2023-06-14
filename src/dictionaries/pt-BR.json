@@ -1,1 +1,9 @@
-{}
+{
+  "home": {
+    "above": {
+      "title": "Gustavo Leite Oliveira",
+      "subtitle": "Software Developer",
+      "description": "Desenvolvedor de software com foco no Frontend, apaixonado por entregar projetos desafiadores e promover experiências incríveis para as pessoas. Eterno estudante, sempre aprendendo algo novo pra melhorar minha caixa de ferramentas. Participei do desenvolvimento de sistemas de grande porte como e-commerces e ERPs. Atualmente trabalho com Frontend React, experiência +3 anos, mas estou estudando backend node com Nest.js. Typescript é minha paixão, projetos nessa linguagem são muito bem vindos."
+    }
+  }
+}
