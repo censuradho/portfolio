@@ -4,10 +4,11 @@
       "title": "We create systems that deliver value and results."
     },
     "services": {
-      "title": "My services",
+      "title": "Services",
+      "page": "/software-development",
       "items": [
         {
-          "title": "Desenvolvimento de software",
+          "title": "Software Development",
           "description": "Complete end-to-end website solutions, including E-commerce, CMS, responsive websites, blogs, systems and platforms, hosting, payment gateways, mobile apps, and more."
         },
         {
@@ -16,9 +17,14 @@
         },
         {
           "title": "SEO",
-          "description": "Don't lose customers due to slowness or lack of accessibility. I work on optimizing applications to achieve the highest levels of performance for leading search engines, directly impacting your conversion rate."
+          "description": "We work to ensure that your business achieves the best possible organic results, always staying ahead."
         }
       ]
+    },
+    "projects": {
+      "title": "Nosso portfólio",
+      "cta": "Veja todos",
+      "items": [0, 1]
     }
   },
   "experiences": {
@@ -55,6 +61,26 @@
         "date": "Fev 2021 - Jun 2021",
         "description": "Worked with the Git Flow workflow model. Participated in agile ceremonies such as SCRUM and Kanban. Managed tasks using BitBucket. Developed features following best practices and adhering to the team's established standards. Contributed to the development and maintenance of features. Provided input on technical specifications and implementations to ensure high-quality and scalable deliveries. Created customizable components. Worked with technologies such as React, Next, Electron, JavaScript, TypeScript, HTML, Styled-components, CSS, Sass, Node.js, Docker, Axios, Redux, Context API, REST, RESTful. Conducted code reviews to ensure quality and standardization in deliveries. Participated in agile ceremonies such as SCRUM and Kanban.",
         "logo": "/companies/openbox.png"
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "thumb": {
+          "title": "Master Sul Academia",
+          "description": "Transforme seu corpo e supere sua mente",
+          "thumb_url": "https://res.cloudinary.com/dpe03j7x8/image/upload/v1686773692/portifolio/master%20sul%20academia/thumb-mastersul-academia_fpvbdc.png"
+        },
+        "featured": true
+      },
+      {
+        "thumb": {
+          "title": "SGN",
+          "description": "projetos de arquitetura comercial",
+          "thumb_url": "https://res.cloudinary.com/dpe03j7x8/image/upload/v1686773895/portifolio/SGN/thumb-sgn_ddwwf1.png"
+        },
+        "featured": true
       }
     ]
   }

@@ -1,5 +1,5 @@
 import { DictionaryData } from '@/dictionaries/types'
 
 export interface AboveFoldProps {
-  data: DictionaryData['home']
+  data: DictionaryData['home']['above']
 }

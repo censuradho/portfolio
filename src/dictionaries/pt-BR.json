@@ -4,7 +4,7 @@
       "title": "Criamos sistemas que entregam  valor e resultado"
     },
     "services": {
-      "title": "Meus serviços",
+      "title": "Serviços",
       "items": [
         {
           "title": "Desenvolvimento de software",
@@ -16,9 +16,14 @@
         },
         {
           "title": "SEO",
-          "description": " Não perca clientes por lentidão ou falta de acessibilidade. Trabalho com otimização de aplicações para estarem nos mais altos niveis de performance para os principais mecanismos de busca, impactando diretamente na sua conversão."
+          "description": "Trabalhamos para que seu negocio tenha os melhores resultados orgânicos possíveis, estando sempre a frente."
         }
       ]
+    },
+    "projects": {
+      "title": "Nosso portfólio",
+      "cta": "Veja todos",
+      "items": [0, 1, 2]
     }
   },
   "experiences": {
@@ -57,5 +62,31 @@
         "logo": "/companies/openbox.png"
       }
     ]
+  },
+  "projects": {
+    "items": [
+      {
+        "thumb": {
+          "title": "Master Sul Academia",
+          "description": "Transforme seu corpo e supere sua mente",
+          "thumb_url": "https://res.cloudinary.com/dpe03j7x8/image/upload/v1686773692/portifolio/master%20sul%20academia/thumb-mastersul-academia_fpvbdc.png"
+        }
+      },
+      {
+        "thumb": {
+          "title": "SGN",
+          "description": "projetos de arquitetura comercial",
+          "thumb_url": "https://res.cloudinary.com/dpe03j7x8/image/upload/v1686773895/portifolio/SGN/thumb-sgn_ddwwf1.png"
+        }
+      },
+      {
+        "thumb": {
+          "title": "Workout Keep",
+          "description": "Em breve",
+          "thumb_url": "https://res.cloudinary.com/dpe03j7x8/image/upload/v1686775685/portifolio/workout-keep/thumb-workout-keep_arpwz4.png"
+        }
+      }
+    ]
   }
 }
+

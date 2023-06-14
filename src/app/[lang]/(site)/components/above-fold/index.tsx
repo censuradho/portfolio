@@ -9,7 +9,7 @@ export function AboveFold (props: AboveFoldProps) {
   return (
     <section className={classGroupe('container', styles.above)}>
       <div>
-        <h1 className={styles.above__title}>{data.above.title}</h1>
+        <h1 className={styles.above__title}>{data.title}</h1>
       </div>
     </section>
   )

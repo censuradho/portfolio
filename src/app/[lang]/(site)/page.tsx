@@ -1,5 +1,5 @@
 import { getDictionary } from "@/utils/get-dictionary"
-import { AboveFold, Services } from "./components"
+import { AboveFold, ProjectFeatured, Services } from "./components"
 
 export default async function HomePage ({ params }: any) {
   const { lang } = params
@@ -7,12 +7,12 @@ export default async function HomePage ({ params }: any) {
 
   return (
     <main>
-      <AboveFold 
-        data={dictionary.home}
+      <AboveFold data={dictionary.home.above} />
+      <ProjectFeatured 
+        data={dictionary.home.projects}
+        projects={dictionary.projects.items}
       />
-      <Services 
-        data={dictionary.home.services}
-      />
+      <Services data={dictionary.home.services} />
     </main>
   )
 }

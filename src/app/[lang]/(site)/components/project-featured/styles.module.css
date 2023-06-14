@@ -1,0 +1,49 @@
+.project {
+  display: grid;
+  gap: 34px;
+}
+
+.project__header {
+  padding: 24px;
+}
+
+.project__slide {
+  padding-left: 24px;
+}
+
+.project__title {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-roboto-serif);
+  font-weight: 500;
+}
+
+.project__item-figure {
+  width: 100%;
+  height: 447px;
+  position: relative;
+}
+
+.project__item-content {
+  margin-top: 28px;
+}
+
+.project__item-title {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  font-family: var(--font-roboto-serif);
+}
+
+.project__item-description {
+  font-size: var(--font-size-sm);
+}
+
+.project__item-figure img {
+  object-fit: cover;
+  object-position: center right;
+}
+
+@media (min-width: 762px) {
+  .project__slide {
+    padding-left: 62px;
+  }
+}
