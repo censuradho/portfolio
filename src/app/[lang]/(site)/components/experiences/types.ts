@@ -1,5 +1,5 @@
 import { DictionaryData } from '@/dictionaries/types'
 
 export interface ExperiencesProps {
-  data: DictionaryData['home']['experiences']
+  data: DictionaryData['experiences']
 }

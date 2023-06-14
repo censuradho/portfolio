@@ -1,9 +1,7 @@
 {
   "home": {
     "above": {
-      "title": "Gustavo Leite Oliveira",
-      "subtitle": "Software Developer",
-      "description": "Desenvolvedor de software apaixonado por entregar projetos desafiadores e promover experiências incríveis para as pessoas."
+      "title": "Criamos sistemas que entregam  valor e resultado"
     },
     "services": {
       "title": "Meus serviços",
@@ -21,43 +19,43 @@
           "description": " Não perca clientes por lentidão ou falta de acessibilidade. Trabalho com otimização de aplicações para estarem nos mais altos niveis de performance para os principais mecanismos de busca, impactando diretamente na sua conversão."
         }
       ]
-    },
-    "experiences": {
-        "title": "Experiências",
-        "items": [
-          {
-            "title": "Openbox.ai",
-            "location": "POA, RS",
-            "position": "Estagiário em Desenvolvimento web",
-            "date": "Set 2019 - Fev 2021",
-            "description": "Aprendizado de hard & soft skills. Atuei com as tecnologias JavaScript, CSS, HTML, PHP, React.js, Next.js, MySQL, Rest API. Participei da elaboração de sites e landing pages. Participei da criação de e-mail marketing. Atuei na correção de BUGs do sistema. Acompanhamento de deploys da aplicação para produção. Realização de aplicações dashboard para relatórios internos",
-            "logo": "/companies/openbox.png"
-          },
-          {
-            "title": "Openbox.ai",
-            "location": "Remoto",
-            "position": "Software Developer Jr",
-            "date": "Jun 2021 - Mai 2022",
-            "description": "Responsável pela manutenção do site institucional. Responsável pela redução do tempo e esforço  na área de marketing através da automação de marketing via RD Station. Elaboração de relatórios em aplicações Dashboards internas. Atuei no deploy de aplicações para produção. Atuei com as tecnologias TypeScript, JavaScript, React, CSS, Styled-components, Next.js, Node.js, PHP, HTML, Gulp, Axios, REST, RESTFul. Criação de fluxos de UI/UX através da ferramenta Figma",
-            "logo": "/companies/openbox.png"
-          },
-          {
-            "title": "Ubistart",
-            "location": "Remoto",
-            "position": "Software Developer Jr",
-            "date": "Fev 2021 - Jun 2021",
-            "description": "Atuação com o modelo de trabalho Git Flow, que busca simplificar e organizar o versionamento de ramificação de um projeto de desenvolvimento no Git. Participei de cerimônias ágeis como SCRUM e Kanban. Atuação no gerenciamento de tarefas através do BitBucket e Jira. Condução de apresentações de novas features desenvolvidas na Sprint  pelo time de Front End. Responsável por elaborar testes automatizados (unitários/integração). Desenvolvimento de features pensando nos princípios de Clean Code e SOLID. Atuei com as tecnologias React, Next, Electron, JavaScript, TypeScript, Styled-components, CSS, Sass, PHP, Node.js, Docker, Axios, Redux, Zustend, REST, RESTFul. Participação no desenvolvimento e manutenção de features. Responsável por criar e manter documentação dos softwares desenvolvidos para persistir conhecimento e ajudar as próximas pessoas que interagirem com cada assunto. Contribuição com especificações e implementações técnicas para que o time realize entregas com qualidade e escalabilidade.",
-            "logo": "/companies/openbox.png"
-          },
-          {
-            "title": "CWI",
-            "location": "Remoto",
-            "position": "Software Developer Pleno",
-            "date": "Fev 2021 - Jun 2021",
-            "description": "Worked with the Git Flow workflow model. Participated in agile ceremonies such as SCRUM and Kanban. Managed tasks using BitBucket. Developed features following best practices and adhering to the team's established standards. Contributed to the development and maintenance of features. Provided input on technical specifications and implementations to ensure high-quality and scalable deliveries. Created customizable components. Worked with technologies such as React, Next, Electron, JavaScript, TypeScript, HTML, Styled-components, CSS, Sass, Node.js, Docker, Axios, Redux, Context API, REST, RESTful. Conducted code reviews to ensure quality and standardization in deliveries. Participated in agile ceremonies such as SCRUM and Kanban.",
-            "logo": "/companies/openbox.png"
-          }
-        ]
     }
+  },
+  "experiences": {
+    "title": "Experiências",
+    "items": [
+      {
+        "title": "Openbox.ai",
+        "location": "POA, RS",
+        "position": "Estagiário em Desenvolvimento web",
+        "date": "Set 2019 - Fev 2021",
+        "description": "Aprendizado de hard & soft skills. Atuei com as tecnologias JavaScript, CSS, HTML, PHP, React.js, Next.js, MySQL, Rest API. Participei da elaboração de sites e landing pages. Participei da criação de e-mail marketing. Atuei na correção de BUGs do sistema. Acompanhamento de deploys da aplicação para produção. Realização de aplicações dashboard para relatórios internos",
+        "logo": "/companies/openbox.png"
+      },
+      {
+        "title": "Openbox.ai",
+        "location": "Remoto",
+        "position": "Software Developer Jr",
+        "date": "Jun 2021 - Mai 2022",
+        "description": "Responsável pela manutenção do site institucional. Responsável pela redução do tempo e esforço  na área de marketing através da automação de marketing via RD Station. Elaboração de relatórios em aplicações Dashboards internas. Atuei no deploy de aplicações para produção. Atuei com as tecnologias TypeScript, JavaScript, React, CSS, Styled-components, Next.js, Node.js, PHP, HTML, Gulp, Axios, REST, RESTFul. Criação de fluxos de UI/UX através da ferramenta Figma",
+        "logo": "/companies/openbox.png"
+      },
+      {
+        "title": "Ubistart",
+        "location": "Remoto",
+        "position": "Software Developer Jr",
+        "date": "Fev 2021 - Jun 2021",
+        "description": "Atuação com o modelo de trabalho Git Flow, que busca simplificar e organizar o versionamento de ramificação de um projeto de desenvolvimento no Git. Participei de cerimônias ágeis como SCRUM e Kanban. Atuação no gerenciamento de tarefas através do BitBucket e Jira. Condução de apresentações de novas features desenvolvidas na Sprint  pelo time de Front End. Responsável por elaborar testes automatizados (unitários/integração). Desenvolvimento de features pensando nos princípios de Clean Code e SOLID. Atuei com as tecnologias React, Next, Electron, JavaScript, TypeScript, Styled-components, CSS, Sass, PHP, Node.js, Docker, Axios, Redux, Zustend, REST, RESTFul. Participação no desenvolvimento e manutenção de features. Responsável por criar e manter documentação dos softwares desenvolvidos para persistir conhecimento e ajudar as próximas pessoas que interagirem com cada assunto. Contribuição com especificações e implementações técnicas para que o time realize entregas com qualidade e escalabilidade.",
+        "logo": "/companies/openbox.png"
+      },
+      {
+        "title": "CWI",
+        "location": "Remoto",
+        "position": "Software Developer Pleno",
+        "date": "Fev 2021 - Jun 2021",
+        "description": "Worked in the Git Flow workflow model. Participated in agile ceremonies such as SCRUM and Kanban. Managed task management through BitBucket. Developed features with a focus on best practices, following the team's established standards. Contributed with technical specifications and implementations to ensure high-quality and scalable deliveries. Created customizable components. Worked with technologies such as React, Next, Electron, JavaScript, TypeScript, HTML, Styled-components, CSS, Sass, Node.js, Docker, Axios, Redux, Context API, REST, RESTful. Conducted code reviews to ensure delivery quality and standardization. Participated in agile ceremonies such as SCRUM and Kanban.",
+        "logo": "/companies/openbox.png"
+      }
+    ]
   }
 }

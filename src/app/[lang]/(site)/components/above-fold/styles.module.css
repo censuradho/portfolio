@@ -1,16 +1,16 @@
 .above {
-  margin: 90px auto;
+  margin: 150px auto;
   display: grid;
   padding: 1.5rem;
 }
 
 .above__title {
-  font-family: var(--font-roboto-serif);
-  font-size: var(--font-size-xlg);
+  font-size: 3.75rem;
+  font-weight: 500;
 }
 
 @media (min-width: 762px) {
   .above div  {
     max-width: 66%;
   }
-}
+} 
