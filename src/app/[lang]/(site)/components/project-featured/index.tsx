@@ -1,17 +1,19 @@
 'use client'
 
-import { ProjectFeaturedProps } from "./types";
 import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
+import { useMemo } from "react";
+import Image from "next/image";
 
 import styles from './styles.module.css'
-import "keen-slider/keen-slider.min.css"
-import Image from "next/image";
 import { classGroupe } from "@/utils/classNames";
-import { breakpoints } from "constants/theme";
-import { useMemo } from "react";
+
+import { theme } from "@/config/theme";
+import { ProjectFeaturedProps } from "./types";
 
 export function ProjectFeatured (props: ProjectFeaturedProps) {
   const { data, projects } = props
+  const { breakpoints } = theme
 
   const [sliderRef] = useKeenSlider({
     slides: {
@@ -52,6 +54,7 @@ export function ProjectFeatured (props: ProjectFeaturedProps) {
             src={value.thumb.thumb_url}
             alt={value.thumb.title}
             fill
+            sizes="(min-width: 450px) 30vw, 400px"
           />
         </figure>
         <div className={styles['project__item-content']}>

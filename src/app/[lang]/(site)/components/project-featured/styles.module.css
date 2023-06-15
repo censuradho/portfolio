@@ -9,6 +9,7 @@
 }
 
 .project__slide {
+  overflow: hidden;
   padding-left: 24px;
 }
 
