@@ -36,4 +36,9 @@
   .services {
     grid-template-columns: 16.6% 1fr;
   }
+
+  .services__title {
+    font-size: var(--font-size-md);
+    font-weight: 500;
+  }
 }
