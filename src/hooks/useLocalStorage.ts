@@ -1,7 +1,7 @@
 import {
   Dispatch, SetStateAction, useCallback, useEffect, useState,
 } from "react";
-import { isBrowser } from "utils/helpers";
+import { isBrowser } from "@/utils/helpers";
 import { useEventListener } from "./useEventListener";
 
 type SetValue<T> = Dispatch<SetStateAction<T>>

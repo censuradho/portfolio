@@ -23,23 +23,9 @@ export function middleware(request: NextRequest) {
 
   // // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually.
   // // If you have one
-  console.log(pathname.includes('.'))
   
   if (pathname.includes('.')) return;
-
   
-  // if (
-  //   [
-  //     '/manifest.json',
-  //     '/favicon.ico',
-  //     '/techs/react.svg',
-  //     '/public/techs/typescript.svg'
-  //     // Your other files in `public`
-  //   ].includes(pathname)
-  // ) {
-  //   return
-  // }
-
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`

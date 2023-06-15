@@ -4,10 +4,11 @@
   --border-radius: 8px;
   --font-roboto-serif: 'Roboto Serif';
   --font-size-xsm: .875rem;
-  --font-size-sm: 16px;
-  --font-size-md: 24px;
-  --font-size-lg: 36px;
-  --font-size-xlg: 45px;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2.25rem;
+  --font-size-xlg: 2.8125rem;
+  --font-size-xxlg: 3.75rem;
 }
 
 html {

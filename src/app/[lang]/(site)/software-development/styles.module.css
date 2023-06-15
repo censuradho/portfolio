@@ -1,0 +1,88 @@
+.software-development section {
+  padding: 24px;
+}
+
+.software-development__header {
+  max-width: 66.6%;
+  margin: 90px 0;
+  padding: 1.5rem
+}
+
+.software-development__title {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+}
+
+.software-development__subtitle {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--heading)
+}
+
+.software-development__slogan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem
+}
+
+.software-development__slogan-title {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+}
+
+.software-development__slogan-description {
+  font-size: var(--font-size-sm);
+}
+
+.software-development__list {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem
+}
+
+.software-development__item-figure {
+  width: 80px;
+  position: relative;
+  height: 50px
+}
+
+.software-development__item-content {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;    
+}
+
+.software-development__item-description {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.software-development__item-title {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1.75rem;
+}
+
+
+@media (min-width: 1024px) {
+  .software-development__title {
+    font-size: var(--font-size-xxlg);
+    font-weight: 500;
+  }
+  .software-development__slogan {
+    display: grid;
+    grid-template-columns: 41.3% 1fr;
+    align-items: center;
+  }
+
+  .software-development__list {
+    align-items: flex-end;
+  }
+
+  .software-development__item {
+    padding-left: 1rem;
+    width: calc(100% - 41.3%)
+  }
+}
