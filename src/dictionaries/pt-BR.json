@@ -121,7 +121,7 @@
     "items": [
       {
         "title": "Aplicações web",
-        "description": "Construímos aplicações web responsivas para resolver seus complexos problemas de negócios. Nossas equipes trabalham com todas as estruturas modernas, garantindo experiências perfeitas em todos os dispositivos e integração com fontes de dados de back-end.",
+        "description": "Criamos aplicações web responsivas quer visão resolver os problemas mais complexos do seu negócio. Trabalhamos com as mais modernas tecnologias, garantindo experiências perfeitas em todos os dispositivos, além de integração com fontes de dados de back-end.",
         "images": [
           {
             "url": "/tech/next.svg",
@@ -143,7 +143,7 @@
       },
       {
         "title": "Aplicativos móveis",
-        "description": "Criamos aplicativos nativos bonitos, intuitivos e envolventes para algumas das maiores marcas do mundo. Nossa experiência abrange todos os sistemas operacionais móveis e perfis de dispositivos, incluindo integrações complexas com sistemas centrais de back-end.",
+        "description": "Criamos aplicativos para sistemas móveis de diversos dispositivos e plataformas, focando na experiência do usuário. Temos expertise de integração com diversos sistemas de back-end.",
         "images": [
           {
             "url": "/tech/android.svg",
@@ -187,7 +187,7 @@
       },
       {
         "title": "APIs & Integração de sistemas",
-        "description": "Os arquitetos de software da Konrad utilizam as melhores ferramentas da categoria para garantir desempenho, segurança e funcionalidade. Colaboramos com nossos clientes para documentar requisitos de negócios, projetar arquiteturas de integração e conectar todos os sistemas relevantes.",
+        "description": "Utilizamos de ferramentas modernas para garantir a combinação perfeita entre desempenho, segurança e funcionalidade. Colaboramos com nossos clientes para documentar requisitos de negócios, projetar arquiteturas de integração e conectar todos sistemas relevantes.",
         "images": [
           {
             "url": "/tech/node.svg",
@@ -205,7 +205,7 @@
       },
       {
         "title": "Content Management Systems",
-        "description": "Como parceiro preferencial das principais plataformas de CMS do mundo, a Konrad está posicionada de maneira única para aconselhar sobre a seleção e implementação da solução apropriada. De implementações personalizadas à integração de sistemas e suporte contínuo, nossas equipes têm capacidade e experiência para fornecer um ecossistema de conteúdo poderoso e escalável.",
+        "description": "Integramos com as principais ferramentas de CMS, para você criar e atualizar o conteúdo do seu sistema de forma fácil e amigável, permitindo que pessoas sem conhecimento técnico avançado possam gerenciar seu sistema de forma fácil e eficiente.",
         "images": [
           {
             "url": "/tech/contentful.svg",
@@ -219,7 +219,7 @@
       },
       {
         "title": "Cloud Infrastructure",
-        "description": "Os arquitetos de nuvem Konrad projetam, implementam e implantam ambientes escaláveis ​​para dar suporte às soluções e aplicativos mais exigentes. Trabalhamos com todos os principais parceiros de infraestrutura em nuvem, com capacidade de implantação em todas as principais geografias globais e requisitos de segurança.",
+        "description": "Implementamos ambientes escaláveis para dar suporte às soluções e aplicativos mais exigentes. Trabalhamos com os principais parceiros de infraestrutura em nuvem, seguindo todos os requisitos de segurança.",
         "images": [
           {
             "url": "/tech/aws.svg",
@@ -241,7 +241,7 @@
       },
       {
         "title": "Databases",
-        "description": "Os arquitetos de nuvem Konrad projetam, implementam e implantam ambientes escaláveis ​​para dar suporte às soluções e aplicativos mais exigentes. Trabalhamos com todos os principais parceiros de infraestrutura em nuvem, com capacidade de implantação em todas as principais geografias globais e requisitos de segurança.",
+        "description": "Implementamos soluções que aproveitam tanto bancos de dados modernos quanto legados, mantendo os mais antos padrões de segurança. Nossa expertise tem sido utilizada para enfrentar desafios em diversos tipos de seguimento e requisitos.",
         "images": [
           {
             "url": "/tech/postgres.svg",
