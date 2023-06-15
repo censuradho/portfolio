@@ -8,13 +8,14 @@ import "keen-slider/keen-slider.min.css"
 import Image from "next/image";
 import { classGroupe } from "@/utils/classNames";
 import { breakpoints } from "constants/theme";
+import { useMemo } from "react";
 
 export function ProjectFeatured (props: ProjectFeaturedProps) {
   const { data, projects } = props
 
   const [sliderRef] = useKeenSlider({
     slides: {
-      perView: 1.4,
+      perView: 1.1,
       spacing: 20,
     },
     breakpoints: {
@@ -44,7 +45,7 @@ export function ProjectFeatured (props: ProjectFeaturedProps) {
       data.items.includes(index)
     )
 
-    const renderItems = items.map((value, index) => (
+    const renderItems = useMemo(() => items.map((value, index) => (
       <div ref={sliderRef} className="keen-slider__slide">
         <figure className={styles['project__item-figure']}>
           <Image 
@@ -58,7 +59,7 @@ export function ProjectFeatured (props: ProjectFeaturedProps) {
           <p className={styles['project__item-description']}>{value.thumb.description}</p>
         </div>
       </div>
-    ))
+    )), [items])
   
 
   return (
