@@ -9,9 +9,8 @@ export const metadata: Metadata = {
   description: 'Somos um tipo novo de agência, fornecendo soluções digitais completas. Não apenas construímos seu negócio digital, nós o aceleramos.',
 }
 
-export default async function SoftwareDevelopmentPage ({ params }: any) {
-  const { lang } = params
-  const dictionary = await getDictionary(lang)
+export default async function SoftwareDevelopmentPage () {
+  const dictionary = await getDictionary()
   const { software_development } = dictionary
 
   const renderItems = software_development.items.map((value, index) => {

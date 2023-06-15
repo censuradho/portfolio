@@ -8,9 +8,8 @@ export const metadata: Metadata = {
 }
 
 
-export default async function HomePage ({ params }: any) {
-  const { lang } = params
-  const dictionary = await getDictionary(lang)
+export default async function HomePage () {
+  const dictionary = await getDictionary()
 
   return (
     <main>
