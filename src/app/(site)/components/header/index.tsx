@@ -48,31 +48,32 @@ export function Header (props: HeaderProps) {
     )
   })
   return (
-    <Dialog.Root>
+    <Dialog.Root open={isOpen} onOpenChange={toggleOpen}  >
       <header className={styles.header}>
         <div className={classGroupe('container', styles.header__content)}>
           <Link href={paths.home}>Logo</Link>
-          <button onClick={toggleOpen} className={styles.header__trigger}>
+          <Dialog.Trigger className={styles.header__trigger}>
             <Icon name="menu" />
-          </button>
+          </Dialog.Trigger>
         </div>
-        <nav 
-          className={classNames({
-            [styles['header__navigation--close']]: !isOpen,
-          }, [styles.header__navigation])}
-        >
-          <Box justifyContent="flex-end">
-            <button onClick={toggleOpen}>
-              <Icon name="close" />
-            </button>
-          </Box>
-          <Accordion.Root 
-            type="single"
-            collapsible
-          >
-            <ul>{renderNavigation}</ul>
-          </Accordion.Root>
-        </nav>
+        <Dialog.Portal>
+          <Dialog.Overlay />
+          <Dialog.Content className={styles['header__dialog-content']}>
+            <nav className={classGroupe('container', styles.header__navigation)}>
+              <div className={styles['header__navigation-header']}>
+                <Dialog.Close>
+                  <Icon name="close" />
+                </Dialog.Close>
+              </div>
+              <Accordion.Root 
+                type="single"
+                collapsible
+              >
+                <ul>{renderNavigation}</ul>
+              </Accordion.Root>
+            </nav>
+          </Dialog.Content>
+        </Dialog.Portal>
       </header>
     </Dialog.Root>
   )
