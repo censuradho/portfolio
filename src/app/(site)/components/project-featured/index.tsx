@@ -47,22 +47,26 @@ export function ProjectFeatured (props: ProjectFeaturedProps) {
       data.items.includes(index)
     )
 
-    const renderItems = useMemo(() => items.map((value, index) => (
-      <div ref={sliderRef} className="keen-slider__slide">
-        <figure className={styles['project__item-figure']}>
-          <Image 
-            src={value.thumb.thumb_url}
-            alt={value.thumb.title}
-            fill
-            sizes="(min-width: 450px) 30vw, 400px"
-          />
-        </figure>
-        <div className={styles['project__item-content']}>
-          <h3 className={styles['project__item-title']}>{value.thumb.title}</h3>
-          <p className={styles['project__item-description']}>{value.thumb.description}</p>
-        </div>
+  const renderItems = useMemo(() => items.map((value, index) => (
+    <div
+      key={index} 
+      ref={sliderRef} 
+      className="keen-slider__slide"
+    >
+      <figure className={styles['project__item-figure']}>
+        <Image 
+          src={value.thumb.thumb_url}
+          alt={value.thumb.title}
+          fill
+          sizes="(min-width: 450px) 30vw, 400px"
+        />
+      </figure>
+      <div className={styles['project__item-content']}>
+        <h3 className={styles['project__item-title']}>{value.thumb.title}</h3>
+        <p className={styles['project__item-description']}>{value.thumb.description}</p>
       </div>
-    )), [items])
+    </div>
+  )), [items, sliderRef])
   
 
   return (
