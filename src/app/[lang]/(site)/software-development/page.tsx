@@ -1,9 +1,7 @@
 import { getDictionary } from "@/utils/get-dictionary"
 
-import styles from './styles.module.css'
-import { classGroupe } from "@/utils/classNames"
 import Image from "next/image"
-import { Box } from "@/components"
+import styles from './styles.module.css'
 
 export default async function SoftwareDevelopmentPage ({ params }: any) {
   const { lang } = params
@@ -50,7 +48,7 @@ export default async function SoftwareDevelopmentPage ({ params }: any) {
           <p className={styles['software-development_subtitle']}>{software_development.subtitle}</p>
         </section>
       </div>
-      <section className={classGroupe('container')}>
+      <section className="container">
         <div className={styles['software-development__slogan']}>
           <h2 className={styles['software-development__slogan-title']}>{software_development.slogan.title}</h2>
           <p className={styles['software-development__slogan-description']}>{software_development.slogan.description}</p>

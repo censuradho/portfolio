@@ -63,6 +63,7 @@
   font-weight: 500;
   display: inline-block;
   margin-bottom: 1.75rem;
+  font-family: var(--ff-heading);
 }
 
 
