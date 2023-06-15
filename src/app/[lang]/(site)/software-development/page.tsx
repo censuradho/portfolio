@@ -2,6 +2,12 @@ import { getDictionary } from "@/utils/get-dictionary"
 
 import Image from "next/image"
 import styles from './styles.module.css'
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Gustavo Leite Studio | Nossos serviços',
+  description: 'Somos um tipo novo de agência, fornecendo soluções digitais completas. Não apenas construímos seu negócio digital, nós o aceleramos.',
+}
 
 export default async function SoftwareDevelopmentPage ({ params }: any) {
   const { lang } = params
