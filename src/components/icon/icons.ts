@@ -25,10 +25,11 @@ import {
 } from '@meronex/icons/ios';
 import {
   MdEmail,
-  MdModeEdit
+  MdModeEdit,
+  MdKeyboardArrowDown
 } from '@meronex/icons/md/';
 import {
-  MdcWeb
+  MdcWeb,
 } from '@meronex/icons/mdc';
 
 export const icons = {
@@ -50,4 +51,5 @@ export const icons = {
   email: MdEmail,
   zoom: FiZoomIn,
   phone: AiFillPhone,
+  keyBoardArrowDown: MdKeyboardArrowDown
 }

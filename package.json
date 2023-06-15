@@ -11,9 +11,10 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.4.0",
     "@meronex/icons": "^4.0.0",
+    "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.2",
     "@radix-ui/react-collapsible": "^1.0.1",
-    "@radix-ui/react-dialog": "^1.0.2",
+    "@radix-ui/react-dialog": "^1.0.4",
     "@radix-ui/react-hover-card": "^1.0.2",
     "@svgr/webpack": "^6.5.1",
     "@tryghost/content-api": "^1.11.5",

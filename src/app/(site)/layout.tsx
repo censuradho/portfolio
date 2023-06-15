@@ -1,10 +1,13 @@
 import { PropsWithChildren } from "react";
 import { Header } from "./components";
+import { getDictionary } from "@/utils/get-dictionary";
 
-export default function Layout ({ children }: PropsWithChildren) {
+export default async function Layout ({ children }: PropsWithChildren) {
+  const { navigation } = await getDictionary()
+
   return (
     <div>
-      <Header />
+      <Header navigation={navigation} />
       {children}
     </div>
   )

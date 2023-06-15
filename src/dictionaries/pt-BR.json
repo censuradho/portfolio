@@ -1,4 +1,23 @@
 {
+  "navigation": [
+    {
+      "label": "Início",
+      "href": "/"
+    },
+    {
+      "label": "Serviços",
+      "items": [
+        {
+          "label": "Desenvolvimento Web",
+          "href": "/software-development"
+        },
+        {
+          "label":" Design",
+          "href": "/design"
+        }
+      ]
+    }
+  ],
   "home": {
     "above": {
       "title": "Criamos sistemas que entregam  valor e resultado"

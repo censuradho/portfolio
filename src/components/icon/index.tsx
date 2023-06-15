@@ -17,7 +17,12 @@ export function Icon(props: IconProps) {
   if (!Svg) return null
   
   return (
-    <span style={{ color: fill }}>
+    <span 
+      style={{ 
+        all: 'unset',
+        color: fill
+      }}
+    >
       <Svg
         size={size} 
       />
