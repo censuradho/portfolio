@@ -7,7 +7,7 @@ import { classNames } from "@/utils/classNames";
 export function NativeLink (props: PropsWithChildren<NativeLinkProps>) {
   const { 
     children, 
-    pulse = true, 
+    pulse = false, 
     ...otherProps 
   } = props
 
