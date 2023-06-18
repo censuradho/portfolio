@@ -1,14 +1,15 @@
 :root {
   --background: #fff;
-  --heading: #040404;
+  --heading: #0C0C1C;
   --border-radius: 8px;
-  --ff-heading: 'Roboto Serif';
-  --font-size-xsm: .875rem;
-  --font-size-sm: 1rem;
-  --font-size-md: 1.5rem;
-  --font-size-lg: 2.25rem;
-  --font-size-xlg: 2.8125rem;
-  --font-size-xxlg: 3.75rem;
+  --ff-heading: 'Poppins';
+  --primary: #D6EF39;
+  --fs-xsm: .875rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.5rem;
+  --fs-lg: 2.25rem;
+  --fs-xlg: 2.8125rem;
+  --fs-xxlg: 3.75rem;
 }
 
 html {
@@ -19,9 +20,10 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--ff-heading), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--heading)
 }
 
 body {
@@ -63,6 +65,13 @@ h2 {
   max-width: 1024px;
   margin: 0 auto;
 }
+
+.container-sm {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 
 table {
   position: relative;

@@ -1,6 +1,10 @@
+import { Box } from "@/components"
 import { getDictionary } from "@/utils/get-dictionary"
-import { AboveFold, ProjectFeatured, Services, Slogan } from "./components"
 import { Metadata } from "next"
+
+import styles from './styles.module.css'
+import { classGroupe } from "@/utils/classNames"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: 'Gustavo Leite Studio',
@@ -9,17 +13,25 @@ export const metadata: Metadata = {
 
 
 export default async function HomePage () {
-  const dictionary = await getDictionary()
+  const { home } = await getDictionary()
 
   return (
     <main>
-      <AboveFold data={dictionary.home.above} />
-      <ProjectFeatured 
-        data={dictionary.home.projects}
-        projects={dictionary.projects.items}
-      />
-      <Services data={dictionary.home.services} />
-      <Slogan message={dictionary.home.slogan} />
+      <div className="container-sm">
+        <div className={styles.header}>
+          <h1 className={styles.header__name}>{home.name}</h1>
+          <Image 
+            src={home.avatar}
+            alt={home.name}
+            width={96}
+            height={96}
+            className={styles.header__avatar}
+          />
+        </div>
+      </div>
+      <div className="container-sm">
+        <h2 className={styles.presentation}>{home.presentation}</h2>
+      </div>
     </main>
   )
 }

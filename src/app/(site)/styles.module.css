@@ -1,0 +1,21 @@
+.header {
+  padding: 50px 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.header__name {
+  font-size: var(--fs-md);
+  font-weight: 700;
+}
+
+.header__avatar {
+  border-radius: 50%;
+}
+
+.presentation {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  margin: 40px 0
+}

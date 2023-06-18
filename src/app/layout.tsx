@@ -1,10 +1,10 @@
-import { Roboto_Serif } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
 import './globals.css'
 
-const robotoSerif = Roboto_Serif({
+const robotoSerif = Poppins({
   display: 'swap',
-  weight: ['400', '500'],
+  weight: ['400', '500', '600'],
   subsets: ['latin'],
 })
 
