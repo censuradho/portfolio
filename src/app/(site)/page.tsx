@@ -7,8 +7,29 @@ import { Experiences } from "./components"
 import styles from './styles.module.css'
 
 export const metadata: Metadata = {
-  title: 'Gustavo Leite Studio',
-  description: 'Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras.',
+
+}
+
+export async function generateMetadata (): Promise<Metadata> {
+
+  const data = await getDictionary()
+
+  const { metadata } = data.home
+
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    openGraph: {
+      type: metadata.openGraph.type as any,
+      images: metadata.openGraph.images,
+    },
+    twitter: {
+      card: metadata.twitter.card as any,
+      description: metadata.description,
+      title: metadata.title,
+      creator: metadata.twitter.creator
+    },
+  }
 }
 
 

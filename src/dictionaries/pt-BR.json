@@ -1,5 +1,19 @@
 {
   "home": {
+    "metadata": {
+      "title": "Gustavo Leite | Desenvolvedor",
+      "description": "Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras.",
+      "openGraph": {
+        "type": "profile",
+        "images": [
+          "https://avatars.githubusercontent.com/u/49209628?v=4"
+        ]
+      },
+      "twitter": {
+        "card": "summary",
+        "creator": "@Censuradho"
+      }
+    },
     "name": "Gustavo Leite",
     "avatar": "/avatar.jpg",
     "presentation": {
