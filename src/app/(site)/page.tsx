@@ -6,10 +6,6 @@ import Image from "next/image"
 import { Experiences } from "./components"
 import styles from './styles.module.css'
 
-export const metadata: Metadata = {
-
-}
-
 export async function generateMetadata (): Promise<Metadata> {
 
   const data = await getDictionary()
