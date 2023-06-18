@@ -42,6 +42,7 @@ export default async function HomePage () {
               href={home.presentation.cta.href}
               rel="noreferrer"
               target="_blank"
+              pulse
             >{home.presentation.cta.label}</NativeLink>
           </div>
           <figure className={styles.presentation__banner}>
@@ -69,6 +70,7 @@ export default async function HomePage () {
             href={home.social.linkedin}
             target="_blank" 
             rel="noreferrer"
+            aria-label="linkedin"
           >
             <Icon name="linkedin" color="background" />
           </a>
@@ -77,6 +79,7 @@ export default async function HomePage () {
             href={home.social.github}
             target="_blank" 
             rel="noreferrer"
+            aria-label="github"
           >
             <Icon name="github" color="background" />
           </a>
@@ -85,6 +88,7 @@ export default async function HomePage () {
             href={home.social.instagram}
             target="_blank" 
             rel="noreferrer"
+            aria-label="instagram"
           >
             <Icon name="instagram" color="background" />
           </a>

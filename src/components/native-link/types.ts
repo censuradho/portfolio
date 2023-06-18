@@ -1,3 +1,5 @@
 import { AnchorHTMLAttributes } from "react";
 
-export interface NativeLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {}
+export interface NativeLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  pulse?: boolean
+}

@@ -4,6 +4,8 @@
   --border-radius: 8px;
   --ff-heading: 'Poppins';
   --primary: #D6EF39;
+  --primary-light: rgba(214, 239, 57, 70);
+  --primary-lighter: rgba(214, 239, 57, 20);
   --fs-xsm: .875rem;
   --fs-sm: 1rem;
   --fs-md: 1.5rem;
