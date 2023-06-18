@@ -2,6 +2,51 @@
   "home": {
     "name": "Gustavo Leite",
     "avatar": "/avatar.jpg",
-    "presentation": "\"Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras."
+    "presentation": {
+      "title": "\"Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras.",
+      "cta": {
+        "label": "✦ Me pague um café",
+        "href": ""
+      }
+    },
+    "banner_image": {
+      "url": "/banner.jpg",
+      "alt": "Banner"
+    },
+    "about": {
+      "description": [
+        "Estudo Análise e desenvolvimento de sistemas no Senac RS, Moro em Porto Alegre. Atuo como desenvolvedor de software a +4 anos, apaixonado por entregar projetos desafiadores e promover experiências incríveis para as pessoas.",
+        "Eterno aluno, sempre aprendendo algo novo para aperfeiçoar minhas hard e soft skills.",
+        "Desenvolvimento de software é acima de tudo, melhorar a vida das pessoas através da tecnologia 🖤"
+      ],
+      "subtitle": "Garoto de programa (que faz sites) 👨🏽‍💻"
+    },
+    "social": {
+      "instagram": "https://www.instagram.com/censuradho.dev/",
+      "github": "https://github.com/censuradho",
+      "linkedin": "https://www.linkedin.com/in/gustavo-dev-front/"
+    },
+    "experiences": {
+      "items": [
+        {
+          "company_name": "Openbox.ai",
+          "position": "Front-end Developer",
+          "date": "Set 2019 — Jun 2021",
+          "avatar": "/companies/openbox.png"
+        },
+        {
+          "company_name": "Ubistart",
+          "position": "Software Developer",
+          "date": "Jun 2021 — Jun 2022",
+          "avatar": "/companies/ubistart.png"
+        },
+        {
+          "company_name": "CWI",
+          "position": "Front-end Developer",
+          "date": "Jun 2022 — Jan 2023",
+          "avatar": "/companies/cwi.png"
+        }
+      ]
+    }
   }
 }

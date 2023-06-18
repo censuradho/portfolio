@@ -1,0 +1,6 @@
+.button {
+  background: var(--primary);
+  color: var(--heading);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}

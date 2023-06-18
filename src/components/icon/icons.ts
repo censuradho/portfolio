@@ -7,6 +7,7 @@ import {
   AiOutlineClose,
   AiOutlineDownload,
   AiOutlineMenu,
+  AiFillGithub
 } from '@meronex/icons/ai';
 import {
   BiDotsVerticalRounded,
@@ -51,5 +52,6 @@ export const icons = {
   email: MdEmail,
   zoom: FiZoomIn,
   phone: AiFillPhone,
-  keyBoardArrowDown: MdKeyboardArrowDown
+  keyBoardArrowDown: MdKeyboardArrowDown,
+  github: AiFillGithub
 }

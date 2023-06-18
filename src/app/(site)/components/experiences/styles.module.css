@@ -1,0 +1,34 @@
+.experiences {
+  margin: 20px 0;
+  padding: 24px;
+}
+
+.experiences__title {
+  font-size: var(--fs-md);
+}
+
+.experiences__list {
+  display: grid;
+  gap: 1rem
+}
+
+.experiences__item {
+  display: flex;
+  gap: 1rem
+}
+
+.experiences__item-avatar img {
+  border-radius: 50%;
+}
+
+.experiences__item-company_name {
+
+}
+
+.experiences__item-position {
+
+}
+
+.experiences__item-date {
+
+}

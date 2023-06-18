@@ -19,7 +19,6 @@ export function Icon(props: IconProps) {
   return (
     <span 
       style={{ 
-        all: 'unset',
         color: fill
       }}
     >
