@@ -23,7 +23,8 @@ export async function generateMetadata (): Promise<Metadata> {
       card: metadata.twitter.card as any,
       description: metadata.description,
       title: metadata.title,
-      creator: metadata.twitter.creator
+      creator: metadata.twitter.creator,
+      images: []
     },
   }
 }
