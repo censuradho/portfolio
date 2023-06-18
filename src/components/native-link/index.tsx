@@ -7,15 +7,14 @@ import { classNames } from "@/utils/classNames";
 export function NativeLink (props: PropsWithChildren<NativeLinkProps>) {
   const { 
     children, 
-    pulse = false, 
+    pulse = true, 
     ...otherProps 
   } = props
 
-  
   return (
     <a 
       className={classNames({
-        [styles['styles.native_link-pulse']]: pulse
+        [styles['native_link-pulse']]: pulse
       }, [
         styles.native_link
       ])} 
