@@ -1,0 +1,8 @@
+.native_link {
+  background: var(--primary);
+  color: var(--heading);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  padding: 1rem 1.25rem;
+  border-radius: 40px;;
+}

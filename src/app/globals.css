@@ -1,0 +1,106 @@
+:root {
+  --background: #fff;
+  --heading: #0C0C1C;
+  --border-radius: 8px;
+  --ff-heading: 'Poppins';
+  --primary: #D6EF39;
+  --fs-xsm: .875rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.5rem;
+  --fs-lg: 2.25rem;
+  --fs-xlg: 2.8125rem;
+  --fs-xxlg: 3.75rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--ff-heading), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--background);
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--background);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p, strong {
+  line-height: 200%;
+  font-size: var(--font-size-sm);
+  line-height: 170%;
+}
+
+p, strong, h1, h2, h3, h4, h5, h6 {
+  color: var(--heading)
+}
+
+h1 {
+  margin-bottom: 14px;
+}
+
+h2 {
+  line-height: 140.5% ;
+  font-size: 2.92rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container-sm {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+table {
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+thead tr {
+  position: sticky;
+  background: var(--background);
+  top: 0;
+}
+
+td {
+  border-bottom: 1px solid var(--border);
+  padding: 1.2rem 1rem;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+tbody tr:nth-child(odd) td {
+  background: var(--foreground)
+}
