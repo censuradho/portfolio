@@ -1,15 +1,14 @@
-import { Box, Icon, NativeLink } from "@/components"
+import { Icon, NativeLink } from "@/components"
 import { getDictionary } from "@/utils/get-dictionary"
 import { Metadata } from "next"
 
-import styles from './styles.module.css'
-import { classGroupe } from "@/utils/classNames"
 import Image from "next/image"
 import { Experiences } from "./components"
+import styles from './styles.module.css'
 
 export const metadata: Metadata = {
   title: 'Gustavo Leite Studio',
-  description: 'Somos uma agência digital que entrega serviços de ponta a ponta com foco em estratégia, design de experiência do usuário (UX) e transformação digital.',
+  description: 'Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras.',
 }
 
 
