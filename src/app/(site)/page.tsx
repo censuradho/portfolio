@@ -31,6 +31,7 @@ export default async function HomePage () {
             width={96}
             height={96}
             className={styles.header__avatar}
+            priority
           />
         </div>
       </div>
