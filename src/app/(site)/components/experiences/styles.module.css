@@ -26,7 +26,7 @@
 }
 
 .experiences__item-position {
-
+  white-space: nowrap;
 }
 
 .experiences__item-date {

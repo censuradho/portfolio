@@ -1,18 +1,19 @@
 import {
   AiFillFacebook,
+  AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
   AiFillPhone,
   AiOutlineArrowLeft,
   AiOutlineClose,
   AiOutlineDownload,
-  AiOutlineMenu,
-  AiFillGithub
+  AiOutlineMenu
 } from '@meronex/icons/ai';
 import {
   BiDotsVerticalRounded,
   BiMoon,
   BiSun,
+  BilSpotify
 } from '@meronex/icons/bi';
 import {
   BsArrowRightShort
@@ -26,8 +27,8 @@ import {
 } from '@meronex/icons/ios';
 import {
   MdEmail,
-  MdModeEdit,
-  MdKeyboardArrowDown
+  MdKeyboardArrowDown,
+  MdModeEdit
 } from '@meronex/icons/md/';
 import {
   MdcWeb,
@@ -53,5 +54,6 @@ export const icons = {
   zoom: FiZoomIn,
   phone: AiFillPhone,
   keyBoardArrowDown: MdKeyboardArrowDown,
-  github: AiFillGithub
+  github: AiFillGithub,
+  spotify: BilSpotify
 }

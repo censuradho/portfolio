@@ -19,7 +19,7 @@ export function Experiences (props: ExperiencesProps) {
           alt={value.company_name}
         />
       </figure>
-      <Box alignItems="flex-end" fullWidth>
+      <Box flexWrap="wrap" alignItems="flex-end" fullWidth>
         <Box flex={1} flexDirection="column">
           <strong className={styles['experiences__item-company_name']}>{value.company_name}</strong>
           <p className={styles['experiences__item-position']}>{value.position}</p>

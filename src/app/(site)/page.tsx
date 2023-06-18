@@ -92,6 +92,15 @@ export default async function HomePage () {
           >
             <Icon name="instagram" color="background" />
           </a>
+          <a 
+            className={styles.social__icon}
+            href={home.social.spotify}
+            target="_blank" 
+            rel="noreferrer"
+            aria-label="instagram"
+          >
+            <Icon name="spotify" color="background" />
+          </a>
         </aside>
       </div>
     </main>

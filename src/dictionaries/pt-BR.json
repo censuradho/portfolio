@@ -3,7 +3,7 @@
     "name": "Gustavo Leite",
     "avatar": "/avatar.jpg",
     "presentation": {
-      "title": "\"Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras.",
+      "title": "\"Desenvolvedor & UI Design. Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras.",
       "cta": {
         "label": "✦ Me pague um café ☕",
         "href": "https://www.paypal.com/donate/?hosted_button_id=FPSATBXRTXXHS"
@@ -24,7 +24,8 @@
     "social": {
       "instagram": "https://www.instagram.com/censuradho.dev/",
       "github": "https://github.com/censuradho",
-      "linkedin": "https://www.linkedin.com/in/gustavo-dev-front/"
+      "linkedin": "https://www.linkedin.com/in/gustavo-dev-front/",
+      "spotify": "https://open.spotify.com/user/22a7vmu5rsx5s5rzof72ye45y?si=8355e0f17dc341bd"
     },
     "experiences": {
       "items": [
