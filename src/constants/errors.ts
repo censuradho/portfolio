@@ -1,3 +1,4 @@
 export const FORM_ERROR = {
-  required: 'Campo obrigatório'
+  required: 'Campo obrigatório',
+  invalid: 'Formato incorreto',
 }

@@ -7,6 +7,9 @@ export const appSettings = {
     link: process.env.NEXT_PUBLIC_MADE_BY_LINK,
     label: process.env.NEXT_PUBLIC_MADE_BY_LABEL,
   },
+  mailChimp: {
+    apiKey: process.env.MAILCHIMP_API_KEY
+  }
 } 
 
 export const isDevMode = appSettings.env && appSettings.env === 'development'

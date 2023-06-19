@@ -10,6 +10,7 @@ import { ContactProps } from './types'
 import { ContactFormData, contactSchemaValidation } from './validation'
 import { TextInputForm } from '@/components/hook-form'
 import { Textarea } from '@/components/form'
+import { TextareaForm } from '@/components/hook-form/textarea'
 
 export function Contact ({ data }: ContactProps) {
   const { 
@@ -55,8 +56,12 @@ export function Contact ({ data }: ContactProps) {
             errorMessage={errors?.whatsapp?.message}
             register={register('whatsapp')}
           />
-          <Textarea 
+          <TextareaForm
+            id="message"
             label="Mensagem"
+            register={register('message')}
+            errorMessage={errors?.message?.message}
+            placeholder="No que posso te ajudar?"
           />
           <div style={{ marginTop: '2rem', width: '100%' }}>
             <Button type="submit" fullWidth>Enviar</Button>
