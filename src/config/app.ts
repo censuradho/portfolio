@@ -8,7 +8,9 @@ export const appSettings = {
     label: process.env.NEXT_PUBLIC_MADE_BY_LABEL,
   },
   mailChimp: {
-    apiKey: process.env.MAILCHIMP_API_KEY
+    apiKey: process.env.MAILCHIMP_API_KEY,
+    marketingBaseUrl: process.env.MAILCHIMP_MARKETING_BASE_URL,
+    transactionalBaseUrl: process.env.MAILCHIMP_TRANSACTIONAL_BASE_URL
   }
 } 
 

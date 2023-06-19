@@ -1,39 +1,54 @@
 'use client'
 
-import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
 
-import { Button, TextInput } from '@/components'
+import { Button, SuccessDialog } from '@/components'
 import styles from './styles.module.css'
 import { ContactProps } from './types'
 
-import { ContactFormData, contactSchemaValidation } from './validation'
 import { TextInputForm } from '@/components/hook-form'
-import { Textarea } from '@/components/form'
 import { TextareaForm } from '@/components/hook-form/textarea'
+import { useToggle } from '@/hooks'
+import { localApiService } from '@/services/local-api'
+import { ContactFormData, contactSchemaValidation } from './validation'
 
 export function Contact ({ data }: ContactProps) {
+  const [isOpen, toggle] = useToggle()
+
   const { 
     register,
     formState: { errors },
     handleSubmit, 
   } = useForm<ContactFormData>({
-    resolver: zodResolver(contactSchemaValidation)
+    resolver: zodResolver(contactSchemaValidation),
+    defaultValues: {
+      email: 'gustavoleiteoliveira800@gmail.com',
+      message: 'Lorem Ipsum',
+      name: 'Gustavo Leite Oliveira',
+      whatsapp: '51982397632'
+    }
   })
 
   const onSubmit = async (data: ContactFormData) => {
-
+    await localApiService.subscribe(data)
+    toggle()
   }
 
   return (
     <div className="container-sm">
+      <SuccessDialog
+        title="Obrigado pela inscrição"
+        open={isOpen}
+        onOpenChange={toggle} 
+      />
       <section className={styles.contact}>
         <h2 className={styles.contact__title}>Quer falar comigo?</h2>
         <a
           className={styles['contact__cta-email']}
           rel="noreferrer" 
           href={`mailto:${data.email}`}>{`✉️ ${data.email}`}</a>
-        <p>Ou Preencha o formulário abaixo 👇</p>
+        {/* <p>Ou Preencha o formulário abaixo 👇</p>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.contact__form}>
           <TextInputForm
             id="name"
@@ -66,7 +81,7 @@ export function Contact ({ data }: ContactProps) {
           <div style={{ marginTop: '2rem', width: '100%' }}>
             <Button type="submit" fullWidth>Enviar</Button>
           </div>
-        </form>
+        </form> */}
       </section>
     </div>
   )

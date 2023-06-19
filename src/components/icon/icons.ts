@@ -28,7 +28,8 @@ import {
 import {
   MdEmail,
   MdKeyboardArrowDown,
-  MdModeEdit
+  MdModeEdit,
+  MdDone
 } from '@meronex/icons/md/';
 import {
   MdcWeb,
@@ -55,5 +56,6 @@ export const icons = {
   phone: AiFillPhone,
   keyBoardArrowDown: MdKeyboardArrowDown,
   github: AiFillGithub,
-  spotify: BilSpotify
+  spotify: BilSpotify,
+  done: MdDone
 }
