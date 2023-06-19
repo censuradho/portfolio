@@ -1,21 +1,22 @@
 :root {
   --background: #fff;
   --heading: #0C0C1C;
-  --border-radius: 8px;
-  --ff-heading: 'Poppins';
+  --highlight: #B2ACA7;
+  --border: rgba(0, 0, 0, 0.03);
   --primary: #D6EF39;
   --primary-light: #D6EF39B3;
   --primary-lighter: #D6EF3933;
+  --error: #FF613F;
+
+  --border-radius: 8px;
+  --ff-heading: 'Poppins';
+
   --fs-xsm: .875rem;
   --fs-sm: 1rem;
   --fs-md: 1.5rem;
   --fs-lg: 2.25rem;
   --fs-xlg: 2.8125rem;
   --fs-xxlg: 3.75rem;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 * {
@@ -25,6 +26,13 @@ html {
   font-family: var(--ff-heading), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+  background-color: var(--border);
+  border: none;
+  width: 100%;
+  height: 1px
 }
 
 body {

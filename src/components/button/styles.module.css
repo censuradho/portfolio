@@ -3,4 +3,60 @@
   color: var(--heading);
   font-size: var(--fs-sm);
   font-weight: 500;
+  padding: 1rem 1.25rem;
+  border-radius: 40px;;
+  position: relative;
+  z-index: 2;
+  transition: 0.2s ease;
+  outline: none;
+}
+
+.button-fullwidth {
+  width: 100%
+}
+
+.button:hover,
+.button:hover::after,
+.button:focus,
+.button:focus::after  {
+  background: var(--primary-lighter);
+}
+
+.button-pulse::after,
+.button-pulse::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.button-pulse::after {
+  background-color: var(--primary);
+  z-index: -2;
+  border-radius: 40px;
+}
+
+
+.button-pulse::after {
+  animation: pulse infinite 1.25s;
+}
+
+.button-pulse:hover::after,
+.button-pulse:focus::after {
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }

@@ -3,7 +3,7 @@ import { getDictionary } from "@/utils/get-dictionary"
 import { Metadata } from "next"
 
 import Image from "next/image"
-import { Experiences } from "./components"
+import { Contact, Experiences } from "./components"
 import styles from './styles.module.css'
 
 export async function generateMetadata (): Promise<Metadata> {
@@ -31,7 +31,7 @@ export async function generateMetadata (): Promise<Metadata> {
 
 
 export default async function HomePage () {
-  const { home } = await getDictionary()
+  const { home, personal_infos } = await getDictionary()
 
   const renderAboutDescription = home.about.description.map((value, index) => (
     <p key={index}>{value}</p>
@@ -81,6 +81,8 @@ export default async function HomePage () {
         </section>
       </div>
       <Experiences data={home.experiences} />
+      <Contact data={personal_infos} />
+      <hr />
       <div className="container-sm">
         <aside className={styles.social}>
           <a 

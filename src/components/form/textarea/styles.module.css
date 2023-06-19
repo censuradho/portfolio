@@ -1,0 +1,45 @@
+.textarea {
+  display: grid;
+  gap: 1rem;
+  width: 100%
+}
+
+.textarea-label {
+  font-size: var(--fs-sm);
+  font-weight: 400;
+}
+
+.textarea-input {
+  height: 48px;
+  padding: 0.49rem 1rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: var(--border-radius);
+  background: rgba(0, 0, 0, 0.02);
+  line-height: 24px;
+  resize: none;
+}
+
+.textarea-input::-webkit-scrollbar {
+  display: none;
+}
+
+.textarea-error_message {
+  color: var(--error);
+  font-size: var(--fs-xsm);
+  font-weight: 400;
+}
+
+.textarea-input::placeholder {
+  color: var(--highlight)
+}
+
+.textarea-default .textarea-label {
+  cursor: pointer
+}
+
+.textarea-dark .textarea-input {
+  font-weight: 400;
+  font-size: var(--fs-xsm);
+} 
