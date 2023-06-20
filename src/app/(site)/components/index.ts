@@ -1,2 +1,3 @@
 export * from './experiences'
 export * from './contac'
+export * from './info'

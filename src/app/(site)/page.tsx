@@ -3,7 +3,7 @@ import { getDictionary } from "@/utils/get-dictionary"
 import { Metadata } from "next"
 
 import Image from "next/image"
-import { Contact, Experiences } from "./components"
+import { Contact, Experiences, Info } from "./components"
 import styles from './styles.module.css'
 
 export async function generateMetadata (): Promise<Metadata> {
@@ -73,6 +73,7 @@ export default async function HomePage () {
           </figure>
         </section>
       </div>
+      <Info />
       <div className="container-sm">
         <section className={styles.about}>
           <h2 className={styles.about__title}>Sobre</h2>
