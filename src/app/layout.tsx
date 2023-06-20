@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google'
 
 import './globals.css'
+import { GoogleAnalytics } from '@/components'
 
 const robotoSerif = Poppins({
   display: 'swap',
@@ -15,6 +16,7 @@ export default function Root({
 }) {
   return (
     <html lang="pt-BR">
+      <GoogleAnalytics />
       <body className={robotoSerif.className}>{children}</body>
     </html>
   )
