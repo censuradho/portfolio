@@ -23,12 +23,6 @@ export function Contact ({ data }: ContactProps) {
     handleSubmit, 
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchemaValidation),
-    defaultValues: {
-      email: 'gustavoleiteoliveira800@gmail.com',
-      message: 'Lorem Ipsum',
-      name: 'Gustavo Leite Oliveira',
-      whatsapp: '51982397632'
-    }
   })
 
   const onSubmit = async (data: ContactFormData) => {
