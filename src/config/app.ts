@@ -11,6 +11,14 @@ export const appSettings = {
     apiKey: process.env.MAILCHIMP_API_KEY,
     marketingBaseUrl: process.env.MAILCHIMP_MARKETING_BASE_URL,
     transactionalBaseUrl: process.env.MAILCHIMP_TRANSACTIONAL_BASE_URL
+  },
+  nodemailer: {
+    host: process.env.NODE_MAILER_HOST,
+    port: process.env.NODE_MAILER_PORT,
+    auth: {
+      user: process.env.NODE_MAILER_USER,
+      password: process.env.NODE_MAILER_PASSWORD,
+    }
   }
 } 
 

@@ -15,6 +15,7 @@ import { ContactFormData, contactSchemaValidation } from './validation'
 
 export function Contact ({ data }: ContactProps) {
   const [isOpen, toggle] = useToggle()
+  const [isLoading, toggleLoading] = useToggle()
 
   const { 
     register,
@@ -31,8 +32,12 @@ export function Contact ({ data }: ContactProps) {
   })
 
   const onSubmit = async (data: ContactFormData) => {
-    await localApiService.subscribe(data)
-    toggle()
+    try {
+      await localApiService.contact(data)
+      toggle()
+    } finally {
+
+    }
   }
 
   return (
@@ -48,7 +53,7 @@ export function Contact ({ data }: ContactProps) {
           className={styles['contact__cta-email']}
           rel="noreferrer" 
           href={`mailto:${data.email}`}>{`✉️ ${data.email}`}</a>
-        {/* <p>Ou Preencha o formulário abaixo 👇</p>
+        <p>Ou Preencha o formulário abaixo 👇</p>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.contact__form}>
           <TextInputForm
             id="name"
@@ -79,9 +84,13 @@ export function Contact ({ data }: ContactProps) {
             placeholder="No que posso te ajudar?"
           />
           <div style={{ marginTop: '2rem', width: '100%' }}>
-            <Button type="submit" fullWidth>Enviar</Button>
+            <Button 
+              type="submit" 
+              fullWidth
+              loading={isLoading}
+            >Enviar</Button>
           </div>
-        </form> */}
+        </form>
       </section>
     </div>
   )
