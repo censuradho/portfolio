@@ -1,11 +1,15 @@
 import { ContactFormData } from "@/app/(site)/components/contac/validation";
 
 export function contactTemplate (payload: ContactFormData) {
+  const { message, ...contact } = payload
+
+  const list = Object.entries(contact).reduce((string, [key, value]) => {
+    return string += `<li>${key}: ${value}</li>`
+  }, '')
+
   return `
     <ul>
-      <li>email: ${payload.email}</li>
-      <li>name: ${payload.name}</li>
-      <li>whatsapp: ${payload.whatsapp}</li>
+      ${list}
     </ul>
     <br />
     <p>${payload.message}</p>
