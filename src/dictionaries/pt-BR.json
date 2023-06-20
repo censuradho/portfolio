@@ -19,8 +19,18 @@
     },
     "name": "Gustavo Leite",
     "avatar": "/avatar.jpg",
+    "infos": [
+      {
+        "label": "Brasileiro, 28 anos • Rio Grande do Sul, BR",
+        "image": "/br.svg"
+      },
+      {
+        "label": "Software Developer",
+        "emoji": "👨🏽‍💻"
+      }
+    ],
     "presentation": {
-      "title": "\"Desenvolvedor & UI Design. Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras.",
+      "title": "\"Aqui você encontra um pouco sobre minha carreira profissional, gostos musicais, setup e bônus extras.",
       "cta": {
         "label": "✦ Me pague um café ☕",
         "href": "https://www.paypal.com/donate/?hosted_button_id=FPSATBXRTXXHS"

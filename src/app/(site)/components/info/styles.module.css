@@ -1,0 +1,17 @@
+.info {
+  padding: 24px
+}
+
+.info__list {
+  display: grid;
+  gap: 1rem
+}
+.info__list__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem
+}
+
+.info__list__item__emoji {
+  font-size: 1.25rem;
+}

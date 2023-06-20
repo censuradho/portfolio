@@ -17,6 +17,7 @@ export function Experiences (props: ExperiencesProps) {
           width={32}
           height={32}
           alt={value.company_name}
+          style={{ objectFit: 'contain' }}
         />
       </figure>
       <Box flexWrap="wrap" alignItems="flex-end" fullWidth>

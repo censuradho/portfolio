@@ -51,6 +51,7 @@ export default async function HomePage () {
             priority
           />
         </div>
+        <Info data={home.infos} />
       </div>
       <div className="container-sm">
         <section className={styles.presentation}>
@@ -69,11 +70,12 @@ export default async function HomePage () {
               alt={home.banner_image.alt}
               fill
               priority
+              sizes="400px, (min-width: 762px) 600px"
+              style={{ objectFit: 'cover' }}
             />
           </figure>
         </section>
       </div>
-      <Info />
       <div className="container-sm">
         <section className={styles.about}>
           <h2 className={styles.about__title}>Sobre</h2>
