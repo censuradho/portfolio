@@ -33,17 +33,19 @@ export function Contact ({ data }: ContactProps) {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
+      toggleLoading()
       await localApiService.contact(data)
       toggle()
     } finally {
-
+      toggleLoading()
     }
   }
 
   return (
     <div className="container-sm">
       <SuccessDialog
-        title="Obrigado pela inscrição"
+        title="Enviado com sucesso!"
+        description="Assim que possível te retorno o email 😉"
         open={isOpen}
         onOpenChange={toggle} 
       />

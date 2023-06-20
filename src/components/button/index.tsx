@@ -9,11 +9,14 @@ export function Button (props: PropsWithChildren<ButtonProps>) {
     children, 
     pulse = false, 
     fullWidth = false,
+    loading,
+    disabled,
     ...otherProps 
   } = props
 
   return (
     <button
+      disabled={disabled || loading}
       className={classNames({
         [styles['button-pulse']]: pulse,
         [styles['button-fullwidth']]: fullWidth

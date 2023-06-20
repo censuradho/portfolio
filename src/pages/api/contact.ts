@@ -34,6 +34,8 @@ export default async function handler (req: NextApiRequest, res: NextApiResponse
       text: contact.message,
       html: contactTemplate(contact)
     })
+
+    return res.status(201).send('ok')
   } catch (err) {
     console.log(err)
 

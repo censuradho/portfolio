@@ -12,7 +12,8 @@ export function SuccessDialog (props: PropsWithChildren<SuccessDialogProps>) {
     children,
     onOpenChange,
     open,
-    title
+    title,
+    description
   } = props
 
   const renderTrigger = () => {
@@ -35,6 +36,7 @@ export function SuccessDialog (props: PropsWithChildren<SuccessDialogProps>) {
             <Icon size={30} name="done" color="heading" />
           </div>
           <strong className={styles.success_dialog__title}>{title}</strong>
+          <p>{description}</p>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>

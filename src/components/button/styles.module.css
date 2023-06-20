@@ -51,6 +51,11 @@
   animation: none;
 }
 
+
+
+.button:disabled {
+  background: var(--highlight) !important
+}
 @keyframes pulse {
   0% {
     transform: scale(0.9);
