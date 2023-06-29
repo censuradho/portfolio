@@ -5,6 +5,11 @@ import { appSettings } from "@/config/app";
 import { resolvePath } from "@/utils/helpers";
 import { paths } from "@/constants/paths";
 
+import styles from './styles.module.css'
+import { classGroupe } from "@/utils/classNames";
+import Link from "next/link";
+import { formatPostDate } from "@/lib/date-fns";
+
 export async function generateStaticParams () {
   const posts = await getPosts()
 
@@ -63,8 +68,20 @@ export default async function BlogPage ({ params }: BlogPageProps) {
   })
 
   return (
-    <main>
-      <h1>{params.slug}</h1>
+    <main className={classGroupe('container', styles.blog_post)}>
+      <div className={styles.blog_post__header}>
+        <Link href={paths.blog} className={styles.blog_post__back_button}>← Voltar na listagem</Link>
+      </div>
+      <h1 className={styles.blog_post__title}>{data.title}</h1>
+      <div className={styles.blog_post__meta}>
+        <span>{`${formatPostDate(data.published_at as string)} • Leitura de ${data.reading_time} min`}</span>
+      </div>
+      <article
+        className={styles.blog_post__article}
+        dangerouslySetInnerHTML={{
+          __html: data?.html || ''
+        }}
+      />
     </main>
   )
 }
