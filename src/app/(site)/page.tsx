@@ -35,7 +35,7 @@ export default async function HomePage () {
   const { home, personal_infos } = await getDictionary()
   const post = await getPosts({
     include: ['authors', 'tags'],
-    limit: 3
+    filter: ['featured:true']
   })
   
   const renderAboutDescription = home.about.description.map((value, index) => (

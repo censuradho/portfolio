@@ -35,7 +35,9 @@ export function BlogPosts ({ data }: BlogPostsProps) {
           {renderData}
         </Box>
         <div>
-          <Link href={paths.blog}>Veja todos os posts</Link>
+          <Link
+            href={paths.blog}
+          >Veja todos os posts</Link>
         </div>
       </section>
     </div>
