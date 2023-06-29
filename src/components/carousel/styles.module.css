@@ -39,6 +39,6 @@
 }
 
 .carousel__item_body > * {
-  color: var(--background);
+  color: var(--heading);
   padding: 10px 20px
 }

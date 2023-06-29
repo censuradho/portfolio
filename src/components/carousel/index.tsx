@@ -52,7 +52,6 @@ export function Carousel (props: CarouselProps) {
               src={value.image.src}
               alt={value.image.alt}
               fill
-              priority={index <= 2}
               sizes="300px"
             />
           </figure>
