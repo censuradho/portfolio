@@ -7,6 +7,9 @@
   max-width: 300px;
   border-radius: var(--border-radius);
   overflow: hidden;
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content 1fr;
 }
 
 .carousel__item p {
