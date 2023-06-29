@@ -1,0 +1,47 @@
+.carousel__list {
+  margin-top: 2.375rem;
+  overflow: hidden;
+}
+
+.carousel__item {
+  max-width: 300px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+}
+
+.carousel__item p {
+  white-space: pre-line;
+  font-size: var(--fs-xsm);
+}
+
+.carousel__item img {
+  transition: 0.2s;
+  max-width: 300px;
+  object-fit: cover;
+}
+.carousel__item:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.carousel__item_image {
+  position: relative;
+  width: 100%;
+  height: 18.125rem;
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.carousel__item_body {
+  background-color: var(--foreground);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  overflow: hidden;
+}
+
+.carousel__item_body > * {
+  color: var(--heading);
+  padding: 10px 20px
+}

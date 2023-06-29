@@ -75,6 +75,29 @@
           "avatar": "/companies/cwi.png"
         }
       ]
+    },
+    "projects": {
+      "title": "Projetos",
+      "items": [
+        {
+          "title": "SGN Energy - Enegia fotovoltaica",
+          "description": "É uma empresa com soluções em energia solar fotovoltaica, energia que hoje é sinônimo de economia, tecnologia e sustentabilidade. Fonte de energia limpa, sua casa, local comercial ou industrial pode economizar até 95% da conta de energia elétrica.",
+          "link": "https://sgnenergy.vercel.app",
+          "image": {
+            "src": "/projects/sgnenergy.png",
+            "alt": "Foto da aplicação"
+          }
+        },
+        {
+          "title": "Nitria Lerina - Designer de Sobrancelhas e Micropgmentadora",
+          "description": "Mine site com informações sobre os serviços de design de Make • Micro • Design de sobrancelhas • Lash Lift • Limpeza de pele • Hidraglos",
+          "link": "https://nitria.vercel.app/",
+          "image": {
+            "src": "/projects/nitria.jpg",
+            "alt": "Foto da aplicação"
+          }
+        }
+      ]
     }
   }
 }

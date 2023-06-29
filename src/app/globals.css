@@ -1,5 +1,6 @@
 :root {
   --background: #fff;
+  --foreground: rgba(0, 0, 0, 0.02);
   --heading: #0C0C1C;
   --highlight: #B2ACA7;
   --border: rgba(0, 0, 0, 0.03);
