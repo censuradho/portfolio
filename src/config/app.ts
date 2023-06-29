@@ -19,6 +19,10 @@ export const appSettings = {
       user: process.env.NODE_MAILER_USER,
       password: process.env.NODE_MAILER_PASSWORD,
     }
+  },
+  ghost: {
+    url: process.env.GHOST_URL || '',
+    key: process.env.GHOST_KEY || '',
   }
 } 
 

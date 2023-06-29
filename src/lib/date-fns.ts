@@ -15,3 +15,7 @@ export function formatDistance (date: number | Date, baseDate: number | Date) {
     locale: ptBr
   })
 }
+
+export function formatPostDate (date: string) {
+  return format(new Date(date), "MMM dd', ' yyyy")
+}

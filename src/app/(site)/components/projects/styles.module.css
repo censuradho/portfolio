@@ -1,9 +1,13 @@
 .projects {
   margin: 20px 0;
-  padding: 24px;
 }
 
 
 .projects__title {
   font-size: var(--fs-md);
+  padding: 0 24px;
+}
+
+.projects_carousel {
+  padding-left: 24px
 }

@@ -16,7 +16,8 @@ import {
   BilSpotify
 } from '@meronex/icons/bi';
 import {
-  BsArrowRightShort
+  BsArrowRightShort,
+  BsArrowUpRight
 } from '@meronex/icons/bs';
 import {
   FiTrash,
@@ -34,6 +35,7 @@ import {
 import {
   MdcWeb,
 } from '@meronex/icons/mdc';
+
 
 export const icons = {
   moon: BiMoon,
@@ -57,5 +59,6 @@ export const icons = {
   keyBoardArrowDown: MdKeyboardArrowDown,
   github: AiFillGithub,
   spotify: BilSpotify,
-  done: MdDone
+  done: MdDone,
+  arrowUpRight: BsArrowUpRight
 }
