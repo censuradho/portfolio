@@ -1,14 +1,14 @@
 .blog {
   margin: 44px 0;
   padding: 0 24px;
+  display: grid;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .blog__title {
   font-size: var(--fs-md);
-}
-
-.blog__article {
-  margin-bottom: 2rem
 }
 
 .blog__article__title {
