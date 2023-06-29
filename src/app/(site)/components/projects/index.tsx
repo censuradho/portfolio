@@ -9,9 +9,11 @@ export function Projects ({ data }: ProjectsProps) {
     <div className="container-sm">
       <section className={styles.projects}>
         <h2 className={styles.projects__title}>Projetos destaques</h2>
-        <Carousel 
-          data={data.items}
-        />
+        <div className={styles.projects_carousel}>
+          <Carousel 
+            data={data.items}
+          />
+        </div>
       </section>
     </div>
   )
