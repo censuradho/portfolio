@@ -1742,12 +1742,12 @@
   dependencies:
     tslib "^2.4.0"
 
-"@tryghost/content-api@^1.11.5":
-  version "1.11.5"
-  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.11.5.tgz#8023bd03c9e0073a4aaf244c7d527cdd71a80b13"
-  integrity sha512-dDU3EBgi8fpSZqnEOunYra/W/yABGlJng6f6i99ZLHir/y/KbShA+zA5/R19Y7Z109ocB8R4VWHk44GjFSTeBA==
+"@tryghost/content-api@^1.11.13":
+  version "1.11.13"
+  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.11.13.tgz#5da4c8c4bd9ea122dbdc7a27163b25b927826e81"
+  integrity sha512-UVvxxi6jIlflff3gnRNQ8xBcy93lzF0diSThgxtAP19W8W6q/yEJFjW1EFZHkVfVGITmqKWxu8M6TLFetUJ1Fg==
   dependencies:
-    axios "^0.27.0"
+    axios "^1.0.0"
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -1997,15 +1997,7 @@ axe-core@^4.4.3:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.6.2.tgz#6e566ab2a3d29e415f5115bc0fd2597a5eb3e5e3"
   integrity sha512-b1WlTV8+XKLj9gZy2DZXgQiyDp9xkkoe2a6U6UbYccScq2wgH/YwCeI2/Jq2mgo0HzQxqJOjWZBLeA/mqsk5Mg==
 
-axios@^0.27.0:
-  version "0.27.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
-  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
-  dependencies:
-    follow-redirects "^1.14.9"
-    form-data "^4.0.0"
-
-axios@^1.4.0:
+axios@^1.0.0, axios@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.4.0.tgz#38a7bf1224cd308de271146038b551d725f0be1f"
   integrity sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==
@@ -2755,7 +2747,7 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-follow-redirects@^1.14.9, follow-redirects@^1.15.0:
+follow-redirects@^1.15.0:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
