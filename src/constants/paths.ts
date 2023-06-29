@@ -1,4 +1,5 @@
 export const paths = {
   home: '/',
-  softwareDevelopment: '/software-development'
+  softwareDevelopment: '/software-development',
+  blog: '/blog/:slug'
 }

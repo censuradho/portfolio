@@ -3,8 +3,9 @@ import { getDictionary } from "@/utils/get-dictionary"
 import { Metadata } from "next"
 
 import Image from "next/image"
-import { Contact, Experiences, Info, Projects } from "./components"
+import { BlogPosts, Contact, Experiences, Info, Projects } from "./components"
 import styles from './styles.module.css'
+import { getPosts } from "@/lib/ghost"
 
 export async function generateMetadata (): Promise<Metadata> {
 
@@ -32,7 +33,11 @@ export async function generateMetadata (): Promise<Metadata> {
 
 export default async function HomePage () {
   const { home, personal_infos } = await getDictionary()
-
+  const post = await getPosts({
+    include: ['authors', 'tags'],
+    limit: 3
+  })
+  
   const renderAboutDescription = home.about.description.map((value, index) => (
     <p key={index}>{value}</p>
   ))
@@ -85,6 +90,7 @@ export default async function HomePage () {
       </div>
       <Experiences data={home.experiences} />
       <Projects data={home.projects} />
+      <BlogPosts data={post} />
       <Contact data={personal_infos} />
       <hr />
       <div className="container-sm">
