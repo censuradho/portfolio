@@ -1,14 +1,20 @@
-import { getPost, getPosts } from "@/lib/ghost";
-import { BlogPageProps } from "./types";
+import Link from "next/link";
 import { Metadata } from "next";
+
+
 import { appSettings } from "@/config/app";
-import { resolvePath } from "@/utils/helpers";
+
 import { paths } from "@/constants/paths";
 
-import styles from './styles.module.css'
 import { classGroupe } from "@/utils/classNames";
-import Link from "next/link";
+import { resolvePath } from "@/utils/helpers";
+
 import { formatPostDate } from "@/lib/date-fns";
+import { getPost, getPosts } from "@/lib/ghost";
+
+import styles from './styles.module.css'
+import { BlogPageProps } from "./types";
+import { Highligh } from "./components";
 
 export async function generateStaticParams () {
   const posts = await getPosts()
@@ -21,6 +27,7 @@ export async function generateStaticParams () {
 export async function generateMetadata ({ params }: BlogPageProps): Promise<Metadata> {
   const { slug } = params
 
+ 
   const data = await getPost(slug, {
     include: [
       'authors',
@@ -67,8 +74,9 @@ export default async function BlogPage ({ params }: BlogPageProps) {
     include: ['tags', 'authors']
   })
 
+
   return (
-    <main className={classGroupe('container', styles.blog_post)}>
+    <main  className={classGroupe('container', styles.blog_post)}>
       <div className={styles.blog_post__header}>
         <Link href={paths.blog} className={styles.blog_post__back_button}>← Voltar na listagem</Link>
       </div>
@@ -76,11 +84,9 @@ export default async function BlogPage ({ params }: BlogPageProps) {
       <div className={styles.blog_post__meta}>
         <span>{`${formatPostDate(data.published_at as string)} • Leitura de ${data.reading_time} min`}</span>
       </div>
-      <article
+      <Highligh 
         className={styles.blog_post__article}
-        dangerouslySetInnerHTML={{
-          __html: data?.html || ''
-        }}
+        innerHTML={data?.html as string}
       />
     </main>
   )
