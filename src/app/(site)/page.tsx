@@ -33,6 +33,7 @@ export async function generateMetadata (): Promise<Metadata> {
 
 export default async function HomePage () {
   const { home, personal_infos } = await getDictionary()
+
   const post = await getPosts({
     include: ['authors', 'tags'],
     filter: ['featured:true']

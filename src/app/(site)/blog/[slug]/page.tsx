@@ -78,7 +78,7 @@ export default async function BlogPage ({ params }: BlogPageProps) {
   return (
     <main  className={classGroupe('container', styles.blog_post)}>
       <div className={styles.blog_post__header}>
-        <Link href={paths.blog} className={styles.blog_post__back_button}>← Voltar na listagem</Link>
+        <Link href={paths.home} className={styles.blog_post__back_button}>← Página inicial</Link>
       </div>
       <h1 className={styles.blog_post__title}>{data.title}</h1>
       <div className={styles.blog_post__meta}>
