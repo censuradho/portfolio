@@ -23,12 +23,16 @@
     "avatar": "/avatar.jpg",
     "infos": [
       {
-        "label": "Brasileiro, 28 anos • Rio Grande do Sul, BR",
+        "label": "Brasileiro, 27 anos • Rio Grande do Sul, BR",
         "image": "/br.svg"
       },
       {
         "label": "Software Developer",
         "emoji": "👨🏽‍💻"
+      },
+      {
+        "label": "Taurino",
+        "emoji": "♉"
       }
     ],
     "presentation": {
