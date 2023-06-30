@@ -13,7 +13,10 @@ import {
   BiDotsVerticalRounded,
   BiMoon,
   BiSun,
-  BilSpotify
+  BiTab,
+  BiTag,
+  BilSpotify,
+  BisTag
 } from '@meronex/icons/bi';
 import {
   BsArrowRightShort,
@@ -35,7 +38,6 @@ import {
 import {
   MdcWeb,
 } from '@meronex/icons/mdc';
-
 
 export const icons = {
   moon: BiMoon,
@@ -60,5 +62,6 @@ export const icons = {
   github: AiFillGithub,
   spotify: BilSpotify,
   done: MdDone,
-  arrowUpRight: BsArrowUpRight
+  arrowUpRight: BsArrowUpRight,
+  tag: BiTag
 }
