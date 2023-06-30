@@ -21,7 +21,7 @@ export default async function BlogPage () {
   ))
 
   return (
-    <main>
+    <>
       <HeaderButton 
         data={personal_infos} 
         left={{
@@ -29,11 +29,15 @@ export default async function BlogPage () {
         }}
         title="Posts"
       />
-      <div className="container">
-        <Box gap={1.5} flexDirection="column">
-          {renderPosts}
-        </Box>
-      </div>
-    </main>
+      <main className={styles.article}>
+
+        <div className="container">
+          <Box gap={1.5} flexDirection="column">
+            {renderPosts}
+          </Box>
+        </div>
+      </main>
+    </>
+
   )
 }

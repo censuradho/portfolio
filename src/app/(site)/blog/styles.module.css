@@ -1,3 +1,7 @@
 .article__title {
   font-size: var(--fs-md);
 }
+
+.article {
+  padding: 24px
+}

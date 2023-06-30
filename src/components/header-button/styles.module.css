@@ -12,6 +12,7 @@
   gap: 1rem;
   min-height: 60px;
   margin-bottom: 2rem;
+  justify-content: space-between;
 }
 
 .header__left__label {
