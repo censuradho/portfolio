@@ -25,7 +25,8 @@ export default async function BlogPage () {
       <HeaderButton 
         data={personal_infos} 
         left={{
-          label: 'Início'
+          label: 'Início',
+          href: paths.home
         }}
         title="Posts"
       />
