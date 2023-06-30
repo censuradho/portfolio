@@ -35,7 +35,7 @@ export function Experiences (props: ExperiencesProps) {
       <section className={styles.experiences}>
         <h2 className={styles.experiences__title}>Carreira</h2>
         <ul className={styles.experiences__list}>{renderItems}</ul>
-        <NativeLink download href="/curriculo.pdf">
+        <NativeLink icon={{ name: 'download' }} download href="/curriculo.pdf">
           Baixar currículo
         </NativeLink>
       </section>
