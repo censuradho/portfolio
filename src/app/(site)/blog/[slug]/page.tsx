@@ -67,7 +67,7 @@ export async function generateMetadata ({ params }: BlogPageProps): Promise<Meta
   }
 }
 
-export const revalidate = 10
+export const revalidate = 60
 
 export default async function PostPage ({ params }: BlogPageProps) {
   const { slug } = params

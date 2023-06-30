@@ -11,6 +11,8 @@ import styles from '../../styles.module.css'
 import Link from "next/link";
 import { Metadata } from "next";
 
+export const revalidate = 120
+
 export async function generateStaticParams () {
   const tags = await getTags()
 
