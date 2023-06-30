@@ -15,6 +15,7 @@ import { getPost, getPosts } from "@/lib/ghost";
 import styles from './styles.module.css'
 import { BlogPageProps } from "./types";
 import { Highligh } from "./components";
+import { HeaderButton } from "@/components";
 
 export async function generateStaticParams () {
   const posts = await getPosts()
@@ -76,18 +77,18 @@ export default async function BlogPage ({ params }: BlogPageProps) {
 
 
   return (
-    <main  className={classGroupe('container', styles.blog_post)}>
-      <div className={styles.blog_post__header}>
-        <Link href={paths.home} className={styles.blog_post__back_button}>← Página inicial</Link>
-      </div>
-      <h1 className={styles.blog_post__title}>{data.title}</h1>
-      <div className={styles.blog_post__meta}>
-        <span>{`${formatPostDate(data.published_at as string)} • Leitura de ${data.reading_time} min`}</span>
-      </div>
-      <Highligh 
-        className={styles.blog_post__article}
-        innerHTML={data?.html as string}
-      />
-    </main>
+    <>
+      <HeaderButton title="Página inicial" />
+      <main  className={classGroupe('container', styles.blog_post)}>
+        <h1 className={styles.blog_post__title}>{data.title}</h1>
+        <div className={styles.blog_post__meta}>
+          <span>{`${formatPostDate(data.published_at as string)} • Leitura de ${data.reading_time} min`}</span>
+        </div>
+        <Highligh 
+          className={styles.blog_post__article}
+          innerHTML={data?.html as string}
+        />
+      </main>
+    </>
   )
 }

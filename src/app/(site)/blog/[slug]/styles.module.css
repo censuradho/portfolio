@@ -1,5 +1,5 @@
 .blog_post {
-  margin: 40px auto;
+  margin-bottom: 40px;
   padding: 0 24px
 }
 
@@ -17,8 +17,13 @@
 }
 .blog_post__article {
   font-size: var(--fs-lg);
-  display: grid;
   width: 100%;
+  white-space: pre-line;
+}
+
+.blog_post__article > * {
+  width: 100%;
+  white-space: pre-line;
 }
 
 

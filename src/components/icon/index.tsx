@@ -17,14 +17,9 @@ export function Icon(props: IconProps) {
   if (!Svg) return null
   
   return (
-    <span 
-      style={{ 
-        color: fill
-      }}
-    >
-      <Svg
-        size={size} 
-      />
-    </span>
+    <Svg
+      size={size} 
+      color={fill}
+    />
   );
 }
