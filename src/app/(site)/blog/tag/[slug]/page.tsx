@@ -9,6 +9,7 @@ import { Tags } from "@/app/(site)/components";
 
 import styles from '../../styles.module.css'
 import Link from "next/link";
+import { Metadata } from "next";
 
 export async function generateStaticParams () {
   const tags = await getTags()
@@ -16,6 +17,18 @@ export async function generateStaticParams () {
   return tags.map(value => ({
     slug: value.slug
   }))
+}
+
+
+export async function generateMetadata ({ params }: BlogPageProps): Promise<Metadata> {
+  const { slug } = params
+
+  const tag = await getTag(slug)
+
+  return {
+    title: `Posts sobre ${tag.name} - Gustavo Leite`,
+    description: `Aqui você encontra um pouco do que eu falo sobre ${tag.name}`,
+  }
 }
 
 export default async function TagPage ({ params }: BlogPageProps) {
