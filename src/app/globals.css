@@ -41,6 +41,7 @@ hr {
 
 body {
   background: var(--background);
+  height: 100%; 
 }
 
 button {
