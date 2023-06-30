@@ -69,7 +69,7 @@ export async function generateMetadata ({ params }: BlogPageProps): Promise<Meta
 
 export const revalidate = 10
 
-export default async function BlogPage ({ params }: BlogPageProps) {
+export default async function PostPage ({ params }: BlogPageProps) {
   const { slug } = params
 
   const { personal_infos } = await getDictionary()
@@ -81,7 +81,13 @@ export default async function BlogPage ({ params }: BlogPageProps) {
 
   return (
     <>
-      <HeaderButton data={personal_infos} title="Outros posts" />
+      <HeaderButton 
+        data={personal_infos} 
+        left={{
+          href: paths.blog,
+          label: 'Outros posts'
+        }}
+      />
       <main  className={classGroupe('container', styles.blog_post)}>
         <h1 className={styles.blog_post__title}>{data.title}</h1>
         <div className={styles.blog_post__meta}>

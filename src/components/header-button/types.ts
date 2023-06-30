@@ -4,10 +4,12 @@ import { DictionaryData } from "@/dictionaries/types";
 
 export interface HeaderProps {
   left?: {
-    icon: IconProps
+    icon?: IconProps
     onClick?: () => void
+    href?: string
+    label: string
   }
-  title: string
+  title?: string
   right?: ReactNode
   data: DictionaryData['personal_infos']
 }

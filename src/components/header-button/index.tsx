@@ -8,6 +8,7 @@ import { classGroupe } from '@/utils/classNames'
 import Image from 'next/image'
 import Link from 'next/link'
 import { paths } from '@/constants/paths'
+import { Box } from '../box'
 
 export function HeaderButton (props: HeaderProps) {
   const { title, left, right, data } = props
@@ -19,18 +20,24 @@ export function HeaderButton (props: HeaderProps) {
       icon = {
         name: 'arrowLeft',
         color: 'heading',
-        size: 25
+        size: 25,
       }, 
-      onClick = () => router.back()
+      onClick = () => router.back(),
+      href,
+      label = 'Voltar'
     } = left || {}
 
     return (
-      <button 
-        className={styles.header__button} 
-        onClick={onClick}
-      >
-        {icon ? <Icon {...icon} /> : null}
-      </button>
+      <Box gap={0.5}>
+        <button
+          aria-labelledby="label"
+          className={styles.header__left__button} 
+          onClick={href ? () => router.push(href) : onClick}
+        >
+          {icon ? <Icon {...icon} /> : null}
+        </button>
+        <strong id="label" className={styles.header__left__label}>{label}</strong>
+      </Box>
     )
   } 
   
@@ -55,7 +62,7 @@ export function HeaderButton (props: HeaderProps) {
   return (
     <header className={classGroupe('container', styles.header)}>
       {renderLeftButton()}
-      <strong className={styles.header__title}>{title}</strong>
+      <h1 className={styles.header__title}>{title}</h1>
       {right || renderDefaultRight()}
     </header>
   )
