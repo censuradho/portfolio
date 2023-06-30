@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 0 24px;
+  z-index: 10;
+  background: var(--background-opacity);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 60px;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.header__left__label {
+  white-space: nowrap;
+}
+.header__left__button {
+  background: none
+}
+
+
+.header__title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  margin: 0
+}
+
+.header__avatar {
+  border-radius: 50%;
+}

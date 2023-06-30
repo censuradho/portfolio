@@ -1,5 +1,5 @@
 .blog_post {
-  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 0 24px
 }
 
@@ -17,8 +17,13 @@
 }
 .blog_post__article {
   font-size: var(--fs-lg);
-  display: grid;
   width: 100%;
+  white-space: pre-line;
+}
+
+.blog_post__article > * {
+  width: 100%;
+  white-space: pre-line;
 }
 
 
@@ -59,10 +64,21 @@
   font-size: var(--fs-xsm);
 }
 
-.blog_post__article figure iframe {
-  object-fit: cover;
+.blog_post__article figure {
+  display: grid;
+  gap: 0.5rem
+}
+
+.blog_post__article figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+.blog_post__article figure iframe,
+.blog_post__article figure img {
+  object-fit: contain;
   width: 100%;
-  height: 26rem;
+  height: auto;
   max-width: 100%;
 }
 

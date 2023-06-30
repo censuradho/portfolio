@@ -1,9 +1,10 @@
 :root {
   --background: #fff;
+  --background-opacity: rgba(255, 255, 255, 0.85);
   --foreground: rgba(0, 0, 0, 0.02);
+  --border: #EFF3F4;
   --heading: #0C0C1C;
   --highlight: #B2ACA7;
-  --border: rgba(0, 0, 0, 0.03);
   --primary: #D6EF39;
   --primary-light: #D6EF39B3;
   --primary-lighter: #D6EF3933;

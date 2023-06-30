@@ -1,6 +1,8 @@
 {
   "personal_infos": {
-    "email": "develo.front@gmail.com"
+    "email": "develo.front@gmail.com",
+    "name": "Gustavo Leite",
+    "avatar": "/avatar.jpg"
   },
   "home": {
     "metadata": {

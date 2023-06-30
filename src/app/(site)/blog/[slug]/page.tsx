@@ -15,6 +15,8 @@ import { getPost, getPosts } from "@/lib/ghost";
 import styles from './styles.module.css'
 import { BlogPageProps } from "./types";
 import { Highligh } from "./components";
+import { HeaderButton } from "@/components";
+import { getDictionary } from "@/utils/get-dictionary";
 
 export async function generateStaticParams () {
   const posts = await getPosts()
@@ -67,8 +69,10 @@ export async function generateMetadata ({ params }: BlogPageProps): Promise<Meta
 
 export const revalidate = 10
 
-export default async function BlogPage ({ params }: BlogPageProps) {
+export default async function PostPage ({ params }: BlogPageProps) {
   const { slug } = params
+
+  const { personal_infos } = await getDictionary()
 
   const data = await getPost(slug, {
     include: ['tags', 'authors']
@@ -76,18 +80,24 @@ export default async function BlogPage ({ params }: BlogPageProps) {
 
 
   return (
-    <main  className={classGroupe('container', styles.blog_post)}>
-      <div className={styles.blog_post__header}>
-        <Link href={paths.home} className={styles.blog_post__back_button}>← Página inicial</Link>
-      </div>
-      <h1 className={styles.blog_post__title}>{data.title}</h1>
-      <div className={styles.blog_post__meta}>
-        <span>{`${formatPostDate(data.published_at as string)} • Leitura de ${data.reading_time} min`}</span>
-      </div>
-      <Highligh 
-        className={styles.blog_post__article}
-        innerHTML={data?.html as string}
+    <>
+      <HeaderButton 
+        data={personal_infos} 
+        left={{
+          href: paths.blog,
+          label: 'Outros posts'
+        }}
       />
-    </main>
+      <main  className={classGroupe('container', styles.blog_post)}>
+        <h1 className={styles.blog_post__title}>{data.title}</h1>
+        <div className={styles.blog_post__meta}>
+          <span>{`${formatPostDate(data.published_at as string)} • Leitura de ${data.reading_time} min`}</span>
+        </div>
+        <Highligh 
+          className={styles.blog_post__article}
+          innerHTML={data?.html as string}
+        />
+      </main>
+    </>
   )
 }
