@@ -30,6 +30,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html { height: 100%; }
+
 hr {
   background-color: var(--border);
   border: none;
