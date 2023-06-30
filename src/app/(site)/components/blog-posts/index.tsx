@@ -33,7 +33,7 @@ export function BlogPosts ({ data }: BlogPostsProps) {
     <div className="container-sm">
       <section className={styles.blog}>
         <h2 className={styles.blog__title}>Últimos do blog</h2>
-        <Box gap={1} flexDirection="column">
+        <Box gap={2.7} flexDirection="column">
           {renderData}
         </Box>
         <div>
