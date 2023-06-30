@@ -61,6 +61,7 @@ export function Contact ({ data }: ContactProps) {
           <TextInputForm
             id="email"
             label="E-mail"
+            inputMode="email"
             placeholder="exemplo@email.com"
             errorMessage={errors?.email?.message}
             register={register('email')}
@@ -68,6 +69,7 @@ export function Contact ({ data }: ContactProps) {
           <TextInputForm
             id="whatsapp"
             label="whatsapp"
+            inputMode="numeric"
             placeholder="DDD + Número"
             errorMessage={errors?.whatsapp?.message}
             register={register('whatsapp')}

@@ -8,6 +8,7 @@ type RootInputProps = Pick<InputHTMLAttributes<HTMLInputElement>,
   | 'onFocus'
   | 'value'
   | 'defaultValue'
+  | 'inputMode'
 >
 
 export interface TextInputProps extends RootInputProps {
