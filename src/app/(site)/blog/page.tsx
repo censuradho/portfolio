@@ -6,6 +6,7 @@ import styles from './styles.module.css'
 import Link from "next/link"
 import { resolvePath } from "@/utils/helpers"
 import { paths } from "@/constants/paths"
+import { Tags } from "../components"
 
 export default async function BlogPage () {
   const { personal_infos } = await getDictionary()
@@ -14,27 +15,13 @@ export default async function BlogPage () {
   })
 
   const renderPosts = posts.map(value => {
-    const renderTags = value?.tags?.map((value, index) => (
-      <Tag href={resolvePath(paths.tags, { slug: value.slug })} key={index}>{value.name}</Tag>
-    ))
-
-    const renderTagContent = () => {
-      if (!renderTags || renderTags.length === 0) return null
-      
-      return (
-        <div className={styles.article__tags}>
-          <Icon name="tag" />
-          {renderTags}
-        </div>
-      )
-    }
     return (
       <article key={value.slug}>
         <Link href={resolvePath(paths.post, { slug: value.slug })}>
           <h2 className={styles.article__title}>{value.title}</h2>
           <p>{value?.excerpt}</p>
         </Link>
-        {renderTagContent()}
+        <Tags data={value?.tags || []} />
       </article>
     )
   })

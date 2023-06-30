@@ -3,5 +3,5 @@ export const paths = {
   softwareDevelopment: '/software-development',
   blog: '/blog',
   post: '/blog/:slug',
-  tags: '/tag/:slug'
+  tags: '/blog/tag/:slug'
 }

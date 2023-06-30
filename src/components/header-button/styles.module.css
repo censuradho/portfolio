@@ -22,13 +22,13 @@
   background: none
 }
 
-
 .header__title {
   display: flex;
   width: 100%;
   justify-content: center;
   font-size: var(--fs-sm);
-  margin: 0
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .header__avatar {

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Metadata } from "next";
 
 
@@ -12,11 +11,12 @@ import { resolvePath } from "@/utils/helpers";
 import { formatPostDate } from "@/lib/date-fns";
 import { getPost, getPosts } from "@/lib/ghost";
 
-import styles from './styles.module.css'
-import { BlogPageProps } from "./types";
-import { Highligh } from "./components";
 import { HeaderButton } from "@/components";
 import { getDictionary } from "@/utils/get-dictionary";
+import { Tags } from "../../components";
+import { Highligh } from "./components";
+import styles from './styles.module.css';
+import { BlogPageProps } from "./types";
 
 export async function generateStaticParams () {
   const posts = await getPosts()
@@ -78,7 +78,6 @@ export default async function PostPage ({ params }: BlogPageProps) {
     include: ['tags', 'authors']
   })
 
-
   return (
     <>
       <HeaderButton 
@@ -92,6 +91,7 @@ export default async function PostPage ({ params }: BlogPageProps) {
         <h1 className={styles.blog_post__title}>{data.title}</h1>
         <div className={styles.blog_post__meta}>
           <span>{`${formatPostDate(data.published_at as string)} • Leitura de ${data.reading_time} min`}</span>
+          <Tags data={data?.tags || []} />
         </div>
         <Highligh 
           className={styles.blog_post__article}
