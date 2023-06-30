@@ -7,7 +7,7 @@ import {
   AiOutlineArrowLeft,
   AiOutlineClose,
   AiOutlineDownload,
-  AiOutlineMenu
+  AiOutlineMenu,
 } from '@meronex/icons/ai';
 import {
   BiDotsVerticalRounded,

@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './styles.module.css'
 import { ExperiencesProps } from './types'
-import { Box } from '@/components'
+import { Box, Icon, NativeLink } from '@/components'
 
 export function Experiences (props: ExperiencesProps) {
   const { data } = props
@@ -35,6 +35,9 @@ export function Experiences (props: ExperiencesProps) {
       <section className={styles.experiences}>
         <h2 className={styles.experiences__title}>Carreira</h2>
         <ul className={styles.experiences__list}>{renderItems}</ul>
+        <NativeLink download href="/curriculo.pdf">
+          Baixar currículo
+        </NativeLink>
       </section>
     </div>
   )
