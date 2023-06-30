@@ -62,7 +62,7 @@ export function HeaderButton (props: HeaderProps) {
   return (
     <header className={classGroupe('container', styles.header)}>
       {renderLeftButton()}
-      <h1 className={styles.header__title}>{title}</h1>
+      {title ? <h1 className={styles.header__title}>{title}</h1> : null}
       {right || renderDefaultRight()}
     </header>
   )

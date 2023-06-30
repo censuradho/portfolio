@@ -64,10 +64,21 @@
   font-size: var(--fs-xsm);
 }
 
-.blog_post__article figure iframe {
-  object-fit: cover;
+.blog_post__article figure {
+  display: grid;
+  gap: 0.5rem
+}
+
+.blog_post__article figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+.blog_post__article figure iframe,
+.blog_post__article figure img {
+  object-fit: contain;
   width: 100%;
-  height: 26rem;
+  height: auto;
   max-width: 100%;
 }
 
