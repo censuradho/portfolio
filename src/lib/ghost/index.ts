@@ -4,7 +4,7 @@ import GhostContentAPI, { Params } from "@tryghost/content-api";
 const api = new GhostContentAPI({
   url: appSettings.ghost.url,
   key: appSettings.ghost.key,
-  version: 'v3'
+  version: 'v5.0'
 });
 
 export async function getPosts(options?: Params) {

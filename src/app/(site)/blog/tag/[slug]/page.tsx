@@ -55,7 +55,7 @@ export default async function TagPage ({ params }: BlogPageProps) {
   })
 
   return (
-    <>
+    <div style={{ height: '100%' }}>
       <HeaderButton
         left={{
           label: 'Início',
@@ -69,6 +69,6 @@ export default async function TagPage ({ params }: BlogPageProps) {
           {renderPosts}
         </Box>
       </main>
-    </>
+    </div>
   )
 } 

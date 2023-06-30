@@ -79,7 +79,7 @@ export default async function PostPage ({ params }: BlogPageProps) {
   })
 
   return (
-    <>
+    <div style={{ height: '100%' }}>
       <HeaderButton 
         data={personal_infos} 
         left={{
@@ -98,6 +98,6 @@ export default async function PostPage ({ params }: BlogPageProps) {
           innerHTML={data?.html as string}
         />
       </main>
-    </>
+    </div>
   )
 }
