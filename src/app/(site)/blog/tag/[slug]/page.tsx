@@ -58,7 +58,8 @@ export default async function TagPage ({ params }: BlogPageProps) {
     <>
       <HeaderButton
         left={{
-          label: 'Voltar'
+          label: 'Início',
+          href: paths.home
         }}
         data={personal_infos}  
         title={tag.name}
