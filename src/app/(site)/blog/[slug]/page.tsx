@@ -11,12 +11,13 @@ import { resolvePath } from "@/utils/helpers";
 import { formatPostDate } from "@/lib/date-fns";
 import { getPost, getPosts } from "@/lib/ghost";
 
-import { HeaderButton } from "@/components";
+import { Box, HeaderButton } from "@/components";
 import { getDictionary } from "@/utils/get-dictionary";
 import { Tags } from "../../components";
 import { Highligh } from "./components";
 import styles from './styles.module.css';
 import { BlogPageProps } from "./types";
+import Image from "next/image";
 
 export async function generateStaticParams () {
   const posts = await getPosts()
@@ -77,6 +78,9 @@ export default async function PostPage ({ params }: BlogPageProps) {
   const data = await getPost(slug, {
     include: ['tags', 'authors']
   })
+
+
+
 
   return (
     <div style={{ height: '100%' }}>
