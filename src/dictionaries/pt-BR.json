@@ -86,6 +86,15 @@
       "title": "Projetos",
       "items": [
         {
+          "title": "Ritualiza - Cuidados de alta performance com a pele",
+          "description": "E-commerce de produtos para pele, altamente focado na personalização para que o produto atenda as demandas específicas de cada pele, de acordo com as necessidades, motivos e gostos.",
+          "link": "https://ritualiza.com.br",
+          "image": {
+            "src": "/projects/ritualiza.png",
+            "alt": "Foto da aplicação"
+          }
+        },
+        {
           "title": "SGN Energy - Enegia fotovoltaica",
           "description": "É uma empresa com soluções em energia solar fotovoltaica, energia que hoje é sinônimo de economia, tecnologia e sustentabilidade. Fonte de energia limpa, sua casa, local comercial ou industrial pode economizar até 95% da conta de energia elétrica.",
           "link": "https://sgnenergy.vercel.app",

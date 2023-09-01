@@ -27,7 +27,7 @@ export function Carousel (props: CarouselProps) {
     breakpoints: {
       [breakpoints["table-min"]]: {
         slides: {
-          perView: 2,
+          perView: 2.12,
           spacing: 20
         },
       }
