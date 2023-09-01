@@ -38,7 +38,7 @@
 .button-pulse::after {
   background-color: var(--primary);
   z-index: -2;
-  border-radius: 40px;
+  border-radius: var(--border-radius);
 }
 
 
