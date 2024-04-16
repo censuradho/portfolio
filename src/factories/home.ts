@@ -22,3 +22,13 @@ function imageFactory (data: any) {
 function richTextFactory (data: any): Document {
   return data
 }
+
+
+function metadataFactory (data: any) {
+  const { fields } = data || {}
+
+  return {
+    title: fields?.title || '',
+    description: fields?.description || '',
+  }
+}
