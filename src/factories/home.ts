@@ -18,3 +18,7 @@ function imageFactory (data: any) {
     }
   }
 }
+
+function richTextFactory (data: any): Document {
+  return data
+}
