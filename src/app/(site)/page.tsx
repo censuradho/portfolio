@@ -1,11 +1,14 @@
-import { Icon, NativeLink } from "@/components"
-import { getDictionary } from "@/utils/get-dictionary"
-import { Metadata } from "next"
+import { Icon, NativeLink } from '@/components'
+import { getDictionary } from '@/utils/get-dictionary'
+import { Metadata } from 'next'
 
-import Image from "next/image"
-import { BlogPosts, Contact, Experiences, Info, Projects } from "./components"
+import Image from 'next/image'
+import { BlogPosts, Contact, Experiences, Info, Projects } from './components'
 import styles from './styles.module.css'
-import { getPosts } from "@/lib/ghost"
+import { getPosts } from '@/lib/ghost'
+import { getEntry } from '@/lib/contentful'
+import { CONTENTFUL_ENTRIES } from '@/constants/contentful'
+import { homeFactory } from '@/factories/home'
 
 export async function generateMetadata (): Promise<Metadata> {
 
@@ -38,6 +41,10 @@ export default async function HomePage () {
     include: ['authors', 'tags'],
     filter: ['featured:true']
   })
+
+  const entry = await getEntry(CONTENTFUL_ENTRIES.HOME)
+  
+  const content = homeFactory(entry)
   
   const renderAboutDescription = home.about.description.map((value, index) => (
     <p key={index}>{value}</p>

@@ -23,6 +23,11 @@ export const appSettings = {
   ghost: {
     url: process.env.GHOST_URL || '',
     key: process.env.GHOST_KEY || '',
+  },
+  contentful: {
+    space: process.env.CONTENTFUL_SPACE || '',
+    token: process.env.CONTENTFUL_TOKEN || '',
+    host: process.env.CONTENTFUL_HOST || '',
   }
 } 
 

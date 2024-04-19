@@ -32,3 +32,11 @@ function metadataFactory (data: any) {
     description: fields?.description || '',
   }
 }
+
+export function homeFactory (data: any) {
+  const { fields } = data || {}
+
+  return {
+    name: fields?.name || '',
+  }
+}
