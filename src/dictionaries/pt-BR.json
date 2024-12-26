@@ -63,10 +63,16 @@
     "experiences": {
       "items": [
         {
-          "company_name": "Openbox.ai",
+          "company_name": "Vortigo",
           "position": "Front-end Developer",
-          "date": "Set 2019 — Jun 2021",
-          "avatar": "/companies/openbox.png"
+          "date": "Set 2024 — Atualmente",
+          "avatar": "/companies/vortigo.png"
+        },
+        {
+          "company_name": "CWI",
+          "position": "Front-end Developer",
+          "date": "Jun 2022 — Jan 2023",
+          "avatar": "/companies/cwi.png"
         },
         {
           "company_name": "Ubistart",
@@ -75,10 +81,10 @@
           "avatar": "/companies/ubistart.png"
         },
         {
-          "company_name": "CWI",
+          "company_name": "Openbox.ai",
           "position": "Front-end Developer",
-          "date": "Jun 2022 — Jan 2023",
-          "avatar": "/companies/cwi.png"
+          "date": "Set 2019 — Jun 2021",
+          "avatar": "/companies/openbox.png"
         }
       ]
     },

@@ -1,18 +1,26 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   productionBrowserSourceMaps: true,
   images: {
-    domains: [
-      'github.com',
-      'agile-planning-poker.vercel.app',
-      'static-public.klickpages.com.br',
-      'digitalpress.fra1.cdn.digitaloceanspaces.com',
-      'res.cloudinary.com'
-    ]
+    remotePatterns: [
+      {
+        hostname: 'github.com',
+        protocol: 'https',
+      },
+      {
+        hostname: 'static-public.klickpages.com.br',
+        protocol: 'https',
+      },
+      {
+        hostname: 'agile-planning-poker.vercel.app',
+        protocol: 'https',
+      },
+      {
+        hostname: 'res.cloudinary.com',
+        protocol: 'https',
+      }
+    ],
   }
 }
 
