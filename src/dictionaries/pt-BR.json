@@ -92,6 +92,15 @@
       "title": "Projetos",
       "items": [
         {
+          "title": "Sorteio+ - Nomes & Números",
+          "description": "App para sortear rifas, loterias, números e nomes de forma rápida e prática.",
+          "link": "https://play.google.com/store/apps/details?id=com.fist.sorteio",
+          "image": {
+            "src": "/projects/sorteio.webp",
+            "alt": "Foto da aplicação"
+          }
+        },
+        {
           "title": "Ritualiza - Cuidados de alta performance com a pele",
           "description": "E-commerce de produtos para pele, altamente focado na personalização para que o produto atenda as demandas específicas de cada pele, de acordo com as necessidades, motivos e gostos.",
           "link": "https://ritualiza.com.br",
