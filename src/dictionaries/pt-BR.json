@@ -48,9 +48,9 @@
     },
     "about": {
       "description": [
-        "Estudo Análise e desenvolvimento de sistemas no Senac RS, Moro em Porto Alegre. Atuo como desenvolvedor de software a {{xp_time}}, apaixonado por entregar projetos desafiadores e promover experiências incríveis para as pessoas.",
-        "Eterno aluno, sempre aprendendo algo novo para aperfeiçoar minhas hard e soft skills.",
-        "Desenvolvimento de software é acima de tudo, melhorar a vida das pessoas através da tecnologia 🖤"
+        "Estudo Análise e Desenvolvimento de Sistemas no Senac RS e moro em Porto Alegre. Atuo como desenvolvedor de software há {{xp_time}}, apaixonado por entregar projetos desafiadores e promover experiências incríveis.",
+        "Eterno estudante, sempre aprendendo algo novo para aperfeiçoar minhas hard e soft skills.",
+        "Desenvolvimento de software é, acima de tudo, melhorar a vida das pessoas através da tecnologia 🖤"
       ],
       "subtitle": "Só nos compiuter 👨🏽‍💻"
     },
@@ -110,7 +110,7 @@
           }
         },
         {
-          "title": "SGN Energy - Enegia fotovoltaica",
+          "title": "SGN Energy - Energia fotovoltaica",
           "description": "É uma empresa com soluções em energia solar fotovoltaica, energia que hoje é sinônimo de economia, tecnologia e sustentabilidade. Fonte de energia limpa, sua casa, local comercial ou industrial pode economizar até 95% da conta de energia elétrica.",
           "link": "https://sgnenergy.vercel.app",
           "image": {
@@ -119,8 +119,8 @@
           }
         },
         {
-          "title": "Nitria Lerina - Designer de Sobrancelhas e Micropgmentadora",
-          "description": "Mine site com informações sobre os serviços de design de Make • Micro • Design de sobrancelhas • Lash Lift • Limpeza de pele • Hidraglos",
+          "title": "Nitria Lerina - Designer de Sobrancelhas e Micropigmentadora",
+          "description": "Mini site com informações sobre os serviços de design de Make • Micro • Design de sobrancelhas • Lash Lift • Limpeza de pele • Hidraglos",
           "link": "https://nitria.vercel.app/",
           "image": {
             "src": "/projects/nitria.jpg",
