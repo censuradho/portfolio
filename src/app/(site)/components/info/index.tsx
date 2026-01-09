@@ -2,9 +2,13 @@ import Image from "next/image";
 
 import { InfoProps } from "./types";
 import styles from './styles.module.css'
+import { interpolate } from "@/utils/interpolate";
+import { differenceInYears } from 'date-fns'
 
 export function Info ({ data }: InfoProps) {
   const renderInfos = data.map((value, index) => {
+  
+  const myAge = differenceInYears(new Date(), new Date('1996-04-20'))
 
     const renderImage = () => {
       if (!value.image) return null
@@ -31,7 +35,7 @@ export function Info ({ data }: InfoProps) {
       <li key={index} className={styles.info__list__item}>
         {renderImage()}
         {renderEmoji()}
-        <span>{value.label}</span>
+        <span>{interpolate(value.label, { age: myAge + ' anos' })}</span>
       </li>
     )
   })
