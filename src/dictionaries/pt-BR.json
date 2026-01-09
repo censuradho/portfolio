@@ -64,25 +64,25 @@
       "items": [
         {
           "company_name": "Vortigo",
-          "position": "Front-end Developer",
+          "position": "Senior Frontend Developer",
           "date": "Set 2023 — Atualmente",
           "avatar": "/companies/vortigo.png"
         },
         {
           "company_name": "CWI",
-          "position": "Front-end Developer",
+          "position": "Frontend Developer",
           "date": "Jun 2022 — Jan 2023",
           "avatar": "/companies/cwi.png"
         },
         {
           "company_name": "Ubistart",
-          "position": "Software Developer",
+          "position": "Frontend Developer",
           "date": "Jun 2021 — Jun 2022",
           "avatar": "/companies/ubistart.png"
         },
         {
           "company_name": "Openbox.ai",
-          "position": "Front-end Developer",
+          "position": "Frontend Developer",
           "date": "Set 2019 — Jun 2021",
           "avatar": "/companies/openbox.png"
         }
