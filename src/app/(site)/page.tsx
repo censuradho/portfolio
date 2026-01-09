@@ -5,6 +5,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import { Contact, Experiences, Info, Projects } from './components'
 import styles from './styles.module.css'
+import { interpolate } from '@/utils/interpolate'
 
 export async function generateMetadata (): Promise<Metadata> {
 
@@ -28,13 +29,15 @@ export async function generateMetadata (): Promise<Metadata> {
     },
   }
 }
-
+export const revalidate = 3600 // 1 hora
 
 export default async function HomePage () {
   const { home, personal_infos } = await getDictionary()
   
+  const xpYears = new Date().getFullYear() - 2019
+
   const renderAboutDescription = home.about.description.map((value, index) => (
-    <p key={index}>{value}</p>
+    <p key={index}>{interpolate(value, { xp_time: `${xpYears}+ anos` })}</p>
   ))
 
   return (
