@@ -35,9 +35,6 @@ importers:
       '@svgr/webpack':
         specifier: ^8.1.0
         version: 8.1.0(typescript@5.7.2)
-      '@tryghost/content-api':
-        specifier: ^1.12.2
-        version: 1.12.2
       axios:
         specifier: ^1.13.2
         version: 1.13.2
@@ -1651,9 +1648,6 @@ packages:
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
-
-  '@tryghost/content-api@1.12.2':
-    resolution: {integrity: sha512-KcheOLdF0gnt6G3l1khGSP2Dp6FTRoYhiiUtV42O4TLopkL+qhD5HEAbzfbba1Pxi9iKQXRflgh2tZkejMgR7w==}
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -5282,12 +5276,6 @@ snapshots:
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
-
-  '@tryghost/content-api@1.12.2':
-    dependencies:
-      axios: 1.13.2
-    transitivePeerDependencies:
-      - debug
 
   '@trysound/sax@0.2.0': {}
 
