@@ -23,7 +23,7 @@
     "avatar": "/avatar.jpg",
     "infos": [
       {
-        "label": "Brasileiro, 27 anos • Rio Grande do Sul, BR",
+        "label": "Brasileiro, {{age}} • Rio Grande do Sul, BR",
         "image": "/br.svg"
       },
       {
@@ -48,7 +48,7 @@
     },
     "about": {
       "description": [
-        "Estudo Análise e desenvolvimento de sistemas no Senac RS, Moro em Porto Alegre. Atuo como desenvolvedor de software a +4 anos, apaixonado por entregar projetos desafiadores e promover experiências incríveis para as pessoas.",
+        "Estudo Análise e desenvolvimento de sistemas no Senac RS, Moro em Porto Alegre. Atuo como desenvolvedor de software a {{xp_time}}, apaixonado por entregar projetos desafiadores e promover experiências incríveis para as pessoas.",
         "Eterno aluno, sempre aprendendo algo novo para aperfeiçoar minhas hard e soft skills.",
         "Desenvolvimento de software é acima de tudo, melhorar a vida das pessoas através da tecnologia 🖤"
       ],
