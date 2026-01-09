@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
+import type { NextConfig } from 'next'
 
-const nextConfig = {
+const settings: NextConfig = {
   productionBrowserSourceMaps: true,
   images: {
     remotePatterns: [
@@ -24,14 +24,18 @@ const nextConfig = {
   }
 }
 
-module.exports = {
-  ...nextConfig,
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
-    })
-    return config
+ 
+// Next.js 16 - turbopack at the top level of nextConfig
+const nextConfig: NextConfig = {
+  ...settings,
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
   },
 }
+ 
+export default nextConfig
